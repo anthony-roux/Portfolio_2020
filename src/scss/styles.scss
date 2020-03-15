@@ -1,0 +1,36 @@
+// mes importations de feuilles de styles.scss
+
+// IMPORTATIONS DU DOSSIER GLOBAL
+
+@import 'global/_reset.scss';
+@import 'global/_utilities.scss';
+@import 'global/_variables.scss';
+@import 'global/_fonts.scss';
+@import 'global/_typography.scss';
+@import 'global/_icons.scss';
+@import 'global/_cta.scss';
+
+// COMPONENTS
+// ici importations des éléments génériques qui se répétent souvent dans le site : calltoactions, cards...
+
+
+// LAYOUTS
+// ici importations des pages correspondants aux éléments du site : menuburger, hero, aside, footer, header, caroussel...
+@import 'layouts/_header.scss';
+@import 'layouts/_footer.scss';
+
+// PAGES 
+// ici importations des pages du site : homepage, contact, panier, articles, FAQ...
+@import 'pages/_homepage.scss';
+
+
+body {
+  background-color: lightcyan;
+}
+
+.content-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1104px;
+  padding: 0 30px;
+}

@@ -1,0 +1,97 @@
+// COLORS
+
+
+// PRIMARY :
+
+$white: #FFFFFF;
+$darkBlue: #161569;
+$WhiteKC: #F6FCFC;
+
+
+// COLORS WITH OPACITY :
+
+$darkBlue-opa_50: rgba(26, 27, 109, 0.5);
+$darkBlue-opa_03--titleSection: rgba(22, 21, 105, 0.03);
+$darkBlue-opa_05--subTitleSection: rgba(22, 21, 105, 0.2);
+
+
+
+// SECONDARY
+$blueGrey: #2F3F80;
+$PurpleBlue: #505488;
+$BlueLagoon: #00B7D4;
+
+
+// GRADIENTS :
+$gradientOriginal: linear-gradient(80.36deg, #161569 -98.51%, #2F3F80 -38.63%, #505488 24.65%, #00B7D4 118.41%, #F6FCFC 118.44%);
+
+$gradient1: linear-gradient(0.42deg, #161569 -230.79%, #2F3F80 -104.45%, #505488 14.14%, #00B7D4 145.11%);
+
+$backgroundGradient: linear-gradient(103.23deg, rgba(182, 251, 255, 0.05) -25.45%, rgba(0, 183, 212, 0.05) 16.51%, rgba(47, 63, 128, 0.05) 53.77%, rgba(22, 21, 105, 0.05) 100%);
+
+$iconGradient: linear-gradient(181.28deg, #161569 -176.37%, #2F3F80 -65.45%, #505488 30.87%, #00B7D4 135.95%);
+
+$numberGradient: linear-gradient(81.99deg, #161569 -98.51%, #2F3F80 -38.63%, #505488 24.65%, #00B7D4 118.41%, #F6FCFC 118.44%);
+
+/**
+* FONTS
+*/
+
+$fontRighteous: 'Righteous',
+cursive;
+
+
+
+/**
+* BREAKPOINTS
+*/
+$tablet-up: 768px;
+$tablet-down: 767px;
+
+$desktop-up: 1200px;
+$desktop-down: 1199px;
+
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
+    @content;
+  }
+}
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+@mixin desktop-down {
+  @media (max-width: $desktop-down) {
+    @content;
+  }
+}
+
+
+@mixin landscape {
+  @media (min-aspect-ratio: 1/1) {
+    @content;
+  }
+}
+
+/**
+* GLOBAL
+*/
+$headerHeight: 40px;
+
+/************ DISPLAY ************/
+
+@mixin flexbox($direction: row, $justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  flex-direction: $direction;
+  align-items: $align;
+}
