@@ -7,7 +7,7 @@ header {
 
 .nav {
   @include flexbox(row, space-between, center);
-  height: 60px;
+  // height: 60px;
   width: 100%;
 
   &__logo {
@@ -18,86 +18,137 @@ header {
 
   &__burger {
     @include flexbox(row, space-around, center);
+
+    .nav__linkHomeOnHero {
+      margin-right: 10px;
+      text-decoration: none;
+      font-family: $montserrat;
+      font-weight: 500;
+      font-size: rem(13px);
+      text-transform: uppercase;
+      color: $darkBlue;
+
+    }
+
+    .nav__menu-button {
+      margin-left: 10px;
+      width: 41px;
+      height: 41px;
+      padding: 10px 0;
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      position: relative;
+      background-image: linear-gradient(45deg,
+          #161569,
+          #2F3F80,
+          #00B7D4);
+      border: solid 1px #eee;
+      cursor: pointer;
+    }
+
+    // animations on click
+    .nav__menu-button.clicked {
+
+      .menu-line:nth-of-type(1) {
+        transform: translateY(6.5px) rotate(45deg);
+      }
+
+      .menu-line:nth-of-type(2) {
+        transform: translateX(30px);
+        opacity: 0;
+        transition: all 0.5s ease;
+      }
+
+      .menu-line:nth-of-type(3) {
+        transform: translateY(-6.5px) rotate(-45deg);
+      }
+
+      .menu-circle:nth-of-type(1) {
+        transform: scale(4.5);
+        opacity: 0;
+        transition: all 0.3s linear;
+      }
+
+      .menu-circle:nth-of-type(2) {
+        transform: scale(2.8);
+        opacity: 0;
+        transition: all 0.3s linear;
+      }
+    }
+
+    /*---------end-----------*/
+
+    .menu-circle {
+      //ondes de choc
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: solid 1px #e9e9e9;
+    }
+
+    .menu-line {
+      // barres du burger
+      height: 2.5px;
+      width: 20px;
+      background: #e9e9e9;
+      border-radius: 1em;
+      transition: transform 0.3s ease;
+    }
   }
 
-  &__linkHomeOnHero {
-    margin-right: 10px;
-    text-decoration: none;
-    font-family: Montserrat;
-    font-weight: 500;
-    font-size: rem(13px);
-    text-transform: uppercase;
-    color: $darkBlue;
 
-  }
 
-  &__menu-button {
-    margin-left: 10px;
-    width: 41px;
-    height: 41px;
-    padding: 10px 0;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-    background-image: linear-gradient(45deg,
-        #161569,
-        #2F3F80,
-        #00B7D4);
-    border: solid 1px #eee;
-    cursor: pointer;
-  }
-
-  .menu-circle {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    border: solid 1px #e9e9e9;
-  }
-
-  .menu-line {
-    height: 2.5px;
-    width: 20px;
-    background: #e9e9e9;
-    border-radius: 1em;
-    transition: transform 0.3s ease;
-  }
-
-  &__menu {
-    display: none;
-  }
 }
 
-// animations on click
-.nav__menu-button.clicked {
-  .menu-line:nth-of-type(1) {
-    transform: translateY(6.5px) rotate(45deg);
+.menu {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+  transition: transform 0.5s;
+  transform: translateX(-2500px);
+
+
+
+  li {
+    list-style-type: none;
+
+    &:first-child {
+      border: 1px solid #F6FCFC;
+    }
+
+    a {
+      font-family: $montserrat;
+      font-style: normal;
+      font-weight: 800;
+      font-size: rem(30px);
+      line-height: 37px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $darkBlue;
+    }
   }
 
-  .menu-line:nth-of-type(2) {
-    transform: translateX(30px);
-    opacity: 0;
-    transition: all 0.5s ease;
-  }
 
-  .menu-line:nth-of-type(3) {
-    transform: translateY(-6.5px) rotate(-45deg);
-  }
+}
 
-  .menu-circle:nth-of-type(1) {
-    transform: scale(4.5);
-    opacity: 0;
-    transition: all 0.3s linear;
-  }
+.header-is-open {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
-  .menu-circle:nth-of-type(2) {
-    transform: scale(2.8);
-    opacity: 0;
-    transition: all 0.3s linear;
-  }
+.is-open-menu {
+  transform: none;
+  @include flexbox(column, space-around, stretch);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
 }
