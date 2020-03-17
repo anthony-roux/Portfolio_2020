@@ -5,7 +5,7 @@
 
 $white: #FFFFFF;
 $darkBlue: #161569;
-$WhiteKC: #F6FCFC;
+$whiteKc: #F6FCFC;
 
 
 // COLORS WITH OPACITY :
@@ -18,8 +18,8 @@ $darkBlue-opa_05--subTitleSection: rgba(22, 21, 105, 0.2);
 
 // SECONDARY
 $blueGrey: #2F3F80;
-$PurpleBlue: #505488;
-$BlueLagoon: #00B7D4;
+$purpleBlue: #505488;
+$blueLagoon: #00B7D4;
 
 
 // GRADIENTS :
@@ -47,6 +47,11 @@ sans-serif;
 /**
 * BREAKPOINTS
 */
+
+$iphone6-7-8: 374px;
+$iphone6-7-8__: 375px;
+$iphone6-7-8_max: 413px;
+
 $tablet-up: 768px;
 $tablet-down: 767px;
 
@@ -84,6 +89,35 @@ $desktop-down: 1199px;
   }
 }
 
+
+$iphone6-7-8: 374px;
+$iphone6-7-8__: 375px;
+$iphone6-7-8_max: 410px;
+$iphone6-7-8_max-height: 735px;
+$iphoneXs_max-height: 896px;
+
+$desktop-up: 1200px;
+$desktop-down: 1199px;
+
+
+@mixin iphone6-7-8 {
+  @media (min-width: $iphone6-7-8) and (max-height: $iphone6-7-8__) {
+    @content;
+  }
+}
+
+@mixin iphone6-7-8_max {
+  @media (min-width: $iphone6-7-8_max) {
+    @content;
+  }
+}
+
+// @mixin iphoneXS_Max {
+//   @media (min-width: $iphone6-7-8_max) and (max-height: $iphoneXs_max-height) {
+//     @content;
+//   }
+// }
+
 /**
 * GLOBAL
 */
@@ -96,4 +130,9 @@ $headerHeight: 40px;
   justify-content: $justify;
   flex-direction: $direction;
   align-items: $align;
+}
+
+@mixin format_vw-vh {
+  height: 100vh;
+  width: 100vw;
 }
