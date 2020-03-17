@@ -21,9 +21,13 @@
 
 // PAGES 
 // ici importations des pages du site : homepage, contact, panier, articles, FAQ...
-@import 'pages/_homepage.scss';
+@import 'pages/_hero.scss';
 
-
+// main {
+//   margin-top: 10vh;
+//   padding-top: 1vh;
+//   background: $backgroundGradient;
+// }
 
 
 .content-wrapper {

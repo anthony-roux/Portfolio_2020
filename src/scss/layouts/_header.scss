@@ -3,13 +3,15 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 5px;
+  color: transparent;
+  
 }
 
 .nav {
   @include flexbox(row, space-between, center);
   width: 100%;
-  height: 10vh;
+  height: 10vh;  
+
 
   &__logo {
     @include flexbox(row, space-around, center);
@@ -149,18 +151,18 @@ header {
 }
 
 // .header-is-open {
-//   // height: 100vh;
-//   // display: flex;
-//   // flex-direction: column;
-//   background-color: red;
+//   background: rgba(255, 255, 255, 0.3);
+//   background-image: url("/assets/svg/blur.svg");
+//   backdrop-filter: blur(20px);
 // }
 
 .is-open-menu {
   transform: none;
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   background: rgba(255, 255, 255, 0.3);
   background-image: url("/assets/svg/blur.svg");
-  margin-left: -30px;
+  backdrop-filter: blur(10px);
+  margin: -57px 0 0 -30px;
   padding: 30px;
 }
