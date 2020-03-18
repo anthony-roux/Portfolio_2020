@@ -104,7 +104,7 @@
   &__scrollDown {
     @include flexbox(column, center, center);
     width: 30px;
-    margin: 15px auto;
+    margin: 0 auto 15px;
 
 
     @include iphone6-7-8 {
