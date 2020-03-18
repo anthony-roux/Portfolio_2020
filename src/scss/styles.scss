@@ -36,3 +36,21 @@
   max-width: 1104px;
   padding: 0 30px;
 }
+
+.corpo {
+  //Pour le background purple lines
+  background: url("/assets/svg/PURPLE-LINES.svg") no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  width: 203px;
+  height: 4916px;
+
+  @include iphone6-7-8_max {
+    background: url("/assets/svg/PURPLE-LINES_414px.svg") no-repeat;
+    width: 310px;
+    height: 4916px;
+
+  }
+
+}
