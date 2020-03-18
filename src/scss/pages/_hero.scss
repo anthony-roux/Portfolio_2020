@@ -2,25 +2,46 @@
   height: 100vh;
   background: $backgroundGradient;
 
-  div:first-child {  //container of vector me
+  div:first-child {
+    //container of vector me
     @include flexbox(column, center, center);
-    margin: 32px 0 32px;
+    margin: 32px 0 32px 0;
+
+    @include iphone6-7-8_max {
+      margin: 32px 0 52px 0;
+    }
   }
-  
+
   &__vectorMe {
-    margin-top: 15vh;
+    margin-top: 14vh;
     width: 118px;
     height: 206px;
-    
+
+    @include iphone6-7-8 {
+      margin-top: 14vh;
+      width: 148px;
+      height: 236px;
+    }
   }
 
   &__name {
-    width: 218px;
+    width: 208px;
 
+    @include iphone6-7-8 {
+      width: 278px;
+    }
+
+    @include iphone6-7-8_max {
+      width: 300px;
+    }
   }
 
   &__introduction {
-    margin: 16px 0 0 0;
+    margin: 12px 0 0 0;
+
+    @include iphone6-7-8 {
+      margin: 16px 0 0 0;
+    }
 
     .introduction__job {
       margin: 0 0 8px 0;
@@ -28,9 +49,17 @@
       font-style: normal;
       font-weight: normal;
       font-size: rem(17px);
-      line-height: 21px;
+      line-height: 1.5;
       text-transform: capitalize;
       color: $darkBlue;
+
+      @include iphone6-7-8 {
+        font-size: rem(20px);
+      }
+
+      @include iphone6-7-8_max {
+        font-size: rem(22px);
+      }
     }
 
     .introduction__welcome {
@@ -38,23 +67,54 @@
       font-family: $montserrat;
       font-style: normal;
       font-weight: 600;
-      font-size: rem(11px);
-      line-height: 13px;
+      font-size: rem(12px);
+      line-height: 1.5;
       color: $darkBlue-opa_50;
+
+      @include iphone6-7-8 {
+        font-size: rem(14px);
+      }
+
+      @include iphone6-7-8_max {
+        font-size: rem(16px);
+      }
     }
 
     .introduction__purpose {
-      margin: 0 0 16px 0;
+      margin: 0 0 8px 0;
       color: $darkBlue-opa_50;
       font-family: $montserrat;
       font-style: normal;
       font-weight: normal;
-      font-size: rem(9px);
-      line-height: 13px;
+      font-size: rem(11px);
+      line-height: 1.5;
+
+      @include iphone6-7-8 {
+        font-size: rem(12px);
+      }
+
+      @include iphone6-7-8_max {
+        font-size: rem(14px);
+        margin: 0 0 24px 0;
+
+      }
     }
   }
 
   &__scrollDown {
     @include flexbox(column, center, center);
+    width: 30px;
+    margin: 15px auto;
+
+
+    @include iphone6-7-8 {
+      width: 40px;
+    }
+
+    @include iphone6-7-8_max {
+      margin: 15px auto;
+    }
+
+
   }
 }

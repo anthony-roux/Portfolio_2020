@@ -94,20 +94,26 @@ $iphone6-7-8: 374px;
 $iphone6-7-8__: 375px;
 $iphone6-7-8_max: 410px;
 $iphone6-7-8_max-height: 735px;
-$iphoneXs_max-height: 896px;
+$iphoneXs_max-height: 767px;
 
 $desktop-up: 1200px;
 $desktop-down: 1199px;
 
 
 @mixin iphone6-7-8 {
-  @media (min-width: $iphone6-7-8) and (max-height: $iphone6-7-8__) {
+  @media (min-width: $iphone6-7-8) {
     @content;
   }
 }
 
 @mixin iphone6-7-8_max {
   @media (min-width: $iphone6-7-8_max) {
+    @content;
+  }
+}
+
+@mixin iphoneXS_Max {
+  @media (min-width: 414px) and (max-width: $iphoneXs_max-height) {
     @content;
   }
 }
