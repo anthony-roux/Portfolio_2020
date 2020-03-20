@@ -104,7 +104,7 @@ header {
 
 .menu {
   transition: transform 1s;
-  transform: translateY(-1000px);
+  transform: translateY(-1500px);
   @include format_vw-vh;
   background: $darkBlue;
   margin: -51px 0 0 -30px;
@@ -259,9 +259,9 @@ header {
   background-color: white;
   background-image: $backgroundGradient;
 
-  @supports (backdrop-filter: blur(10px)) {
-    background: rgba(255, 255, 255, 0.3);
-    background-image: url("/assets/svg/blur.svg");
-    backdrop-filter: blur(10px);
-  }
+  // @supports (backdrop-filter: blur(10px)) {
+  //   background: rgba(255, 255, 255, 0.3);
+  //   background-image: url("/assets/svg/blur.svg");
+  //   backdrop-filter: blur(10px);
+  // }
 }
