@@ -123,12 +123,20 @@ header {
     @include iphone6-7-8_max {
       margin: 10% 0 30% 0;
     }
+
+    @include tablet-up {
+      margin: 10% 0 15% 0;
+    }
   }
 
 
   li {
     list-style-type: none;
     margin-top: 32px;
+
+    @include tablet-up {
+      margin-top: 76px;
+    }
 
     a {
       @include flexbox(column, center, center);
@@ -150,6 +158,10 @@ header {
         line-height: 55px;
       }
 
+      @include tablet-up {
+        font-size: 3.5rem;
+      }
+
       p {
         color: $blueLagoon;
         -webkit-text-stroke: 1.5px #f6fcfc;
@@ -164,6 +176,11 @@ header {
         @include iphone6-7-8_max {
           font-size: rem(40px);
           line-height: 55px;
+        }
+
+        @include tablet-up {
+          font-size: 3.5rem;
+          -webkit-text-stroke: 2.5px #f6fcfc;
         }
       }
     }
@@ -183,6 +200,14 @@ header {
 
       @supports (backdrop-filter: blur(10px)) {
         color: $darkBlue;
+      }
+
+      @include tablet-up {
+        margin: 0 0 12px 0;
+      }
+
+      @include tablet-up {
+        font-size: rem(13px);
       }
     }
 
