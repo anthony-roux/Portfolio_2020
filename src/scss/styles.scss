@@ -50,7 +50,10 @@
     background: url("/assets/svg/PURPLE-LINES_414px.svg") no-repeat;
     width: 310px;
     height: 4916px;
-
   }
+}
 
+.hideBgNavScrolling {
+  background-color: transparent;
+  background-image: none;
 }

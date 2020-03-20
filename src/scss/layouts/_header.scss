@@ -10,7 +10,7 @@ header {
   @include flexbox(row, space-between, center);
   width: 100%;
   // height: 10vh;
-  padding-top: 10px;
+  padding: 10px 15px;
   position: relative;
   z-index: 1;
 
@@ -121,7 +121,7 @@ header {
     margin: 25% 0;
 
     @include iphone6-7-8_max {
-      margin: 15% 0 30% 0;
+      margin: 10% 0 30% 0;
     }
   }
 
@@ -218,8 +218,21 @@ header {
   transition: transform 1s;
   @include format_vw-vh;
   background: $darkBlue;
-  margin: -51px 0 0 -30px;
+  margin: -61px 0 0 -30px;
   padding: 30px;
+  overflow: hidden;
+
+  @supports (backdrop-filter: blur(10px)) {
+    background: rgba(255, 255, 255, 0.3);
+    background-image: url("/assets/svg/blur.svg");
+    backdrop-filter: blur(10px);
+  }
+}
+
+.nav-on-scroll {
+  transition: 1s;
+  background-color: white;
+  background-image: $backgroundGradient;
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
