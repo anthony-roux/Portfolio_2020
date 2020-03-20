@@ -22,6 +22,11 @@
       width: 148px;
       height: 236px;
     }
+
+    @include tablet-up {
+      width: 200px;
+      height: 320px;
+    }
   }
 
   &__name {
@@ -34,6 +39,10 @@
     @include iphone6-7-8_max {
       width: 300px;
     }
+
+    @include tablet-up {
+      width: 430px;
+    }
   }
 
   &__introduction {
@@ -41,6 +50,10 @@
 
     @include iphone6-7-8 {
       margin: 16px 0 0 0;
+    }
+
+    @include tablet-up {
+      margin: 40px 0 0 0;
     }
 
     .introduction__job {
@@ -60,6 +73,11 @@
       @include iphone6-7-8_max {
         font-size: rem(22px);
       }
+
+      @include tablet-up {
+        font-size: rem(37px);
+        margin: 0 0 16px 0;
+      }
     }
 
     .introduction__welcome {
@@ -77,6 +95,11 @@
 
       @include iphone6-7-8_max {
         font-size: rem(16px);
+      }
+
+      @include tablet-up {
+        font-size: rem(23px);
+        margin: 0 0 8px 0;
       }
     }
 
@@ -96,7 +119,10 @@
       @include iphone6-7-8_max {
         font-size: rem(14px);
         margin: 0 0 24px 0;
+      }
 
+      @include tablet-up {
+        font-size: rem(18px);
       }
     }
   }
@@ -113,6 +139,10 @@
 
     @include iphone6-7-8_max {
       margin: 15px auto;
+    }
+
+    @include tablet-up {
+      margin: 40px auto;
     }
   }
 }

@@ -14,6 +14,10 @@ header {
   position: relative;
   z-index: 1;
 
+  @include tablet-up {
+    padding: 10px 60px;
+  }
+
   &__logo {
     @include flexbox(row, space-around, center);
     width: 46px;
@@ -115,6 +119,10 @@ header {
     background: rgba(255, 255, 255, 0.3);
     background-image: url("/assets/svg/blur.svg");
     backdrop-filter: blur(10px);
+  }
+
+  @include tablet-up {
+    margin: -51px 0 0 -60px;
   }
 
   ul {
@@ -251,6 +259,10 @@ header {
     background: rgba(255, 255, 255, 0.3);
     background-image: url("/assets/svg/blur.svg");
     backdrop-filter: blur(10px);
+  }
+
+  @include tablet-up {
+    margin: -61px 0 0 -60px;
   }
 }
 

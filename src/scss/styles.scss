@@ -35,6 +35,12 @@
   width: 100%;
   max-width: 1104px;
   padding: 0 30px;
+
+  @include tablet-up {
+    padding: 0 60px;
+
+  }
+
 }
 
 .corpo {

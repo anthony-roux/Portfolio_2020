@@ -7,9 +7,10 @@ var hideBgNavScrolling = document.querySelector('.nav');
 
 burger.addEventListener('click', () => {
   menu.classList.toggle('is-open-menu')
-  header.classList.toggle('header-is-open')
+  header.classList.toggle('header-is-open') // peut-être a supprimer ...
   hideBgNavScrolling.classList.toggle('hideBgNavScrolling')
 });
+
 
 /**********************************************************/
 /*********** SCALE ANIMATION ON BURGER MENU **************/
@@ -26,6 +27,7 @@ btn.addEventListener('click', () => {
     clicked = true;
   }
 });
+
 
 /**********************************************************/
 /******************** HEADER ON SCROLL ********************/
