@@ -10,6 +10,10 @@
     @include iphone6-7-8_max {
       margin: 32px 0 52px 0;
     }
+
+    @include tablet-up {
+      margin: 5% 0 9% 0;
+    }
   }
 
   &__vectorMe {
@@ -27,6 +31,12 @@
       width: 200px;
       height: 320px;
     }
+
+    @include big-tablet {
+      width: 350px;
+      height: 500px;
+      margin-top: 10vh;
+    }
   }
 
   &__name {
@@ -42,6 +52,10 @@
 
     @include tablet-up {
       width: 430px;
+    }
+
+    @include big-tablet {
+      width: 550px;
     }
   }
 
@@ -78,6 +92,10 @@
         font-size: rem(37px);
         margin: 0 0 16px 0;
       }
+
+      @include big-tablet {
+        font-size: rem(50px);
+      }
     }
 
     .introduction__welcome {
@@ -100,6 +118,10 @@
       @include tablet-up {
         font-size: rem(23px);
         margin: 0 0 8px 0;
+      }
+
+      @include big-tablet {
+        font-size: rem(30px);
       }
     }
 
@@ -124,6 +146,10 @@
       @include tablet-up {
         font-size: rem(18px);
       }
+
+      @include big-tablet {
+        font-size: rem(22px);
+      }
     }
   }
 
@@ -143,6 +169,10 @@
 
     @include tablet-up {
       margin: 40px auto;
+    }
+
+    @include big-tablet {
+      width: 55px;
     }
   }
 }

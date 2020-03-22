@@ -21,7 +21,10 @@ header {
   &__logo {
     @include flexbox(row, space-around, center);
     width: 46px;
-    height: 34px;
+
+    @include tablet-up {
+      width: 50px;
+    }
   }
 
   &__burger {
@@ -51,12 +54,18 @@ header {
       background-image: linear-gradient(45deg, #161569, #2f3f80, #00b7d4);
       border: solid 1px #eee;
       cursor: pointer;
+
+      @include tablet-up {
+        width: 50px;
+        height: 50px;
+        padding: 14px 0;
+      }
     }
 
     // animations on click
     .nav__menu-button.clicked {
       .menu-line:nth-of-type(1) {
-        transform: translateY(6.5px) rotate(45deg);
+        transform: translateY(7.5px) rotate(45deg);
       }
 
       .menu-line:nth-of-type(2) {
@@ -102,6 +111,10 @@ header {
       background: #E1E1E1;
       border-radius: 1em;
       transition: transform 0.3s ease;
+
+      @include tablet-up {
+        width: 22px;
+      }
     }
   }
 }
@@ -144,6 +157,10 @@ header {
 
     @include tablet-up {
       margin-top: 76px;
+    }
+
+    @include big-tablet {
+      margin-top: 110px;
     }
 
     a {
@@ -262,7 +279,7 @@ header {
   }
 
   @include tablet-up {
-    margin: -61px 0 0 -60px;
+    margin: -70px 0 0 -60px;
   }
 }
 
