@@ -4,7 +4,7 @@
 }
 
 .hero {
-  @include flexbox(column, space-around, center);
+  @include flexbox(column, space-between, center);
 
   @include tablet-up {
     @include flexbox(column, space-around, center);
@@ -27,13 +27,8 @@
   }
 
   &__vectorMe {
-    width: 118px;
-    height: 206px;
-
-    @include iphone6-7-8 {
-      width: 148px;
-      height: 236px;
-    }
+    width: 120px;
+    height: 210px;
 
     @include tablet-up {
       width: 200px;
@@ -48,7 +43,7 @@
   }
 
   &__text {
-    margin-top: 10%;
+    margin-top: 8%;
 
     @include desktop-min {
       margin: 0;
@@ -56,11 +51,7 @@
   }
 
   &__name {
-    width: 208px;
-
-    @include iphone6-7-8 {
-      width: 290px;
-    }
+    width: 220px;
 
     @include tablet-up {
       width: 470px;
@@ -72,8 +63,6 @@
   }
 
   &__introduction {
-    margin: 16px 0 0 0;
-
     @include tablet-up {
       margin: 40px 0 0 0;
     }
@@ -81,20 +70,12 @@
     .introduction__job {
       margin: 0 0 8px 0;
       font-family: $righteous;
-      font-style: normal;
-      font-weight: normal;
-      font-size: rem(18px);
+      font-size: rem(20px);
       line-height: 1.5;
-      text-transform: capitalize;
       color: $darkBlue;
-
-      @include iphone6-7-8_max {
-        font-size: rem(22px);
-        margin: 0 0 16px 0;
-        padding-bottom: 10px;
-        border-bottom: 1px solid $darkBlue-opa_50;
-        max-width: 300px;
-      }
+      padding-bottom: 10px;
+      border-bottom: 1px solid $darkBlue-opa_50;
+      max-width: 250px;
 
       @include tablet-up {
         font-size: rem(32px);
@@ -133,12 +114,14 @@
         .introduction__network {
           margin: auto;
           padding-left: 30px;
+          position: relative;
+          z-index: 0;
         }
 
         .introduction__social-icons {
           @include flexbox(column, center, center);
 
-          svg {
+          a {
             margin-bottom: 24px;
 
             path {
@@ -161,14 +144,13 @@
     .introduction__welcome {
       margin: 0 0 4px 0;
       font-family: $montserrat;
-      font-style: normal;
       font-weight: 600;
       font-size: rem(12.5px);
       line-height: 1.5;
       color: $darkBlue-opa_50;
 
-      @include iphone6-7-8_max {
-        font-size: rem(14px);
+      @include iphone6-7-8 {
+        font-size: rem(16px);
       }
 
       @include tablet-up {
@@ -178,16 +160,15 @@
     }
 
     .introduction__purpose {
-      margin: 0 0 8px 0;
+      margin: 0 0 5px 0;
       color: $darkBlue-opa_50;
       font-family: $montserrat;
-      font-style: normal;
-      font-weight: normal;
+      font-weight: 500;
       font-size: rem(11px);
       line-height: 1.5;
       max-width: 400px;
 
-      @include iphone6-7-8_max {
+      @include iphone6-7-8 {
         font-size: rem(14px);
         margin: 0 0 24px 0;
       }
