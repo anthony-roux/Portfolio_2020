@@ -27,7 +27,7 @@ $gradientOriginal: linear-gradient(80.36deg, #161569 -98.51%, #2F3F80 -38.63%, #
 
 $gradient1: linear-gradient(0.42deg, #161569 -230.79%, #2F3F80 -104.45%, #505488 14.14%, #00B7D4 145.11%);
 
-$backgroundGradient: linear-gradient(103.23deg, rgba(182, 251, 255, 0.05) -25.45%, rgba(0, 183, 212, 0.05) 16.51%, rgba(47, 63, 128, 0.05) 53.77%, rgba(22, 21, 105, 0.05) 100%);
+$backgroundGradient: linear-gradient(103.23deg, rgba(182, 251, 255, 0.10) -25.45%, rgba(0, 183, 212, 0.10) 16.51%, rgba(47, 63, 128, 0.10) 53.77%, rgba(22, 21, 105, 0.10) 100%);
 
 $iconGradient: linear-gradient(181.28deg, #161569 -176.37%, #2F3F80 -65.45%, #505488 30.87%, #00B7D4 135.95%);
 
@@ -57,7 +57,11 @@ $tablet-down: 767px;
 
 $big-tablet: 1024px;
 
+$desktop-height: 750px;
+
 $desktop-up: 1200px;
+$desktop-large: 1366px;
+$desktop-Xlarge: 1768px;
 $desktop-down: 1199px;
 
 @mixin tablet-up {
@@ -72,8 +76,14 @@ $desktop-down: 1199px;
   }
 }
 
-@mixin big-tablet {
-  @media (min-width: $big-tablet) {
+// @mixin big-tablet {
+//   @media (min-width: $big-tablet) and (min-height: $big-tablet) {
+//     @content;
+//   }
+// }
+
+@mixin desktop-min {
+  @media (min-width: 1024px) and (min-height: $desktop-height) {
     @content;
   }
 }
@@ -87,6 +97,18 @@ $desktop-down: 1199px;
 
 @mixin desktop-down {
   @media (max-width: $desktop-down) {
+    @content;
+  }
+}
+
+@mixin desktop-large {
+  @media (min-width: $desktop-large) {
+    @content;
+  }
+}
+
+@mixin desktop-Xlarge {
+  @media (min-width: $desktop-Xlarge) {
     @content;
   }
 }
