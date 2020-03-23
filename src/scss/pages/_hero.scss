@@ -1,41 +1,89 @@
-.hero {
-  height: 100vh;
+.bg-hero {
   background: $backgroundGradient;
+  height: 100vh;
+}
 
-  div:first-child {
+.hero {
+  @include flexbox(column, space-around, center);
+
+  @include tablet-up {
+    @include flexbox(column, space-around, center);
+  }
+
+  @include desktop-min {
+    @include flexbox(row, space-around, center);
+    height: 100vh;
+  }
+
+  &__svg {
     //container of vector me
-    @include flexbox(column, center, center);
-    margin: 32px 0 32px 0;
+    @include flexbox(column, flex-end, center);
+    height: 46vh;
 
-    @include iphone6-7-8_max {
-      margin: 32px 0 52px 0;
+    // @include iphone6-7-8_max {
+    //   // margin: 32px 0 52px 0;
+    // }
+
+    // @include tablet-up {
+    //   height: 46vh;
+    //   margin: 0
+    // }
+
+    // @include big-tablet {
+    //   margin: 9% 0 9% 0;
+    // }
+
+    @include desktop-min {
+      margin: 0 7% 0 0;
+      @include flexbox(row, center, center);
     }
 
-    @include tablet-up {
-      margin: 5% 0 9% 0;
-    }
+    // @include desktop-up {
+    //   margin: 0 7% 0 0;
+    // }
+
   }
 
   &__vectorMe {
-    margin-top: 14vh;
+    // margin-top: 14vh;
     width: 118px;
     height: 206px;
 
     @include iphone6-7-8 {
-      margin-top: 14vh;
+      // margin-top: 14vh;
       width: 148px;
       height: 236px;
     }
 
     @include tablet-up {
       width: 200px;
-      height: 320px;
+      height: 350px;
+      margin-top: 0;
     }
 
-    @include big-tablet {
-      width: 350px;
-      height: 500px;
-      margin-top: 10vh;
+    // @include big-tablet {
+    //   width: 350px;
+    //   height: 500px;
+    //   margin-top: 10vh;
+    // }
+
+    @include desktop-min {
+      width: 340px;
+      height: 570px;
+      // margin-top: 0;
+    }
+
+    // @include desktop-up {
+    //   width: 340px;
+    //   height: 570px;
+    // }
+  }
+
+  &__text {
+    margin-top: 10%;
+
+    @include desktop-min {
+      margin: 0;
     }
   }
 
@@ -43,28 +91,32 @@
     width: 208px;
 
     @include iphone6-7-8 {
-      width: 278px;
+      width: 290px;
     }
 
-    @include iphone6-7-8_max {
-      width: 300px;
-    }
+    // @include iphone6-7-8_max {
+    //   width: 300px;
+    // }
 
     @include tablet-up {
-      width: 430px;
+      width: 470px;
     }
 
-    @include big-tablet {
-      width: 550px;
+    // @include big-tablet {
+    //   width: 550px;
+    // }
+
+    @include desktop-min {
+      padding-top: 75px;
     }
   }
 
   &__introduction {
-    margin: 12px 0 0 0;
+    margin: 16px 0 0 0;
 
-    @include iphone6-7-8 {
-      margin: 16px 0 0 0;
-    }
+    // @include iphone6-7-8 {
+    //   margin: 16px 0 0 0;
+    // }
 
     @include tablet-up {
       margin: 40px 0 0 0;
@@ -75,26 +127,79 @@
       font-family: $righteous;
       font-style: normal;
       font-weight: normal;
-      font-size: rem(17px);
+      font-size: rem(18px);
       line-height: 1.5;
       text-transform: capitalize;
       color: $darkBlue;
 
-      @include iphone6-7-8 {
-        font-size: rem(20px);
-      }
-
       @include iphone6-7-8_max {
         font-size: rem(22px);
+        margin: 0 0 16px 0;
+        padding-bottom: 10px;
+        border-bottom: 1px solid $darkBlue-opa_50;
+        max-width: 300px;
       }
 
       @include tablet-up {
-        font-size: rem(37px);
-        margin: 0 0 16px 0;
+        font-size: rem(32px);
+        max-width: 400px;
+
+      }
+    }
+
+    .introduction__details {
+      max-width: 330px;
+
+      @include tablet-down {
+        margin-top: 30px;
       }
 
-      @include big-tablet {
-        font-size: rem(50px);
+      @include tablet-up {
+        max-width: 600px;
+      }
+
+
+      .introduction__network {
+        display: none;
+
+        @include tablet-up {
+          display: block;
+        }
+      }
+
+      @include tablet-up {
+        @include flexbox(row, space-between, end);
+        margin-top: 50px;
+
+        div {
+          //bloc de texts a gauche de __network
+          max-width: 400px;
+        }
+
+        .introduction__network {
+          margin: auto;
+          padding-left: 30px;
+        }
+
+        .introduction__social-icons {
+          @include flexbox(column, center, center);
+
+          svg {
+            margin-bottom: 24px;
+
+            path {
+              fill: $darkBlue-opa_50;
+
+              @supports (backdrop-filter: blur(10px)) {
+                fill: $darkBlue;
+              }
+            }
+
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
       }
     }
 
@@ -103,26 +208,26 @@
       font-family: $montserrat;
       font-style: normal;
       font-weight: 600;
-      font-size: rem(12px);
+      font-size: rem(12.5px);
       line-height: 1.5;
       color: $darkBlue-opa_50;
 
-      @include iphone6-7-8 {
+      // @include iphone6-7-8 {
+      //   font-size: rem(14px);
+      // }
+
+      @include iphone6-7-8_max {
         font-size: rem(14px);
       }
 
-      @include iphone6-7-8_max {
-        font-size: rem(16px);
-      }
-
       @include tablet-up {
-        font-size: rem(23px);
+        font-size: rem(20px);
         margin: 0 0 8px 0;
       }
 
-      @include big-tablet {
-        font-size: rem(30px);
-      }
+      // @include big-tablet {
+      //   font-size: rem(30px);
+      // }
     }
 
     .introduction__purpose {
@@ -133,10 +238,12 @@
       font-weight: normal;
       font-size: rem(11px);
       line-height: 1.5;
+      max-width: 400px;
 
-      @include iphone6-7-8 {
-        font-size: rem(12px);
-      }
+
+      // @include iphone6-7-8 {
+      //   font-size: rem(12px);
+      // }
 
       @include iphone6-7-8_max {
         font-size: rem(14px);
@@ -144,35 +251,41 @@
       }
 
       @include tablet-up {
-        font-size: rem(18px);
+        font-size: rem(16px);
       }
 
-      @include big-tablet {
-        font-size: rem(22px);
-      }
+      // @include big-tablet {
+      //   font-size: rem(22px);
+      // }
     }
   }
 
   &__scrollDown {
-    @include flexbox(column, center, center);
-    width: 30px;
-    margin: 0 auto 15px;
+    // @include flexbox(column, center, center);
+    width: 35px;
+    margin: 0 auto;
 
-
-    @include iphone6-7-8 {
-      width: 40px;
+    @include desktop-min {
+      position: relative;
+      bottom: -100px;
+      left: -55%;
     }
 
-    @include iphone6-7-8_max {
-      margin: 15px auto;
-    }
 
-    @include tablet-up {
-      margin: 40px auto;
-    }
+    // @include iphone6-7-8 {
+    //   padding: 10px 0;
+    // }
 
-    @include big-tablet {
-      width: 55px;
-    }
+    // @include iphone6-7-8_max {
+    //   margin: 15px auto;
+    // }
+
+    // @include tablet-up {
+    //   margin: 40px auto;
+    // }
+
+    // @include big-tablet {
+    //   width: 55px;
+    // }
   }
 }

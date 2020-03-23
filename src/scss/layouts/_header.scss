@@ -8,9 +8,9 @@ header {
 
 .nav {
   @include flexbox(row, space-between, center);
+  max-width: 1950px;
   width: 100%;
-  // height: 10vh;
-  padding: 10px 15px;
+  padding: 10px 30px;
   position: relative;
   z-index: 1;
 
@@ -124,7 +124,7 @@ header {
   transform: translateY(-1500px);
   @include format_vw-vh;
   background: $darkBlue;
-  margin: -51px 0 0 -30px;
+  margin: -51px 0 0 0;
   padding: 30px;
   @include flexbox(column, center, center);
 
@@ -135,7 +135,17 @@ header {
   }
 
   @include tablet-up {
-    margin: -51px 0 0 -60px;
+    margin: -51px 0 0 0;
+  }
+
+  @include desktop-min {
+    transform: translateX(-3500px);
+    width: 40vw;
+    height: 100vh;
+    margin: -70px 0 0 0;
+    @include flexbox(column, center, flex-start);
+
+
   }
 
   ul {
@@ -148,6 +158,12 @@ header {
     @include tablet-up {
       margin: 10% 0 15% 0;
     }
+
+    @include desktop-min {
+      margin: 25% 20% 20% 20%;
+      @include flexbox(column, center, flex-start);
+
+    }
   }
 
 
@@ -159,9 +175,15 @@ header {
       margin-top: 76px;
     }
 
-    @include big-tablet {
-      margin-top: 110px;
+    @include desktop-min {
+      margin-top: 25px;
+
+      // &:last-child {
+      //   margin-bottom: 50px;
+      // }
     }
+
+
 
     a {
       @include flexbox(column, center, center);
@@ -187,6 +209,12 @@ header {
         font-size: 3.5rem;
       }
 
+      @include desktop-min {
+        font-size: rem(35px);
+        line-height: 1.5;
+
+      }
+
       p {
         color: $blueLagoon;
         -webkit-text-stroke: 1.5px #f6fcfc;
@@ -207,11 +235,23 @@ header {
           font-size: 3.5rem;
           -webkit-text-stroke: 2.5px #f6fcfc;
         }
+
+        @include desktop-min {
+          font-size: rem(40px);
+        }
       }
     }
   }
 
   &__network {
+
+    @include desktop-min {
+      margin: 50px auto;
+      // @include flexbox(column, center, center);
+
+
+    }
+
     p {
       margin: 0 0 8px 0;
       font-family: $montserrat;
@@ -234,6 +274,10 @@ header {
       @include tablet-up {
         font-size: rem(13px);
       }
+    }
+
+    .menu__social-icons {
+      text-align: center;
     }
 
     svg {
@@ -268,7 +312,7 @@ header {
   transition: transform 1s;
   @include format_vw-vh;
   background: $darkBlue;
-  margin: -61px 0 0 -30px;
+  margin: -61px 0 0 0;
   padding: 30px;
   overflow: hidden;
 
@@ -279,18 +323,18 @@ header {
   }
 
   @include tablet-up {
-    margin: -70px 0 0 -60px;
+    margin: -70px 0 0 0;
+  }
+
+  @include desktop-min {
+    width: 45vw;
+    height: 100vh;
   }
 }
+
 
 .nav-on-scroll {
   transition: 1s;
   background-color: white;
   background-image: $backgroundGradient;
-
-  // @supports (backdrop-filter: blur(10px)) {
-  //   background: rgba(255, 255, 255, 0.3);
-  //   background-image: url("/assets/svg/blur.svg");
-  //   backdrop-filter: blur(10px);
-  // }
 }

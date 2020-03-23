@@ -33,14 +33,14 @@
 .content-wrapper {
   margin: 0 auto;
   width: 100%;
-  max-width: 1104px;
+  max-width: 1164px;
   padding: 0 30px;
 
   @include tablet-up {
+    max-width: 1224px;
     padding: 0 60px;
 
   }
-
 }
 
 .corpo {
@@ -68,4 +68,8 @@
 .hideBgNavScrolling {
   background-color: transparent;
   background-image: none;
+}
+
+html {
+  max-width: 1950px;
 }
