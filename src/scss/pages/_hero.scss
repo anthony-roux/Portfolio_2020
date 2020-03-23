@@ -20,37 +20,17 @@
     @include flexbox(column, flex-end, center);
     height: 46vh;
 
-    // @include iphone6-7-8_max {
-    //   // margin: 32px 0 52px 0;
-    // }
-
-    // @include tablet-up {
-    //   height: 46vh;
-    //   margin: 0
-    // }
-
-    // @include big-tablet {
-    //   margin: 9% 0 9% 0;
-    // }
-
     @include desktop-min {
       margin: 0 7% 0 0;
       @include flexbox(row, center, center);
     }
-
-    // @include desktop-up {
-    //   margin: 0 7% 0 0;
-    // }
-
   }
 
   &__vectorMe {
-    // margin-top: 14vh;
     width: 118px;
     height: 206px;
 
     @include iphone6-7-8 {
-      // margin-top: 14vh;
       width: 148px;
       height: 236px;
     }
@@ -61,22 +41,10 @@
       margin-top: 0;
     }
 
-    // @include big-tablet {
-    //   width: 350px;
-    //   height: 500px;
-    //   margin-top: 10vh;
-    // }
-
     @include desktop-min {
       width: 340px;
       height: 570px;
-      // margin-top: 0;
     }
-
-    // @include desktop-up {
-    //   width: 340px;
-    //   height: 570px;
-    // }
   }
 
   &__text {
@@ -94,17 +62,9 @@
       width: 290px;
     }
 
-    // @include iphone6-7-8_max {
-    //   width: 300px;
-    // }
-
     @include tablet-up {
       width: 470px;
     }
-
-    // @include big-tablet {
-    //   width: 550px;
-    // }
 
     @include desktop-min {
       padding-top: 75px;
@@ -113,10 +73,6 @@
 
   &__introduction {
     margin: 16px 0 0 0;
-
-    // @include iphone6-7-8 {
-    //   margin: 16px 0 0 0;
-    // }
 
     @include tablet-up {
       margin: 40px 0 0 0;
@@ -143,7 +99,6 @@
       @include tablet-up {
         font-size: rem(32px);
         max-width: 400px;
-
       }
     }
 
@@ -157,7 +112,6 @@
       @include tablet-up {
         max-width: 600px;
       }
-
 
       .introduction__network {
         display: none;
@@ -190,8 +144,9 @@
             path {
               fill: $darkBlue-opa_50;
 
-              @supports (backdrop-filter: blur(10px)) {
+              &:hover {
                 fill: $darkBlue;
+                transition: 1s;
               }
             }
 
@@ -212,10 +167,6 @@
       line-height: 1.5;
       color: $darkBlue-opa_50;
 
-      // @include iphone6-7-8 {
-      //   font-size: rem(14px);
-      // }
-
       @include iphone6-7-8_max {
         font-size: rem(14px);
       }
@@ -224,10 +175,6 @@
         font-size: rem(20px);
         margin: 0 0 8px 0;
       }
-
-      // @include big-tablet {
-      //   font-size: rem(30px);
-      // }
     }
 
     .introduction__purpose {
@@ -240,11 +187,6 @@
       line-height: 1.5;
       max-width: 400px;
 
-
-      // @include iphone6-7-8 {
-      //   font-size: rem(12px);
-      // }
-
       @include iphone6-7-8_max {
         font-size: rem(14px);
         margin: 0 0 24px 0;
@@ -253,15 +195,10 @@
       @include tablet-up {
         font-size: rem(16px);
       }
-
-      // @include big-tablet {
-      //   font-size: rem(22px);
-      // }
     }
   }
 
   &__scrollDown {
-    // @include flexbox(column, center, center);
     width: 35px;
     margin: 0 auto;
 
@@ -270,22 +207,5 @@
       bottom: -100px;
       left: -55%;
     }
-
-
-    // @include iphone6-7-8 {
-    //   padding: 10px 0;
-    // }
-
-    // @include iphone6-7-8_max {
-    //   margin: 15px auto;
-    // }
-
-    // @include tablet-up {
-    //   margin: 40px auto;
-    // }
-
-    // @include big-tablet {
-    //   width: 55px;
-    // }
   }
 }
