@@ -1,68 +1,94 @@
-// COLORS
-
+//************************* COLORS *************************//
 
 // PRIMARY :
-
-$white: #FFFFFF;
+$white: #ffffff;
 $darkBlue: #161569;
-$whiteKc: #F6FCFC;
+$whiteKc: #f6fcfc;
+
+// SECONDARY
+$blueGrey: #2f3f80;
+$purpleBlue: #505488;
+$blueLagoon: #00b7d4;
 
 
 // COLORS WITH OPACITY :
-
 $darkBlue-opa_50: rgba(26, 27, 109, 0.5);
 $darkBlue-opa_03--titleSection: rgba(22, 21, 105, 0.03);
 $darkBlue-opa_05--subTitleSection: rgba(22, 21, 105, 0.2);
 
-
-
-// SECONDARY
-$blueGrey: #2F3F80;
-$purpleBlue: #505488;
-$blueLagoon: #00B7D4;
+// Colors for background lines
+$BG_darkBlue-opa_003: rgba(22, 21, 105, 0.03); //left line
+$BG_darkBlue-opa_008: rgba(22, 21, 105, 0.08); //right line
 
 
 // GRADIENTS :
-$gradientOriginal: linear-gradient(80.36deg, #161569 -98.51%, #2F3F80 -38.63%, #505488 24.65%, #00B7D4 118.41%, #F6FCFC 118.44%);
+$gradientOriginal: linear-gradient(80.36deg,
+  #161569 -98.51%,
+  #2f3f80 -38.63%,
+  #505488 24.65%,
+  #00b7d4 118.41%,
+  #f6fcfc 118.44%);
 
-$gradient1: linear-gradient(0.42deg, #161569 -230.79%, #2F3F80 -104.45%, #505488 14.14%, #00B7D4 145.11%);
+$gradient1: linear-gradient(0.42deg,
+  #161569 -230.79%,
+  #2f3f80 -104.45%,
+  #505488 14.14%,
+  #00b7d4 145.11%);
 
-$backgroundGradient: linear-gradient(103.23deg, rgba(182, 251, 255, 0.10) -25.45%, rgba(0, 183, 212, 0.10) 16.51%, rgba(47, 63, 128, 0.10) 53.77%, rgba(22, 21, 105, 0.10) 100%);
+$backgroundGradient: linear-gradient(103.23deg,
+  rgba(182, 251, 255, 0.1) -25.45%,
+  rgba(0, 183, 212, 0.1) 16.51%,
+  rgba(47, 63, 128, 0.1) 53.77%,
+  rgba(22, 21, 105, 0.1) 100%);
 
-$iconGradient: linear-gradient(181.28deg, #161569 -176.37%, #2F3F80 -65.45%, #505488 30.87%, #00B7D4 135.95%);
+$iconGradient: linear-gradient(181.28deg,
+  #161569 -176.37%,
+  #2f3f80 -65.45%,
+  #505488 30.87%,
+  #00b7d4 135.95%);
 
-$numberGradient: linear-gradient(81.99deg, #161569 -98.51%, #2F3F80 -38.63%, #505488 24.65%, #00B7D4 118.41%, #F6FCFC 118.44%);
+$numberGradient: linear-gradient(81.99deg,
+  #161569 -98.51%,
+  #2f3f80 -38.63%,
+  #505488 24.65%,
+  #00b7d4 118.41%,
+  #f6fcfc 118.44%);
 
-/**
-* FONTS
-*/
 
-$righteous: 'Righteous',
+
+
+
+//************************* FONTS *************************//
+
+$righteous: "Righteous",
 sans-serif;
-$montserrat: 'Montserrat',
+$montserrat: "Montserrat",
 sans-serif;
 
 
 
-/**
-* BREAKPOINTS
-*/
+
+//************************* BREAKPOINTS *************************//
 
 $iphone6-7-8: 374px;
 $iphone6-7-8__: 375px;
-$iphone6-7-8_max: 413px;
+// $iphone6-7-8_max: 413px;
+$iphone6-7-8_max: 410px;
 
 $tablet-up: 768px;
 $tablet-down: 767px;
-
 $big-tablet: 1024px;
 
 $desktop-height: 750px;
-
+$desktop-down: 1199px;
 $desktop-up: 1200px;
 $desktop-large: 1366px;
 $desktop-Xlarge: 1768px;
-$desktop-down: 1199px;
+
+
+
+//************************* MEDIA QUERIES *************************//
+
 
 @mixin tablet-up {
   @media (min-width: $tablet-up) {
@@ -76,18 +102,11 @@ $desktop-down: 1199px;
   }
 }
 
-// @mixin big-tablet {
-//   @media (min-width: $big-tablet) and (min-height: $big-tablet) {
-//     @content;
-//   }
-// }
-
 @mixin desktop-min {
   @media (min-width: 1024px) and (min-height: $desktop-height) {
     @content;
   }
 }
-
 
 @mixin desktop-up {
   @media (min-width: $desktop-up) {
@@ -113,22 +132,12 @@ $desktop-down: 1199px;
   }
 }
 
-
 @mixin landscape {
   @media (min-aspect-ratio: 1/1) {
     @content;
   }
 }
 
-
-$iphone6-7-8: 374px;
-$iphone6-7-8__: 375px;
-$iphone6-7-8_max: 410px;
-$iphone6-7-8_max-height: 735px;
-$iphoneXs_max-height: 767px;
-
-$desktop-up: 1200px;
-$desktop-down: 1199px;
 
 
 @mixin iphone6-7-8 {
@@ -149,18 +158,9 @@ $desktop-down: 1199px;
   }
 }
 
-// @mixin iphoneXS_Max {
-//   @media (min-width: $iphone6-7-8_max) and (max-height: $iphoneXs_max-height) {
-//     @content;
-//   }
-// }
 
-/**
-* GLOBAL
-*/
-$headerHeight: 40px;
+//************************* MIXINS *************************//
 
-/************ DISPLAY ************/
 
 @mixin flexbox($direction: row, $justify: center, $align: center) {
   display: flex;
