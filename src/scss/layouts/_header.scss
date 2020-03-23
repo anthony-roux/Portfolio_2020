@@ -3,7 +3,6 @@ header {
   top: 0;
   left: 0;
   @include format_vw-vh;
-
 }
 
 .nav {
@@ -101,14 +100,14 @@ header {
       width: 100%;
       height: 100%;
       border-radius: 50%;
-      border: solid 1px #E1E1E1;
+      border: solid 1px #e1e1e1;
     }
 
     .menu-line {
       // barres du burger
       height: 2.5px;
       width: 20px;
-      background: #E1E1E1;
+      background: #e1e1e1;
       border-radius: 1em;
       transition: transform 0.3s ease;
 
@@ -144,8 +143,6 @@ header {
     height: 100vh;
     margin: -70px 0 0 0;
     @include flexbox(column, center, flex-start);
-
-
   }
 
   ul {
@@ -162,10 +159,8 @@ header {
     @include desktop-min {
       margin: 25% 20% 20% 20%;
       @include flexbox(column, center, flex-start);
-
     }
   }
-
 
   li {
     list-style-type: none;
@@ -183,18 +178,20 @@ header {
       // }
     }
 
-
-
     a {
       @include flexbox(column, center, center);
       font-family: $montserrat;
       font-style: normal;
-      font-weight: 700;
+      font-weight: 600;
       font-size: rem(30px);
       line-height: 37px;
       text-transform: uppercase;
       text-decoration: none;
       color: $whiteKc;
+
+      &:hover {
+        font-weight: bolder;
+      }
 
       @supports (backdrop-filter: blur(10px)) {
         color: $darkBlue;
@@ -212,17 +209,19 @@ header {
       @include desktop-min {
         font-size: rem(35px);
         line-height: 1.5;
-
       }
 
       p {
         color: $blueLagoon;
         -webkit-text-stroke: 1.5px #f6fcfc;
-        // margin-top: 30%;
+        &:hover {
+          font-weight: bolder;
+        }
 
         @supports (backdrop-filter: blur(10px)) {
-          color: $darkBlue;
-          font-weight: 900;
+          color: #00b7d4;
+          -webkit-text-stroke: 1.5px $blueLagoon;
+          font-weight: 600;
           font-size: rem(33px);
         }
 
@@ -233,7 +232,7 @@ header {
 
         @include tablet-up {
           font-size: 3.5rem;
-          -webkit-text-stroke: 2.5px #f6fcfc;
+          -webkit-text-stroke: 2px #f6fcfc;
         }
 
         @include desktop-min {
@@ -244,12 +243,9 @@ header {
   }
 
   &__network {
-
     @include desktop-min {
       margin: 50px auto;
       // @include flexbox(column, center, center);
-
-
     }
 
     p {
@@ -285,6 +281,11 @@ header {
 
       path {
         fill: $whiteKc;
+
+        &:hover {
+          fill: $blueLagoon;
+          transition: 1s;
+        }
 
         @supports (backdrop-filter: blur(10px)) {
           fill: $darkBlue;
@@ -331,7 +332,6 @@ header {
     height: 100vh;
   }
 }
-
 
 .nav-on-scroll {
   transition: 1s;
