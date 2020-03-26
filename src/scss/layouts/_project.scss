@@ -1,0 +1,75 @@
+.project__card {
+  margin-top: 117px;
+  z-index: 0;
+}
+
+.card {
+  background-color: $white;
+  @include shadow-card;
+  border-radius: 8px;
+
+  &__content {
+    min-height: 217px;
+    padding: 20px;
+    @include flexbox(column, space-between, stretch);
+    color: $darkBlue;
+
+  }
+
+  &__informations {
+    @include flexbox(row, space-between, center);
+    margin-top: -54px;
+
+  }
+
+  &__type {
+    font-size: rem(10px);
+    font-family: $righteous;
+    text-transform: uppercase;
+  }
+
+  &__number {
+    font-size: rem(50px);
+    font-family: $righteous;
+    @include gradient-number;
+    position: relative;
+    top: -46px;
+    text-align: center;
+
+  }
+
+  &__date {
+    font-family: $montserrat;
+    font-weight: 300;
+    font-size: rem(10px);
+  }
+
+  &__title {
+    font-family: $righteous;
+    font-size: rem(24px);
+    color: $darkBlue;
+    text-transform: uppercase;
+    margin: 24px 0 16px 0;
+
+  }
+
+  &__synopsis {
+    font-family: $montserrat;
+    font-weight: 300;
+    font-size: rem(10px);
+    line-height: 1.5;
+  }
+
+
+  &__tools {
+    text-align: center;
+    font-family: $montserrat;
+    font-size: rem(8px);
+    font-variant: small-caps;
+  }
+
+  &__button {
+    margin: 16px auto;
+
+  }
+}
