@@ -2,7 +2,7 @@
   @include flexbox(row, space-evenly, center);
   width: 100vw;
   position: absolute;
-  z-index: -1;
+  z-index: -3;
 
   &__purpleLines {
     height: 4916px;

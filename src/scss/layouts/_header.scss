@@ -11,7 +11,7 @@ header {
   width: 100%;
   padding: 10px 30px;
   position: relative;
-  z-index: 1;
+  z-index: 3;
 
   @include tablet-up {
     padding: 10px 60px;
@@ -126,6 +126,9 @@ header {
   margin: -51px 0 0 0;
   padding: 30px;
   @include flexbox(column, center, center);
+  position: relative;
+  z-index: 2;
+
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
@@ -308,6 +311,10 @@ header {
   margin: -61px 0 0 0;
   padding: 30px;
   overflow: hidden;
+  position: absolute;
+  // z-index: 2;
+
+
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);

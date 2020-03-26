@@ -18,6 +18,8 @@
 // ici importations des pages correspondants aux éléments du site : menuburger, hero, aside, footer, header, caroussel...
 @import 'layouts/_header.scss';
 @import 'layouts/_background.scss';
+@import 'layouts/_project.scss';
+
 @import 'layouts/_footer.scss';
 
 // PAGES 
@@ -62,6 +64,6 @@ html {
 // }
 
 // .projects {
-//   position: relative;
-//   z-index: 0;
+//   // position: relative;
+//   z-index: -1;
 // }
