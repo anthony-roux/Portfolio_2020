@@ -129,7 +129,7 @@ header {
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
-    background-image: url("/assets/svg/blur.svg");
+    background-image: url("/assets/svg/header_blur.svg");
     backdrop-filter: blur(10px);
   }
 
@@ -302,7 +302,7 @@ header {
 
 .is-open-menu {
   transform: none;
-  transition: transform 1s;
+  transition: transform 250ms;
   @include format_vw-vh;
   background: $darkBlue;
   margin: -61px 0 0 0;
@@ -311,7 +311,7 @@ header {
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
-    background-image: url("/assets/svg/blur.svg");
+    background-image: url("/assets/svg/header_blur.svg");
     backdrop-filter: blur(10px);
   }
 
@@ -326,7 +326,7 @@ header {
 }
 
 .nav-on-scroll {
-  transition: 1s;
+  transition: 0.5s;
   background-color: white;
   background-image: $backgroundGradient;
 }

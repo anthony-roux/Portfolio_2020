@@ -1,7 +1,7 @@
 .background {
   @include flexbox(row, space-evenly, center);
   width: 100vw;
-  position: relative;
+  position: absolute;
   z-index: -1;
 
   &__purpleLines {
