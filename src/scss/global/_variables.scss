@@ -47,13 +47,12 @@ $iconGradient: linear-gradient(181.28deg,
   #505488 30.87%,
   #00b7d4 135.95%);
 
-$numberGradient: linear-gradient(81.99deg,
-  #161569 -98.51%,
-  #2f3f80 -38.63%,
-  #505488 24.65%,
-  #00b7d4 118.41%,
-  #f6fcfc 118.44%);
-
+$numberGradient: 81.99deg,
+#161569 -98.51%,
+#2f3f80 -38.63%,
+#505488 24.65%,
+#00b7d4 118.41%,
+#f6fcfc 118.44%;
 
 
 
@@ -172,4 +171,15 @@ $desktop-Xlarge: 1768px;
 @mixin format_vw-vh {
   height: 100vh;
   width: 100vw;
+}
+
+@mixin shadow-card {
+  box-shadow: 12px 24px 48px rgba(0, 0, 0, 0.15);
+}
+
+@mixin gradient-number {
+  background: linear-gradient($numberGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 20%;
 }
