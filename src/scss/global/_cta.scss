@@ -50,31 +50,27 @@
 }
 
 
-.anim-right::before,
-.anim-right::after {
-  top: 0;
-  width: 0;
-  height: 100%;
-
-}
-
-.anim-right::before {
+.anim-top::before,
+.anim-top::after {
   left: 0;
-  border: solid 2px #161569;
-  border-left: 0;
-  border-right: 0;
-
-}
-
-.anim-right::after {
-  right: 0;
-
-
-}
-
-.anim-right:hover::before,
-.anim-right:hover::after {
+  height: 0;
   width: 100%;
-  border-radius: 3px;
+}
 
+.anim-top::before {
+  bottom: 0;
+  border: solid 2px #161569;
+  border-top: 0;
+  border-bottom: 0;
+
+}
+
+.anim-top::after {
+  top: 0;
+}
+
+.anim-top:hover::before,
+.anim-top:hover::after {
+  height: 100%;
+  border-radius: 2px;
 }
