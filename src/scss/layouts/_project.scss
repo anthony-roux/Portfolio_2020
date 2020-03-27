@@ -3,19 +3,10 @@
 }
 
 .project {
-  // height: 100vh;
-  // padding-top: 134px;
-
-
   &__background-title {
     @include background-title;
     font-size: rem(40px);
     top: 40px;
-  }
-
-  // réglage du background-title par rapport aux cards, à l'exception de la 1ère.
-  .position-settings {
-    top: -24px;
   }
 
   &__background-project {
@@ -24,7 +15,10 @@
     top: -40px;
   }
 
-
+  // réglage du background-title par rapport aux cards, à l'exception de la 1ère.
+  .position-settings {
+    top: -24px;
+  }
 }
 
 
@@ -44,7 +38,6 @@
     padding: 20px;
     @include flexbox(column, space-between, stretch);
     color: $darkBlue;
-
   }
 
   &__informations {
@@ -65,7 +58,6 @@
     position: relative;
     top: -46px;
     text-align: center;
-
   }
 
   &__date {
@@ -80,7 +72,6 @@
     color: $darkBlue;
     text-transform: uppercase;
     margin: 24px 0 16px 0;
-
   }
 
   &__synopsis {
@@ -103,9 +94,7 @@
   }
 
   // &__image {
-  //   min-height: 217px;
   // }
-
 
   .image {
 
@@ -129,6 +118,4 @@
       @include manage-img-project-mobile;
     }
   }
-
-
 }
