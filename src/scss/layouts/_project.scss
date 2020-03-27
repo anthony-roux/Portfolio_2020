@@ -70,6 +70,47 @@
 
   &__button {
     margin: 16px auto;
-
   }
+
+  // &__image {
+  //   min-height: 217px;
+  // }
+
+
+  .image {
+
+    &__nova {
+      background-image: url(/assets/img/project__nova-pellicia.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 8px 8px;
+      min-height: 217px;
+    }
+
+    &__koala {
+      background-image: url(/assets/img/project__koala.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 8px 8px;
+      min-height: 217px;
+    }
+
+    &__nespresso {
+      background-image: url(/assets/img/project__nespresso.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 8px 8px;
+      min-height: 217px;
+    }
+
+    &__ikea {
+      background-image: url(/assets/img/project__ikea.png);
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0 8px 8px;
+      min-height: 217px;
+    }
+  }
+
+
 }
