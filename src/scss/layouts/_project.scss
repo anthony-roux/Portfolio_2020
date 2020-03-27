@@ -1,5 +1,35 @@
+.projects {
+  margin-top: 32px;
+}
+
+.project {
+  // height: 100vh;
+  // padding-top: 134px;
+
+
+  &__background-title {
+    @include background-title;
+    font-size: rem(40px);
+    top: 40px;
+  }
+
+  // réglage du background-title par rapport aux cards, à l'exception de la 1ère.
+  .position-settings {
+    top: -24px;
+  }
+
+  &__background-project {
+    @include background-project;
+    font-size: rem(60px);
+    top: -40px;
+  }
+
+
+}
+
+
 .project__card {
-  margin-top: 117px;
+  margin-bottom: 117px;
   z-index: 0;
 }
 
@@ -7,6 +37,7 @@
   background-color: $white;
   @include shadow-card;
   border-radius: 8px;
+  margin-top: 16px;
 
   &__content {
     min-height: 217px;
@@ -19,7 +50,6 @@
   &__informations {
     @include flexbox(row, space-between, center);
     margin-top: -54px;
-
   }
 
   &__type {
