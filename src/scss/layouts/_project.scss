@@ -81,34 +81,22 @@
 
     &__nova {
       background-image: url(/assets/img/project__nova-pellicia.png);
-      background-size: cover;
-      background-position: center;
-      border-radius: 0 0 8px 8px;
-      min-height: 217px;
+      @include manage-img-project-mobile;
     }
 
     &__koala {
       background-image: url(/assets/img/project__koala.png);
-      background-size: cover;
-      background-position: center;
-      border-radius: 0 0 8px 8px;
-      min-height: 217px;
+      @include manage-img-project-mobile;
     }
 
     &__nespresso {
       background-image: url(/assets/img/project__nespresso.png);
-      background-size: cover;
-      background-position: center;
-      border-radius: 0 0 8px 8px;
-      min-height: 217px;
+      @include manage-img-project-mobile;
     }
 
     &__ikea {
       background-image: url(/assets/img/project__ikea.png);
-      background-size: cover;
-      background-position: center;
-      border-radius: 0 0 8px 8px;
-      min-height: 217px;
+      @include manage-img-project-mobile;
     }
   }
 
