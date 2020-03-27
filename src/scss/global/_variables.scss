@@ -26,8 +26,7 @@ $gradientOriginal: linear-gradient(80.36deg,
   #161569 -98.51%,
   #2f3f80 -38.63%,
   #505488 24.65%,
-  #00b7d4 118.41%,
-  #f6fcfc 118.44%);
+  #00b7d4 118.41%);
 
 $gradient1: linear-gradient(0.42deg,
   #161569 -230.79%,
@@ -51,8 +50,7 @@ $numberGradient: 81.99deg,
 #161569 -98.51%,
 #2f3f80 -38.63%,
 #505488 24.65%,
-#00b7d4 118.41%,
-#f6fcfc 118.44%;
+#00b7d4 118.41%;
 
 
 
@@ -181,5 +179,14 @@ $desktop-Xlarge: 1768px;
   background: linear-gradient($numberGradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-size: 20%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+}
+
+@mixin manage-img-project-mobile {
+  background-size: cover;
+  background-position: center;
+  border-radius: 0 0 8px 8px;
+  min-height: 217px;
 }
