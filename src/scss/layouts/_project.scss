@@ -24,7 +24,8 @@
 
 .project__card {
   margin-bottom: 117px;
-  z-index: 0;
+  // position: static;
+  // z-index: -1;
 }
 
 .card {
@@ -46,13 +47,13 @@
   }
 
   &__type {
-    font-size: rem(10px);
+    font-size: rem(11px);
     font-family: $righteous;
     text-transform: uppercase;
   }
 
   &__number {
-    font-size: rem(50px);
+    font-size: rem(60px);
     font-family: $righteous;
     @include gradient-number;
     position: relative;
@@ -63,12 +64,14 @@
   &__date {
     font-family: $montserrat;
     font-weight: 300;
-    font-size: rem(10px);
+    font-size: rem(11px);
+    font-variant: small-caps;
+
   }
 
   &__title {
     font-family: $righteous;
-    font-size: rem(24px);
+    font-size: rem(28px);
     color: $darkBlue;
     text-transform: uppercase;
     margin: 24px 0 16px 0;
@@ -77,7 +80,7 @@
   &__synopsis {
     font-family: $montserrat;
     font-weight: 300;
-    font-size: rem(10px);
+    font-size: rem(12px);
     line-height: 1.5;
   }
 
@@ -85,7 +88,7 @@
   &__tools {
     text-align: center;
     font-family: $montserrat;
-    font-size: rem(8px);
+    font-size: rem(10px);
     font-variant: small-caps;
   }
 
