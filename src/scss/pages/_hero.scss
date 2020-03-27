@@ -98,7 +98,7 @@
         display: none;
 
         @include tablet-up {
-          display: block;
+          display: flex;
         }
       }
 
@@ -114,11 +114,14 @@
         .introduction__network {
           margin: auto;
           padding-left: 30px;
-          z-index: 0;
+          // position: relative;
+          // z-index: 1;
         }
 
         .introduction__social-icons {
           @include flexbox(column, center, center);
+          position: relative;
+          z-index: 1;
 
           a {
             margin-bottom: 24px;

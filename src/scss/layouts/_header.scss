@@ -1,5 +1,6 @@
 header {
   position: fixed;
+  // z-index: 3;
   top: 0;
   left: 0;
   @include format_vw-vh;
@@ -130,6 +131,7 @@ header {
   z-index: 2;
 
 
+
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
     background-image: url("/assets/svg/header_blur.svg");
@@ -175,10 +177,6 @@ header {
 
     @include desktop-min {
       margin-top: 25px;
-
-      // &:last-child {
-      //   margin-bottom: 50px;
-      // }
     }
 
     a {
@@ -311,8 +309,8 @@ header {
   margin: -61px 0 0 0;
   padding: 30px;
   overflow: hidden;
-  position: absolute;
-  // z-index: 2;
+  position: relative;
+  z-index: 2;
 
 
 
