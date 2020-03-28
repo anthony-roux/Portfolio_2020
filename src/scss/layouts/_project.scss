@@ -2,6 +2,47 @@
   margin-top: 32px;
 }
 
+.vertical {
+  font-family: $righteous;
+  text-transform: uppercase;
+  position: absolute;
+  z-index: -2;
+  font-size: rem(110px);
+  @include vertical-text;
+  @include animation-gradient-project;
+
+
+
+  &-1 {
+    top: 880px;
+    left: 200px
+  }
+
+  &-2 {
+    top: 1780px;
+    left: 1100px;
+
+    @include desktop-large {
+      left: 1250px;
+    }
+  }
+
+  &-3 {
+    top: 2580px;
+    left: 200px
+  }
+
+  &-4 {
+    top: 3380px;
+    left: 1100px;
+
+    @include desktop-large {
+      top: 3480px;
+      left: 1250px;
+    }
+  }
+}
+
 .project {
   &__background-title {
     @include background-title;
@@ -11,6 +52,12 @@
     @include tablet-up {
       font-size: rem(80px);
       top: 60px;
+    }
+
+    @include desktop-up {
+      top: 60px;
+      left: 160px;
+
     }
   }
 
@@ -23,7 +70,14 @@
       font-size: rem(100px);
       top: -60px;
     }
+
+    @include desktop-up {
+      opacity: 0;
+    }
   }
+
+
+
 
   // réglage du background-title par rapport aux cards, à l'exception de la 1ère.
   .position-settings {
@@ -32,6 +86,10 @@
     @include tablet-up {
       top: -44px;
     }
+  }
+
+  &__left {
+    @include desktop-min {}
   }
 }
 
@@ -42,14 +100,24 @@
   // z-index: -1;
 
   @include desktop-min {
-    max-width: 750px;
+    max-width: 704px;
     margin-bottom: 170px;
-
-
-    // &::nth-child(odd) {
-    //   color: red;
-    // }
   }
+
+  @include desktop-up {
+    min-width: 703px;
+
+    &--left {
+      margin-right: 300px;
+
+    }
+
+    &--right {
+      margin-left: 300px;
+    }
+  }
+
+
 }
 
 .card {
@@ -90,6 +158,10 @@
     @include tablet-up {
       margin-top: -124px;
     }
+
+    @include desktop-min {
+      margin-top: -145px;
+    }
   }
 
   &__type {
@@ -110,9 +182,27 @@
     top: -46px;
     text-align: center;
 
+
+
     @include tablet-up {
       font-size: rem(100px);
       top: -73px;
+    }
+
+    @include desktop-min {
+      max-width: 250px;
+
+      &--toRight {
+        font-size: rem(150px);
+        top: 203px;
+        right: -560px;
+      }
+
+      &--toLeft {
+        font-size: rem(150px);
+        top: 203px;
+        left: -157px;
+      }
     }
   }
 
@@ -129,13 +219,13 @@
 
   &__title {
     font-family: $righteous;
-    font-size: rem(28px);
+    font-size: rem(25px);
     color: $darkBlue;
     text-transform: uppercase;
     margin: 24px 0 16px 0;
 
     @include tablet-up {
-      font-size: rem(48px);
+      font-size: rem(45px);
     }
   }
 
@@ -167,6 +257,8 @@
 
   // &__image {
   // }
+
+
 
   .image {
 
