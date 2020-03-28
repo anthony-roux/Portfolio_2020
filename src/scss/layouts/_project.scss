@@ -40,6 +40,16 @@
   margin-bottom: 117px;
   // position: static;
   // z-index: -1;
+
+  @include desktop-min {
+    max-width: 750px;
+    margin-bottom: 170px;
+
+
+    // &::nth-child(odd) {
+    //   color: red;
+    // }
+  }
 }
 
 .card {
@@ -61,6 +71,16 @@
     @include tablet-up {
       min-height: 360px;
     }
+
+    @include desktop-min {
+      min-height: 300px;
+
+      // &::nth-child(odd) {
+      //   color: red;
+      // }
+    }
+
+    // @include desktop-min {}
   }
 
   &__informations {
