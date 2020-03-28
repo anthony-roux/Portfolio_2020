@@ -20,6 +20,10 @@
     @include flexbox(column, flex-end, center);
     height: 46vh;
 
+    @include big-tablet {
+      height: 52vh;
+    }
+
     @include desktop-min {
       margin: 0 7% 0 0;
       @include flexbox(row, center, center);
@@ -36,6 +40,11 @@
       margin-top: 0;
     }
 
+    @include big-tablet {
+      width: 300px;
+      height: 540px;
+    }
+
     @include desktop-min {
       width: 340px;
       height: 570px;
@@ -44,6 +53,10 @@
 
   &__text {
     margin-top: 8%;
+
+    @include big-tablet {
+      margin-top: 12%;
+    }
 
     @include desktop-min {
       margin: 0;

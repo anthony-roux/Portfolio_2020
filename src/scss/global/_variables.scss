@@ -49,7 +49,7 @@ $iconGradient: linear-gradient(181.28deg,
   #505488 30.87%,
   #00b7d4 135.95%);
 
-$numberGradient: 81.99deg,
+$numberGradient: 350.99deg,
 #161569 -98.51%,
 #2f3f80 -38.63%,
 #505488 24.65%,
@@ -89,56 +89,11 @@ $desktop-Xlarge: 1768px;
 
 //************************* MEDIA QUERIES *************************//
 
-
-@mixin tablet-up {
-  @media (min-width: $tablet-up) {
-    @content;
-  }
-}
-
-@mixin tablet-down {
-  @media (max-width: $tablet-down) {
-    @content;
-  }
-}
-
-@mixin desktop-min {
-  @media (min-width: 1024px) and (min-height: $desktop-height) {
-    @content;
-  }
-}
-
-@mixin desktop-up {
-  @media (min-width: $desktop-up) {
-    @content;
-  }
-}
-
-@mixin desktop-down {
-  @media (max-width: $desktop-down) {
-    @content;
-  }
-}
-
-@mixin desktop-large {
-  @media (min-width: $desktop-large) {
-    @content;
-  }
-}
-
-@mixin desktop-Xlarge {
-  @media (min-width: $desktop-Xlarge) {
-    @content;
-  }
-}
-
 @mixin landscape {
   @media (min-aspect-ratio: 1/1) {
     @content;
   }
 }
-
-
 
 @mixin iphone6-7-8 {
   @media (min-width: $iphone6-7-8) {
@@ -152,11 +107,62 @@ $desktop-Xlarge: 1768px;
   }
 }
 
-@mixin iphoneXS_Max {
-  @media (min-width: 414px) and (max-width: $iphoneXs_max-height) {
+@mixin tablet-up {
+  @media (min-width: $tablet-up) {
     @content;
   }
 }
+
+@mixin tablet-down {
+  @media (max-width: $tablet-down) {
+    @content;
+  }
+}
+
+@mixin big-tablet {
+  @media (min-width: 1024px) and (min-height: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin desktop-min {
+  @media (min-width: 1024px) and (min-height: $desktop-height) and (orientation: landscape) {
+    @content;
+  }
+}
+
+
+@mixin desktop-up {
+  @media (min-width: $desktop-up) {
+    @content;
+  }
+}
+
+
+@mixin desktop-large {
+  @media (min-width: $desktop-large) {
+    @content;
+  }
+}
+
+// @mixin desktop-down {
+//   @media (max-width: $desktop-down) {
+//     @content;
+//   }
+// }
+
+// @mixin desktop-Xlarge {
+//   @media (min-width: $desktop-Xlarge) {
+//     @content;
+//   }
+// }
+
+
+// @mixin iphoneXS_Max {
+//   @media (min-width: 414px) and (max-width: $iphoneXs_max-height) {
+//     @content;
+//   }
+// }
 
 
 //************************* MIXINS *************************//
@@ -199,6 +205,10 @@ $desktop-Xlarge: 1768px;
 
   @include tablet-up {
     min-height: 360px;
+  }
+
+  @include desktop-min {
+    min-height: 300px;
   }
 }
 
