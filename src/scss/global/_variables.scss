@@ -49,13 +49,16 @@ $iconGradient: linear-gradient(181.28deg,
   #505488 30.87%,
   #00b7d4 135.95%);
 
-$numberGradient: 350.99deg,
+$numberGradient: 250.99deg,
 #161569 -98.51%,
 #2f3f80 -38.63%,
 #505488 24.65%,
 #00b7d4 118.41%;
 
-
+$projectGradient: linear-gradient(142deg,
+  #16156920 -230.79%,
+  #5054881e 14.14%,
+  #00b8d433 145.11%);
 
 
 //************************* FONTS *************************//
@@ -189,8 +192,59 @@ $desktop-Xlarge: 1768px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
-  // background-size: 30%;
+  background-size: cover;
   background-position: center;
+  @include animation-gradient;
+}
+
+@mixin animation-gradient {
+  // background: linear-gradient($numberGradient);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  background-size: 600% 600%;
+  animation: gradient 10s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+}
+
+@mixin animation-gradient-project {
+  background: $projectGradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-size: 400% 400%;
+  animation: gradient 5s ease infinite;
+
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 }
 
 @mixin manage-img-project-mobile {
@@ -228,4 +282,10 @@ $desktop-Xlarge: 1768px;
   text-transform: uppercase;
   position: relative;
   z-index: -1;
+}
+
+@mixin vertical-text {
+  writing-mode: vertical-rl;
+  display: inline-block;
+  text-orientation: upright;
 }
