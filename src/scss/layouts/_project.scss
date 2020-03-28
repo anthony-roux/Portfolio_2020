@@ -3,42 +3,44 @@
 }
 
 .vertical {
-  font-family: $righteous;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: -2;
-  font-size: rem(110px);
-  @include vertical-text;
-  @include animation-gradient-project;
+  display: none;
 
+  @include desktop-up {
+    font-family: $righteous;
+    text-transform: uppercase;
+    position: absolute;
+    z-index: -2;
+    font-size: rem(110px);
+    @include vertical-text;
+    @include animation-gradient-project;
 
-
-  &-1 {
-    top: 880px;
-    left: 200px
-  }
-
-  &-2 {
-    top: 1780px;
-    left: 1100px;
-
-    @include desktop-large {
-      left: 1250px;
+    &-1 {
+      top: 880px;
+      left: 200px
     }
-  }
 
-  &-3 {
-    top: 2580px;
-    left: 200px
-  }
+    &-2 {
+      top: 1780px;
+      left: 1100px;
 
-  &-4 {
-    top: 3380px;
-    left: 1100px;
+      @include desktop-large {
+        left: 1250px;
+      }
+    }
 
-    @include desktop-large {
-      top: 3480px;
-      left: 1250px;
+    &-3 {
+      top: 2580px;
+      left: 200px
+    }
+
+    &-4 {
+      top: 3380px;
+      left: 1100px;
+
+      @include desktop-large {
+        top: 3480px;
+        left: 1250px;
+      }
     }
   }
 }
