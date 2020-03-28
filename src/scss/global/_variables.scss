@@ -192,6 +192,14 @@ $desktop-Xlarge: 1768px;
   background-position: center;
   border-radius: 0 0 8px 8px;
   min-height: 217px;
+
+  @include iphone6-7-8_max {
+    min-height: 260px;
+  }
+
+  @include tablet-up {
+    min-height: 360px;
+  }
 }
 
 @mixin background-title {

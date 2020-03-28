@@ -21,7 +21,14 @@
   transition: all 400ms ease-in-out;
   cursor: pointer;
   user-select: none;
+
+  @include tablet-up {
+    font-size: rem(16px);
+    padding: 16px 16px;
+    max-width: 250px;
+  }
 }
+
 
 .btn::before,
 .btn::after {

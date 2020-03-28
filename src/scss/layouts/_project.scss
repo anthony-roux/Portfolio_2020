@@ -7,17 +7,31 @@
     @include background-title;
     font-size: rem(40px);
     top: 40px;
+
+    @include tablet-up {
+      font-size: rem(80px);
+      top: 60px;
+    }
   }
 
   &__background-project {
     @include background-project;
     font-size: rem(60px);
     top: -40px;
+
+    @include tablet-up {
+      font-size: rem(100px);
+      top: -60px;
+    }
   }
 
   // réglage du background-title par rapport aux cards, à l'exception de la 1ère.
   .position-settings {
     top: -24px;
+
+    @include tablet-up {
+      top: -44px;
+    }
   }
 }
 
@@ -39,17 +53,33 @@
     padding: 20px;
     @include flexbox(column, space-between, stretch);
     color: $darkBlue;
+
+    @include iphone6-7-8_max {
+      min-height: 260px;
+    }
+
+    @include tablet-up {
+      min-height: 360px;
+    }
   }
 
   &__informations {
     @include flexbox(row, space-between, center);
     margin-top: -54px;
+
+    @include tablet-up {
+      margin-top: -124px;
+    }
   }
 
   &__type {
     font-size: rem(11px);
     font-family: $righteous;
     text-transform: uppercase;
+
+    @include tablet-up {
+      font-size: rem(14px);
+    }
   }
 
   &__number {
@@ -59,6 +89,11 @@
     position: relative;
     top: -46px;
     text-align: center;
+
+    @include tablet-up {
+      font-size: rem(100px);
+      top: -73px;
+    }
   }
 
   &__date {
@@ -67,6 +102,9 @@
     font-size: rem(11px);
     font-variant: small-caps;
 
+    @include tablet-up {
+      font-size: rem(14px);
+    }
   }
 
   &__title {
@@ -75,6 +113,10 @@
     color: $darkBlue;
     text-transform: uppercase;
     margin: 24px 0 16px 0;
+
+    @include tablet-up {
+      font-size: rem(48px);
+    }
   }
 
   &__synopsis {
@@ -82,14 +124,21 @@
     font-weight: 300;
     font-size: rem(12px);
     line-height: 1.5;
-  }
 
+    @include tablet-up {
+      font-size: rem(18px);
+    }
+  }
 
   &__tools {
     text-align: center;
     font-family: $montserrat;
     font-size: rem(10px);
     font-variant: small-caps;
+
+    @include tablet-up {
+      font-size: rem(14px);
+    }
   }
 
   &__button {
