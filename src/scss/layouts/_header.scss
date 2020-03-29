@@ -1,9 +1,9 @@
 header {
   position: fixed;
-  // z-index: 3;
+  z-index: 100;
   top: 0;
   left: 0;
-  @include format_vw-vh;
+  width: 100vw;
 }
 
 .nav {
@@ -127,8 +127,8 @@ header {
   margin: -51px 0 0 0;
   padding: 30px;
   @include flexbox(column, center, center);
-  position: relative;
-  z-index: 2;
+  position: absolute;
+  top: 0;
 
 
 
