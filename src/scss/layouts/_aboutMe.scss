@@ -16,7 +16,9 @@
 
     @include tablet-up {
       font-size: rem(100px);
-      top: -60px;
+      top: -260px;
+      padding: 0 60px;
+
     }
 
     @include desktop-up {
@@ -36,7 +38,9 @@
 
     @include tablet-up {
       font-size: rem(80px);
-      top: 60px;
+      top: -340px;
+      padding: 0 60px;
+
     }
 
     @include desktop-up {
@@ -52,15 +56,19 @@
     max-height: 300px;
     min-height: 300px;
     padding-bottom: 20px;
+
+    @include tablet-up {
+      max-height: 380px;
+    }
   }
 
   &__image {
     position: relative;
     top: -250px;
-    // .aboutMe__photo {
-    //   clip-path: url(#my-clip-path);
-    //   // clip-path: polygon(50% 0%, 63% 38%, 100% 38%, 69% 59%, 82% 100%, 50% 75%, 18% 100%, 31% 59%, 0% 38%, 37% 38%);
-    // }
+
+    @include tablet-up {
+      top: -300px;
+    }
 
     .svg {
       width: 0;
@@ -75,11 +83,21 @@
       -webkit-clip-path: url(#my-clip-path);
       clip-path: url(#my-clip-path);
       margin: 0 auto;
+
+      @include tablet-up {
+        width: 268px;
+        min-height: 386px;
+      }
     }
   }
 
   &__text {
     margin-top: -255px;
+
+    @include tablet-up {
+      margin-top: -290px;
+
+    }
   }
 
   &__subtitle {
@@ -87,6 +105,12 @@
     font-size: rem(13px);
     text-transform: uppercase;
     margin-bottom: 8px;
+
+    @include tablet-up {
+      font-size: rem(18px);
+      margin-bottom: 16px;
+
+    }
   }
 
   &__description {
@@ -94,6 +118,11 @@
 
     @include iphone6-7-8_max {
       font-size: rem(13px);
+    }
+
+    @include tablet-up {
+      font-size: rem(18px);
+      max-width: 500px;
     }
   }
 }
@@ -114,21 +143,51 @@
     left: 42%;
   }
 
+  @include tablet-up {
+    top: 30px;
+    left: 46%;
+    width: 350px;
+    min-height: 180px;
+    padding: 30px;
+
+  }
+
 
   &__contact {
     width: max-content;
     @include flexbox(column, flex-end, flex-end);
     margin: 0 auto;
 
+    @include tablet-up {
+      width: 270px;
+
+    }
+
     a {
       width: 15px;
       height: 15px;
       display: flex;
+      cursor: pointer;
+
+      @include tablet-up {
+        width: 25px;
+        height: 25px;
+      }
     }
 
     p {
       font-size: rem(11px);
       margin-right: 8px;
+
+      &:hover {
+        font-weight: 500;
+        text-decoration: underline;
+      }
+
+      @include tablet-up {
+        font-size: rem(18px);
+        margin-right: 16px;
+      }
     }
   }
 
@@ -136,16 +195,21 @@
     @include flexbox(row, flex-end, center);
     margin: 8px 0;
 
+    @include tablet-up {
+      margin: 12px 0;
+
+    }
+
   }
 
-  &__mail {
-    @include flexbox(row, flex-start, center);
-    margin-bottom: 8px;
-  }
-
+  &__mail,
   &__phone {
     @include flexbox(row, flex-start, center);
     margin-bottom: 8px;
+
+    @include tablet-up {
+      margin-bottom: 12px;
+    }
   }
 }
 

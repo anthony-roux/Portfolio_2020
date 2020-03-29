@@ -6,4 +6,8 @@
   width: 15px;
   height: 15px;
 
+  @include tablet-up {
+    width: 25px;
+    height: 25px;
+  }
 }
