@@ -130,11 +130,9 @@ header {
   position: absolute;
   top: 0;
 
-
-
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
-    background-image: url("/assets/svg/header_blur.svg");
+    background-image: url('/assets/svg/header_blur.svg');
     backdrop-filter: blur(10px);
   }
 
@@ -210,7 +208,6 @@ header {
         color: $blueLagoon;
         -webkit-text-stroke: 1.5px #f6fcfc;
         font-weight: 900;
-
 
         &:hover {
           font-weight: bolder;
@@ -312,11 +309,9 @@ header {
   position: relative;
   z-index: 2;
 
-
-
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
-    background-image: url("/assets/svg/header_blur.svg");
+    background-image: url('/assets/svg/header_blur.svg');
     backdrop-filter: blur(10px);
   }
 
