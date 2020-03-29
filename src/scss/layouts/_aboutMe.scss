@@ -10,6 +10,10 @@
     top: -250px;
     padding: 0 30px;
 
+    @include iphone6-7-8_max {
+      font-size: rem(70px);
+    }
+
     @include tablet-up {
       font-size: rem(100px);
       top: -60px;
@@ -25,6 +29,10 @@
     font-size: rem(40px);
     top: -290px;
     padding: 0 30px;
+
+    @include iphone6-7-8_max {
+      font-size: rem(55px);
+    }
 
     @include tablet-up {
       font-size: rem(80px);
@@ -71,7 +79,7 @@
   }
 
   &__text {
-    margin-top: -240px;
+    margin-top: -255px;
   }
 
   &__subtitle {
@@ -82,29 +90,30 @@
   }
 
   &__description {
-    font-size: rem(11px);
+    font-size: rem(12px);
+
+    @include iphone6-7-8_max {
+      font-size: rem(13px);
+    }
   }
 }
 
 .blob {
-  width: 173px;
-  min-height: 100px;
+  width: 200px;
+  min-height: 115px;
   background: $blueLagoon;
-  // background-size: cover;
-  // -webkit-clip-path: url(#blob-contact);
-  // clip-path: url(#blob-contact);
-  // margin: 0 auto;
   position: relative;
   top: 25px;
-  left: 32%;
+  left: 22%;
   // margin-left: 30%;
   border-radius: 96% 51% 44% 95%/90% 77% 80% 69%;
   padding: 20px;
 
-  // &__svg {
-  //   width: 0;
-  //   height: 0;
-  // }
+  @include iphone6-7-8_max {
+    top: 40px;
+    left: 42%;
+  }
+
 
   &__contact {
     width: max-content;
@@ -112,20 +121,21 @@
     margin: 0 auto;
 
     a {
-      width: 12px;
-      height: 12px;
+      width: 15px;
+      height: 15px;
       display: flex;
     }
 
     p {
-      font-size: rem(9px);
+      font-size: rem(11px);
       margin-right: 8px;
     }
   }
 
   &__cv {
     @include flexbox(row, flex-end, center);
-    margin-bottom: 8px;
+    margin: 8px 0;
+
   }
 
   &__mail {
@@ -138,3 +148,12 @@
     margin-bottom: 8px;
   }
 }
+
+
+
+
+@include iphone6-7-8_max {}
+
+@include tablet-up {}
+
+@include desktop-min {}
