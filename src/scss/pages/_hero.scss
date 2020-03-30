@@ -28,6 +28,10 @@
       margin: 0 7% 0 0;
       @include flexbox(row, center, center);
     }
+
+    @include desktop-large {
+      margin: 0 20% 0 0;
+    }
   }
 
   &__vectorMe {
@@ -79,6 +83,10 @@
     @include desktop-min {
       padding-top: 75px;
     }
+
+    @include desktop-large {
+      width: 550px;
+    }
   }
 
   &__introduction {
@@ -99,6 +107,12 @@
       @include tablet-up {
         font-size: rem(32px);
         max-width: 400px;
+      }
+
+      @include desktop-large {
+        font-size: rem(34px);
+        max-width: 500px;
+        margin: 0 0 12px 0;
       }
     }
 
@@ -128,6 +142,10 @@
         div {
           //bloc de texts a gauche de __network
           max-width: 400px;
+
+          @include desktop-large {
+            max-width: 503px;
+          }
         }
 
         .introduction__network {
@@ -135,6 +153,10 @@
           padding-left: 30px;
           // position: relative;
           // z-index: 1;
+
+          @include desktop-large {
+            padding-left: 75px;
+          }
         }
 
         .introduction__social-icons {
@@ -178,6 +200,11 @@
         font-size: rem(20px);
         margin: 0 0 8px 0;
       }
+
+      @include desktop-large {
+        font-size: rem(21px);
+        margin: 0px 0 8px 0;
+      }
     }
 
     .introduction__purpose {
@@ -197,6 +224,11 @@
       @include tablet-up {
         font-size: rem(16px);
       }
+
+      @include desktop-large {
+        font-size: rem(18px);
+        max-width: 500px;
+      }
     }
   }
 
@@ -208,6 +240,11 @@
       position: relative;
       bottom: -100px;
       left: -55%;
+    }
+
+    @include desktop-large {
+      margin: 3px auto 50px;
+      left: -50%;
     }
   }
 }
