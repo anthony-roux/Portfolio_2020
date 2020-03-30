@@ -25,6 +25,8 @@
     @include background-project;
     font-size: rem(60px);
     top: -40px;
+    @include animation-gradient-project;
+
 
     @include tablet-up {
       font-size: rem(100px);
