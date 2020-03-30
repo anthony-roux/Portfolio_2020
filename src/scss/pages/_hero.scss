@@ -1,9 +1,9 @@
 .bg-hero {
   background: $backgroundGradient;
-  height: 100vh;
 }
 
 .hero {
+  height: 100vh;
   @include flexbox(column, space-between, center);
 
   @include tablet-up {
@@ -33,6 +33,12 @@
   &__vectorMe {
     width: 120px;
     height: 210px;
+
+    @include iphone6-7-8_max {
+      width: 150px;
+      height: 260px;
+    }
+
 
     @include tablet-up {
       width: 200px;
@@ -100,7 +106,7 @@
       max-width: 330px;
 
       @include tablet-down {
-        margin-top: 30px;
+        margin-top: 25px;
       }
 
       @include tablet-up {
@@ -196,7 +202,7 @@
 
   &__scrollDown {
     width: 35px;
-    margin: 0 auto;
+    margin: 3px auto 8px;
 
     @include desktop-min {
       position: relative;
