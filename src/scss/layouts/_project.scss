@@ -12,6 +12,7 @@
     @include tablet-up {
       font-size: rem(80px);
       top: 60px;
+      max-width: max-content;
     }
 
     @include desktop-up {
@@ -31,6 +32,8 @@
     @include tablet-up {
       font-size: rem(100px);
       top: -60px;
+      max-width: max-content;
+
     }
 
     @include desktop-up {

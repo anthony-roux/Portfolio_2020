@@ -8,13 +8,16 @@
     margin-top: -350px;
   }
 
+  @include desktop-min {
+    margin-top: -350px;
+  }
+
   &__title {
     @include background-project;
     font-size: rem(50px);
     top: -230px;
     padding: 0 30px;
     @include animation-gradient-project;
-
 
     @include iphone6-7-8_max {
       font-size: rem(65px);
@@ -35,8 +38,29 @@
       max-width: max-content;
     }
 
+    @include desktop-min {
+      font-size: 8.25rem;
+      top: 305px;
+      left: 235px;
+      z-index: 0;
+      @include animation-gradient-project;
+      max-width: max-content;
+    }
+
     @include desktop-up {
-      opacity: 0;
+      font-size: 9.25rem;
+      top: 326px;
+      left: 262px;
+      max-width: max-content;
+      z-index: 0;
+    }
+
+    @include desktop-large {
+      font-size: 9.25rem;
+      top: 326px;
+      left: 322px;
+      max-width: max-content;
+      z-index: 0;
     }
   }
 
@@ -62,12 +86,26 @@
       z-index: 0;
       -webkit-text-stroke-color: $white;
       max-width: max-content;
+    }
 
+    @include desktop-min {
+      top: 206px;
+      left: 394px;
+      z-index: 0;
+      -webkit-text-stroke-color: $white;
+      max-width: max-content;
     }
 
     @include desktop-up {
-      top: 60px;
-      left: 160px;
+      top: 205px;
+      left: 427px;
+      max-width: max-content;
+    }
+
+    @include desktop-large {
+      top: 205px;
+      left: 610px;
+      max-width: max-content;
     }
   }
 
@@ -86,6 +124,10 @@
     @include big-tablet {
       max-height: 568px;
     }
+
+    @include desktop-min {
+      max-height: 568px;
+    }
   }
 
   &__image {
@@ -99,6 +141,23 @@
     @include big-tablet {
       top: 176px;
       left: -280px;
+    }
+
+    @include desktop-min {
+      top: 230px;
+      left: -280px;
+    }
+
+    @include desktop-up {
+      width: max-content;
+      top: 215px;
+      left: -31px;
+    }
+
+    @include desktop-large {
+      width: max-content;
+      top: 215px;
+      left: -128px;
     }
 
     .svg {
@@ -124,6 +183,21 @@
         width: 312px;
         min-height: 443px;
       }
+
+      @include desktop-min {
+        width: 280px;
+        min-height: 390px;
+      }
+
+      @include desktop-up {
+        width: 317px;
+        min-height: 440px;
+      }
+
+      @include desktop-large {
+        width: 385px;
+        min-height: 543px;
+      }
     }
   }
 
@@ -140,6 +214,24 @@
       flex-direction: column;
       margin-left: 400px;
       margin-top: -240px;
+    }
+
+    @include desktop-min {
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      // margin-left: 300px;
+      margin: -191px 0 0 301px;
+    }
+
+    @include desktop-up {
+      max-width: 650px;
+      margin: -239px 0 0 349px;
+    }
+
+    @include desktop-large {
+      max-width: 650px;
+      margin: -336px 0 0 323px;
     }
   }
 
@@ -158,6 +250,17 @@
       font-size: 20px;
     }
 
+    @include desktop-min {
+      font-size: 16px;
+    }
+
+    @include desktop-up {
+      font-size: 21px;
+    }
+
+    @include desktop-large {
+      font-size: 22px;
+    }
   }
 
   &__description {
@@ -176,6 +279,20 @@
       font-size: 16px;
       max-width: 600px;
       line-height: 1.7;
+    }
+
+    @include desktop-min {
+      font-size: 14px;
+      max-width: 600px;
+      line-height: 1.7;
+    }
+
+    @include desktop-up {
+      font-size: 18px;
+    }
+
+    @include desktop-large {
+      font-size: 20px;
     }
   }
 }
@@ -209,6 +326,20 @@
     left: 26%;
   }
 
+  @include desktop-min {
+    top: 60px;
+    left: 29%;
+  }
+
+  @include desktop-up {
+    top: 20px;
+    left: 53%;
+  }
+
+  @include desktop-large {
+    top: -13px;
+    left: 56%;
+  }
 
   &__contact {
     width: max-content;
@@ -217,7 +348,6 @@
 
     @include tablet-up {
       width: 270px;
-
     }
 
     a {
@@ -254,9 +384,7 @@
 
     @include tablet-up {
       margin: 12px 0;
-
     }
-
   }
 
   &__mail,
@@ -270,11 +398,4 @@
   }
 }
 
-
-
-
-@include iphone6-7-8_max {}
-
-@include tablet-up {}
-
-@include desktop-min {}
+@include desktop-large {}
