@@ -1,9 +1,10 @@
 .bg-hero {
   background: $backgroundGradient;
+  height: 100vh;
 }
 
 .hero {
-  height: 100vh;
+
   @include flexbox(column, space-between, center);
 
   @include tablet-up {
@@ -64,8 +65,18 @@
   &__text {
     margin-top: 8%;
 
+    @include iphone6-7-8_max {
+      margin: 12% 0 10% 0;
+    }
+
+    @include tablet-up {
+      margin: 12% 0 0% 0;
+
+    }
+
     @include big-tablet {
-      margin-top: 12%;
+      margin: 7% 0;
+
     }
 
     @include desktop-min {
@@ -151,8 +162,7 @@
         .introduction__network {
           margin: auto;
           padding-left: 30px;
-          // position: relative;
-          // z-index: 1;
+
 
           @include desktop-large {
             padding-left: 75px;
@@ -161,8 +171,8 @@
 
         .introduction__social-icons {
           @include flexbox(column, center, center);
-          position: relative;
-          z-index: 1;
+          // position: relative;
+          // z-index: 1;
 
           a {
             margin-bottom: 24px;
@@ -172,7 +182,7 @@
 
               &:hover {
                 fill: $darkBlue;
-                transition: 1s;
+                transition: 250ms;
               }
             }
 
@@ -233,18 +243,42 @@
   }
 
   &__scrollDown {
-    width: 35px;
-    margin: 3px auto 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+
+    svg {
+      width: 50px;
+
+      path {
+        fill: $darkBlue-opa_50;
+
+        &:hover {
+          fill: $darkBlue;
+          transition: 250ms;
+        }
+      }
+    }
+
+    @include iphone6-7-8_max {
+      margin: -35px auto;
+    }
+
+    @include tablet-up {
+      margin: 0 auto;
+    }
 
     @include desktop-min {
       position: relative;
-      bottom: -100px;
-      left: -55%;
+      bottom: 65px;
+      display: flex;
+      justify-content: center;
+      padding: 17px auto;
     }
 
-    @include desktop-large {
-      margin: 3px auto 50px;
-      left: -50%;
-    }
+    // @include desktop-large {
+    //   margin: 3px auto 50px;
+    //   left: -50%;
+    // }
   }
 }

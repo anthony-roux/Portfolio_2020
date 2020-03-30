@@ -160,7 +160,7 @@ header {
     }
 
     @include desktop-min {
-      margin: 25% 20% 20% 20%;
+      margin: 20% 20% 11% 10%;
       @include flexbox(column, center, flex-start);
     }
   }
@@ -201,7 +201,7 @@ header {
       }
 
       @include desktop-min {
-        font-size: rem(35px);
+        font-size: rem(40px);
       }
 
       p {
@@ -226,7 +226,7 @@ header {
         }
 
         @include desktop-min {
-          font-size: rem(40px);
+          font-size: 3.5rem;
         }
       }
     }
@@ -234,7 +234,7 @@ header {
 
   &__network {
     @include desktop-min {
-      margin: 50px auto;
+      margin: 20px auto;
       // @include flexbox(column, center, center);
     }
 
@@ -312,7 +312,7 @@ header {
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
     background-image: url('/assets/svg/header_blur.svg');
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
   }
 
   @include tablet-up {
