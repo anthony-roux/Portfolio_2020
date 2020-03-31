@@ -36,24 +36,24 @@
 
 
 .content-wrapper {
+  padding: 0 30px;
   margin: 0 auto;
   width: 100%;
   max-width: 1164px;
-  padding: 0 30px;
 
   @include tablet-up {
-    max-width: 1224px;
     padding: 0 60px;
+    max-width: 1224px;
   }
 
   @include desktop-min {
-    max-width: 1024px;
     padding: 0 160px;
+    max-width: 1024px;
   }
 
   @include desktop-up {
-    max-width: 1224px;
     padding: 0 130px;
+    max-width: 1224px;
   }
 }
 
@@ -65,9 +65,9 @@
   background-image: none;
 }
 
-html {
-  max-width: 1950px;
-}
+// html {
+//   max-width: 1950px;
+// }
 
 // .corpo {
 //   position: relative;

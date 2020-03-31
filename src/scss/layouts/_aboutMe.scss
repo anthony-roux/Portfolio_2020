@@ -65,7 +65,7 @@
   }
 
   &__whoami {
-    top: -290px;
+    top: -280px;
     padding: 0 30px;
     font-size: rem(40px);
     @include background-title;
@@ -377,8 +377,8 @@
   }
 
   &__cv {
-    @include flexbox(row, flex-end, center);
     margin: 8px 0;
+    @include flexbox(row, flex-end, center);
 
     @include tablet-up {
       margin: 12px 0;
@@ -387,8 +387,8 @@
 
   &__mail,
   &__phone {
-    @include flexbox(row, flex-start, center);
     margin-bottom: 8px;
+    @include flexbox(row, flex-start, center);
 
     @include tablet-up {
       margin-bottom: 12px;

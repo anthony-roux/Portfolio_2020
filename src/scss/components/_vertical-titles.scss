@@ -1,3 +1,9 @@
+.verticals {
+  // margin: 0 auto;
+  max-width: 2560px;
+
+}
+
 .vertical__titles {
   display: none;
 
@@ -11,8 +17,8 @@
     @include animation-gradient-project;
 
     &--1 {
-      top: 880px;
-      left: 200px
+      top: 930px;
+      left: 20%;
     }
 
     &--2 {

@@ -1,6 +1,6 @@
 .bg-hero {
-  background: $backgroundGradient;
   height: 100vh;
+  background: $backgroundGradient;
 }
 
 .hero {
@@ -12,14 +12,14 @@
   }
 
   @include desktop-min {
-    @include flexbox(row, space-around, center);
     height: 100vh;
+    @include flexbox(row, space-around, center);
   }
 
   &__svg {
     //container of vector me
-    @include flexbox(column, flex-end, center);
     height: 46vh;
+    @include flexbox(column, flex-end, center);
 
     @include big-tablet {
       height: 52vh;
@@ -46,9 +46,9 @@
 
 
     @include tablet-up {
-      width: 200px;
-      height: 350px;
       margin-top: 0;
+      width: 10.25rem;
+      height: 17.375rem;
     }
 
     @include big-tablet {
@@ -66,11 +66,11 @@
     margin-top: 8%;
 
     @include iphone6-7-8_max {
-      margin: 12% 0 10% 0;
+      margin: 8% 0 8% 0;
     }
 
     @include tablet-up {
-      margin: 12% 0 0% 0;
+      margin: 8% 0 0% 0;
 
     }
 
@@ -87,8 +87,12 @@
   &__name {
     width: 220px;
 
+    @include iphone6-7-8_max {
+      width: 320px;
+    }
+
     @include tablet-up {
-      width: 470px;
+      width: 420px;
     }
 
     @include desktop-min {
@@ -102,28 +106,37 @@
 
   &__introduction {
     @include tablet-up {
-      margin: 40px 0 0 0;
+      margin: 30px 0 0 0;
     }
 
+    @include big-tablet {
+      margin: 50px 0 0 0;
+    }
+
+
     .introduction__job {
+      padding-bottom: 10px;
       margin: 0 0 8px 0;
+      max-width: 250px;
+      color: $darkBlue;
       font-family: $righteous;
       font-size: rem(20px);
       line-height: 1.5;
-      color: $darkBlue;
-      padding-bottom: 10px;
       border-bottom: 1px solid $darkBlue-opa_50;
-      max-width: 250px;
 
       @include tablet-up {
-        font-size: rem(32px);
         max-width: 400px;
+        font-size: rem(26px);
+      }
+
+      @include big-tablet {
+        font-size: rem(34px);
       }
 
       @include desktop-large {
-        font-size: rem(34px);
-        max-width: 500px;
         margin: 0 0 12px 0;
+        max-width: 500px;
+        font-size: rem(34px);
       }
     }
 
@@ -138,6 +151,8 @@
         max-width: 600px;
       }
 
+
+
       .introduction__network {
         display: none;
 
@@ -148,7 +163,7 @@
 
       @include tablet-up {
         @include flexbox(row, space-between, end);
-        margin-top: 50px;
+        // margin-top: 50px;
 
         div {
           //bloc de texts a gauche de __network
@@ -160,8 +175,8 @@
         }
 
         .introduction__network {
-          margin: auto;
           padding-left: 30px;
+          margin: auto;
 
 
           @include desktop-large {
@@ -181,8 +196,8 @@
               fill: $darkBlue-opa_50;
 
               &:hover {
-                fill: $darkBlue;
                 transition: 250ms;
+                fill: $darkBlue;
               }
             }
 
@@ -196,56 +211,64 @@
 
     .introduction__welcome {
       margin: 0 0 4px 0;
-      font-family: $montserrat;
-      font-weight: 600;
-      font-size: rem(12.5px);
-      line-height: 1.5;
       color: $darkBlue-opa_50;
+      font-family: $montserrat;
+      font-size: rem(12.5px);
+      font-weight: 600;
+      line-height: 1.5;
 
       @include iphone6-7-8 {
-        font-size: rem(16px);
+        font-size: rem(17px);
       }
 
       @include tablet-up {
-        font-size: rem(20px);
         margin: 0 0 8px 0;
+        font-size: rem(20px);
+      }
+
+      @include big-tablet {
+        font-size: rem(22px);
       }
 
       @include desktop-large {
-        font-size: rem(21px);
         margin: 0px 0 8px 0;
+        font-size: rem(21px);
       }
     }
 
     .introduction__purpose {
       margin: 0 0 5px 0;
+      max-width: 400px;
       color: $darkBlue-opa_50;
       font-family: $montserrat;
-      font-weight: 500;
       font-size: rem(11px);
+      font-weight: 500;
       line-height: 1.5;
-      max-width: 400px;
 
       @include iphone6-7-8 {
-        font-size: rem(14px);
         margin: 0 0 24px 0;
+        font-size: rem(15px);
       }
 
       @include tablet-up {
         font-size: rem(16px);
       }
 
+      @include big-tablet {
+        font-size: rem(19px);
+      }
+
       @include desktop-large {
-        font-size: rem(18px);
         max-width: 500px;
+        font-size: rem(18px);
       }
     }
   }
 
   &__scrollDown {
-    margin: 0 auto;
     display: flex;
     justify-content: center;
+    margin: 0 auto;
 
     svg {
       width: 50px;
@@ -254,8 +277,8 @@
         fill: $darkBlue-opa_50;
 
         &:hover {
-          fill: $darkBlue;
           transition: 250ms;
+          fill: $darkBlue;
         }
       }
     }

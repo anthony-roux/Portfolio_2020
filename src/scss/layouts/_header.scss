@@ -10,7 +10,7 @@ header {
   position: relative;
   padding: 10px 30px;
   width: 100%;
-  max-width: 1950px;
+  // max-width: 1950px;
   z-index: 3;
   @include flexbox(row, space-between, center);
 
@@ -126,7 +126,7 @@ header {
   margin: -51px 0 0 0;
   background: $darkBlue;
   transform: translateY(-1500px);
-  transition: transform 1s;
+  transition: transform 250ms;
   @include format_vw-vh;
   @include flexbox(column, center, center);
 
@@ -141,7 +141,7 @@ header {
   }
 
   @include desktop-min {
-    margin: -70px 0 0 0;
+    margin: 0 0 0 0;
     width: 40vw;
     height: 100vh;
     transform: translateX(-3500px);
