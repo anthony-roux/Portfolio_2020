@@ -39,13 +39,13 @@ window.addEventListener("scroll", (e) => {
   var scrolled = document.body.scrollTop;
   var position = nav.offsetTop;
   const dumbPosition = 50;
-  console.log(offsetWindow);
+  // console.log(offsetWindow);
 
   if (offsetWindow > dumbPosition) {
-    console.log("add class");
+    // console.log("add class");
     nav.classList.add('nav-on-scroll');
   } else {
-    console.log("remove class");
+    // console.log("remove class");
     nav.classList.remove('nav-on-scroll');
   }
 });
