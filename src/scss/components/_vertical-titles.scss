@@ -2,11 +2,11 @@
   display: none;
 
   @include desktop-up {
-    font-family: $righteous;
-    text-transform: uppercase;
     position: absolute;
-    z-index: -2;
+    font-family: $righteous;
     font-size: rem(110px);
+    text-transform: uppercase;
+    z-index: -2;
     @include vertical-text;
     @include animation-gradient-project;
 

@@ -1,24 +1,24 @@
 .background {
-  @include flexbox(row, space-evenly, center);
-  width: 100vw;
   position: absolute;
+  width: 100vw;
   z-index: -3;
+  @include flexbox(row, space-evenly, center);
 
   &__purpleLines {
-    height: 8000px;
     width: 2px;
+    height: 8000px;
     @include flexbox(row, center, center);
   }
 }
 
 .purpleLines__line1 {
-  background: $BG_darkBlue-opa_003;
   width: 1px;
   height: 8000px;
+  background: $BG_darkBlue-opa_003;
 }
 
 .purpleLines__line2 {
-  background: $BG_darkBlue-opa_008;
-  height: 8000px;
   width: 1px;
+  height: 8000px;
+  background: $BG_darkBlue-opa_008;
 }

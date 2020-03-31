@@ -1,8 +1,8 @@
 .aboutMe {
+  margin-top: 350px;
   color: $white;
   font-family: $montserrat;
   line-height: 1.5;
-  margin-top: 350px;
 
   @include big-tablet {
     margin-top: -350px;
@@ -13,10 +13,10 @@
   }
 
   &__title {
-    @include background-project;
-    font-size: rem(50px);
     top: -230px;
     padding: 0 30px;
+    font-size: rem(50px);
+    @include background-project;
     @include animation-gradient-project;
 
     @include iphone6-7-8_max {
@@ -24,76 +24,76 @@
     }
 
     @include tablet-up {
-      font-size: rem(100px);
       top: -260px;
       padding: 0 60px;
+      font-size: rem(100px);
     }
 
     @include big-tablet {
-      font-size: 8.25rem;
       top: 305px;
       left: 235px;
+      max-width: max-content;
+      font-size: 8.25rem;
       z-index: 0;
       @include animation-gradient-project;
-      max-width: max-content;
     }
 
     @include desktop-min {
-      font-size: 8.25rem;
       top: 305px;
       left: 235px;
+      max-width: max-content;
+      font-size: 8.25rem;
       z-index: 0;
       @include animation-gradient-project;
-      max-width: max-content;
     }
 
     @include desktop-up {
-      font-size: 9.25rem;
       top: 326px;
       left: 262px;
       max-width: max-content;
+      font-size: 9.25rem;
       z-index: 0;
     }
 
     @include desktop-large {
-      font-size: 9.25rem;
       top: 326px;
       left: 322px;
       max-width: max-content;
+      font-size: 9.25rem;
       z-index: 0;
     }
   }
 
   &__whoami {
-    @include background-title;
-    font-size: rem(40px);
     top: -290px;
     padding: 0 30px;
+    font-size: rem(40px);
+    @include background-title;
 
     @include iphone6-7-8_max {
       font-size: rem(55px);
     }
 
     @include tablet-up {
-      font-size: rem(80px);
       top: -340px;
       padding: 0 60px;
+      font-size: rem(80px);
     }
 
     @include big-tablet {
       top: 206px;
       left: 394px;
+      max-width: max-content;
       z-index: 0;
       -webkit-text-stroke-color: $white;
-      max-width: max-content;
     }
 
     @include desktop-min {
       top: 206px;
       left: 394px;
+      max-width: max-content;
       z-index: 0;
       -webkit-text-stroke-color: $white;
-      max-width: max-content;
     }
 
     @include desktop-up {
@@ -110,12 +110,12 @@
   }
 
   &__background {
-    height: auto;
-    background-color: $darkBlue;
-    width: 100%;
-    max-height: 300px;
-    min-height: 300px;
     padding-bottom: 20px;
+    width: 100%;
+    height: auto;
+    min-height: 300px;
+    max-height: 300px;
+    background-color: $darkBlue;
 
     @include tablet-up {
       max-height: 380px;
@@ -149,15 +149,15 @@
     }
 
     @include desktop-up {
-      width: max-content;
       top: 215px;
       left: -31px;
+      width: max-content;
     }
 
     @include desktop-large {
-      width: max-content;
       top: 215px;
       left: -128px;
+      width: max-content;
     }
 
     .svg {
@@ -166,13 +166,13 @@
     }
 
     .divInBlob {
+      margin: 0 auto;
       width: 220px;
       min-height: 300px;
       background: url(/assets/svg/aboutMe_photo.png);
       background-size: cover;
       -webkit-clip-path: url(#my-clip-path);
       clip-path: url(#my-clip-path);
-      margin: 0 auto;
 
       @include tablet-up {
         width: 268px;
@@ -209,41 +209,40 @@
     }
 
     @include big-tablet {
-      max-width: 500px;
       display: flex;
       flex-direction: column;
-      margin-left: 400px;
       margin-top: -240px;
+      margin-left: 400px;
+      max-width: 500px;
     }
 
     @include desktop-min {
-      max-width: 600px;
       display: flex;
       flex-direction: column;
-      // margin-left: 300px;
       margin: -191px 0 0 301px;
+      max-width: 600px;
     }
 
     @include desktop-up {
-      max-width: 650px;
       margin: -239px 0 0 349px;
+      max-width: 650px;
     }
 
     @include desktop-large {
-      max-width: 650px;
       margin: -336px 0 0 323px;
+      max-width: 650px;
     }
   }
 
   &__subtitle {
-    font-weight: bold;
-    font-size: rem(13px);
-    text-transform: uppercase;
     margin-bottom: 8px;
+    font-size: rem(13px);
+    font-weight: bold;
+    text-transform: uppercase;
 
     @include tablet-up {
-      font-size: rem(18px);
       margin-bottom: 16px;
+      font-size: rem(18px);
     }
 
     @include big-tablet {
@@ -271,19 +270,19 @@
     }
 
     @include tablet-up {
-      font-size: rem(18px);
       max-width: 600px;
+      font-size: rem(18px);
     }
 
     @include big-tablet {
-      font-size: 16px;
       max-width: 600px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
     @include desktop-min {
-      font-size: 14px;
       max-width: 600px;
+      font-size: 14px;
       line-height: 1.7;
     }
 
@@ -298,15 +297,14 @@
 }
 
 .blob {
-  width: 200px;
-  min-height: 115px;
-  background: $blueLagoon;
   position: relative;
   top: 25px;
   left: 22%;
-  // margin-left: 30%;
-  border-radius: 96% 51% 44% 95%/90% 77% 80% 69%;
   padding: 20px;
+  width: 200px;
+  min-height: 115px;
+  background: $blueLagoon;
+  border-radius: 96% 51% 44% 95%/90% 77% 80% 69%;
 
   @include iphone6-7-8_max {
     top: 40px;
@@ -316,9 +314,9 @@
   @include tablet-up {
     top: 30px;
     left: 46%;
+    padding: 30px;
     width: 350px;
     min-height: 180px;
-    padding: 30px;
   }
 
   @include big-tablet {
@@ -342,18 +340,18 @@
   }
 
   &__contact {
+    margin: 0 auto;
     width: max-content;
     @include flexbox(column, flex-end, flex-end);
-    margin: 0 auto;
 
     @include tablet-up {
       width: 270px;
     }
 
     a {
+      display: flex;
       width: 15px;
       height: 15px;
-      display: flex;
       cursor: pointer;
 
       @include tablet-up {
@@ -363,8 +361,8 @@
     }
 
     p {
-      font-size: rem(11px);
       margin-right: 8px;
+      font-size: rem(11px);
 
       &:hover {
         font-weight: 500;
@@ -372,8 +370,8 @@
       }
 
       @include tablet-up {
-        font-size: rem(18px);
         margin-right: 16px;
+        font-size: rem(18px);
       }
     }
   }

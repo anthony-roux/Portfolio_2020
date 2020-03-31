@@ -7,40 +7,40 @@
 
 .btn {
   position: relative;
-  z-index: 0;
   padding: 12px 14px;
   max-width: 145px;
+  color: #161569;
   font-family: $montserrat;
   font-size: rem(10px);
   font-weight: lighter;
-  text-transform: uppercase;
-  text-align: center;
   letter-spacing: 3px;
   white-space: nowrap;
-  color: #161569;
-  transition: all 400ms ease-in-out;
+  text-align: center;
+  text-transform: uppercase;
   cursor: pointer;
+  transition: all 400ms ease-in-out;
   user-select: none;
+  z-index: 0;
 
   @include tablet-up {
-    font-size: rem(16px);
     padding: 16px 16px;
     max-width: 250px;
+    font-size: rem(16px);
   }
 }
 
 
 .btn::before,
 .btn::after {
-  content: ' ';
   position: absolute;
   transition: inherit;
+  content: ' ';
   z-index: -1;
 }
 
 .btn:hover {
-  transition-delay: 0.6s;
   color: #F9F9F9;
+  transition-delay: 0.6s;
 }
 
 .btn:hover::before {
@@ -49,19 +49,19 @@
 }
 
 .btn:hover::after {
-  transition-delay: 0.4s;
   background: linear-gradient(45deg,
       #161569,
       #2F3F80,
       #00B7D4);
+  transition-delay: 0.4s;
 }
 
 
 .anim-top::before,
 .anim-top::after {
   left: 0;
-  height: 0;
   width: 100%;
+  height: 0;
 }
 
 .anim-top::before {

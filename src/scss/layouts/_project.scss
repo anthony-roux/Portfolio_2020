@@ -5,14 +5,14 @@
 
 .project {
   &__background-title {
-    @include background-title;
-    font-size: rem(40px);
     top: 40px;
+    font-size: rem(40px);
+    @include background-title;
 
     @include tablet-up {
-      font-size: rem(80px);
       top: 60px;
       max-width: max-content;
+      font-size: rem(80px);
     }
 
     @include desktop-up {
@@ -23,16 +23,16 @@
   }
 
   &__background-project {
-    @include background-project;
-    font-size: rem(60px);
     top: -40px;
+    font-size: rem(60px);
+    @include background-project;
     @include animation-gradient-project;
 
 
     @include tablet-up {
-      font-size: rem(100px);
       top: -60px;
       max-width: max-content;
+      font-size: rem(100px);
 
     }
 
@@ -65,8 +65,8 @@
   // z-index: -1;
 
   @include desktop-min {
-    max-width: 704px;
     margin-bottom: 170px;
+    max-width: 704px;
   }
 
   @include desktop-up {
@@ -87,16 +87,16 @@
 }
 
 .card {
-  background-color: $white;
-  @include shadow-card;
-  border-radius: 8px;
   margin-top: 16px;
+  background-color: $white;
+  border-radius: 8px;
+  @include shadow-card;
 
   &__content {
-    min-height: 217px;
     padding: 20px;
-    @include flexbox(column, space-between, stretch);
+    min-height: 217px;
     color: $darkBlue;
+    @include flexbox(column, space-between, stretch);
 
     @include iphone6-7-8_max {
       min-height: 260px;
@@ -108,18 +108,12 @@
 
     @include desktop-min {
       min-height: 300px;
-
-      // &::nth-child(odd) {
-      //   color: red;
-      // }
     }
-
-    // @include desktop-min {}
   }
 
   &__informations {
-    @include flexbox(row, space-between, center);
     margin-top: -54px;
+    @include flexbox(row, space-between, center);
 
     @include tablet-up {
       margin-top: -124px;
@@ -131,8 +125,8 @@
   }
 
   &__type {
-    font-size: rem(11px);
     font-family: $righteous;
+    font-size: rem(11px);
     text-transform: uppercase;
 
     @include tablet-up {
@@ -141,42 +135,42 @@
   }
 
   &__number {
-    font-size: rem(60px);
-    font-family: $righteous;
-    @include gradient-number;
     position: relative;
     top: -46px;
+    font-family: $righteous;
+    font-size: rem(60px);
     text-align: center;
+    @include gradient-number;
 
 
 
     @include tablet-up {
-      font-size: rem(100px);
       top: -73px;
+      font-size: rem(100px);
     }
 
     @include desktop-min {
       max-width: 250px;
 
       &--toRight {
-        font-size: rem(150px);
         top: 203px;
         right: -560px;
+        font-size: rem(150px);
       }
 
       &--toLeft {
-        font-size: rem(150px);
         top: 203px;
         left: -157px;
+        font-size: rem(150px);
       }
     }
   }
 
   &__date {
     font-family: $montserrat;
-    font-weight: 300;
     font-size: rem(11px);
     font-variant: small-caps;
+    font-weight: 300;
 
     @include tablet-up {
       font-size: rem(14px);
@@ -184,11 +178,11 @@
   }
 
   &__title {
+    margin: 24px 0 16px 0;
+    color: $darkBlue;
     font-family: $righteous;
     font-size: rem(25px);
-    color: $darkBlue;
     text-transform: uppercase;
-    margin: 24px 0 16px 0;
 
     @include tablet-up {
       font-size: rem(45px);
@@ -197,8 +191,8 @@
 
   &__synopsis {
     font-family: $montserrat;
-    font-weight: 300;
     font-size: rem(12px);
+    font-weight: 300;
     line-height: 1.5;
 
     @include tablet-up {
@@ -207,10 +201,10 @@
   }
 
   &__tools {
-    text-align: center;
     font-family: $montserrat;
     font-size: rem(10px);
     font-variant: small-caps;
+    text-align: center;
 
     @include tablet-up {
       font-size: rem(14px);

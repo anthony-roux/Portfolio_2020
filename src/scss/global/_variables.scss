@@ -173,14 +173,14 @@ $desktop-Xlarge: 1768px;
 
 @mixin flexbox($direction: row, $justify: center, $align: center) {
   display: flex;
-  justify-content: $justify;
   flex-direction: $direction;
   align-items: $align;
+  justify-content: $justify;
 }
 
 @mixin format_vw-vh {
-  height: 100vh;
   width: 100vw;
+  height: 100vh;
 }
 
 @mixin shadow-card {
@@ -189,11 +189,11 @@ $desktop-Xlarge: 1768px;
 
 @mixin gradient-number {
   background: linear-gradient($numberGradient);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   @include animation-gradient;
 }
 
@@ -224,12 +224,12 @@ $desktop-Xlarge: 1768px;
 
 @mixin animation-gradient-project {
   background: $projectGradient;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-size: 400% 400%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-size: 400% 400%;
   animation: gradient 5s ease infinite;
 
   @keyframes gradient {
@@ -248,10 +248,10 @@ $desktop-Xlarge: 1768px;
 }
 
 @mixin manage-img-project-mobile {
-  background-size: cover;
-  background-position: center;
-  border-radius: 0 0 8px 8px;
   min-height: 217px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 0 0 8px 8px;
 
   @include iphone6-7-8_max {
     min-height: 260px;
@@ -267,20 +267,20 @@ $desktop-Xlarge: 1768px;
 }
 
 @mixin background-title {
+  position: relative;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: $backgroundTitle;
   font-family: $righteous;
   text-transform: uppercase;
-  position: relative;
   z-index: -1;
 }
 
 @mixin background-project {
+  position: relative;
   color: $backgroundProject;
   font-family: $righteous;
   text-transform: uppercase;
-  position: relative;
   z-index: -1;
 }
 

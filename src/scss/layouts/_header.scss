@@ -1,26 +1,26 @@
 header {
   position: fixed;
-  z-index: 100;
   top: 0;
   left: 0;
   width: 100vw;
+  z-index: 100;
 }
 
 .nav {
-  @include flexbox(row, space-between, center);
-  max-width: 1950px;
-  width: 100%;
-  padding: 10px 30px;
   position: relative;
+  padding: 10px 30px;
+  width: 100%;
+  max-width: 1950px;
   z-index: 3;
+  @include flexbox(row, space-between, center);
 
   @include tablet-up {
     padding: 10px 60px;
   }
 
   &__logo {
-    @include flexbox(row, space-around, center);
     width: 46px;
+    @include flexbox(row, space-around, center);
 
     @include tablet-up {
       width: 50px;
@@ -32,33 +32,33 @@ header {
 
     .nav__linkHomeOnHero {
       margin-right: 10px;
-      text-decoration: none;
-      font-family: $montserrat;
-      font-weight: 500;
-      font-size: rem(13px);
-      text-transform: uppercase;
       color: $darkBlue;
+      font-family: $montserrat;
+      font-size: rem(13px);
+      font-weight: 500;
+      text-decoration: none;
+      text-transform: uppercase;
     }
 
     .nav__menu-button {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-around;
+      padding: 10px 0;
       margin-left: 10px;
       width: 41px;
       height: 41px;
-      padding: 10px 0;
-      border-radius: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      align-items: center;
-      position: relative;
       background-image: linear-gradient(45deg, #161569, #2f3f80, #00b7d4);
       border: solid 1px #eee;
+      border-radius: 50%;
       cursor: pointer;
 
       @include tablet-up {
+        padding: 14px 0;
         width: 50px;
         height: 50px;
-        padding: 14px 0;
       }
     }
 
@@ -100,14 +100,14 @@ header {
       left: 0;
       width: 100%;
       height: 100%;
-      border-radius: 50%;
       border: solid 1px #e1e1e1;
+      border-radius: 50%;
     }
 
     .menu-line {
       // barres du burger
-      height: 2.5px;
       width: 20px;
+      height: 2.5px;
       background: #e1e1e1;
       border-radius: 1em;
       transition: transform 0.3s ease;
@@ -120,15 +120,15 @@ header {
 }
 
 .menu {
-  transition: transform 1s;
-  transform: translateY(-1500px);
-  @include format_vw-vh;
-  background: $darkBlue;
-  margin: -51px 0 0 0;
-  padding: 30px;
-  @include flexbox(column, center, center);
   position: absolute;
   top: 0;
+  padding: 30px;
+  margin: -51px 0 0 0;
+  background: $darkBlue;
+  transform: translateY(-1500px);
+  transition: transform 1s;
+  @include format_vw-vh;
+  @include flexbox(column, center, center);
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
@@ -141,10 +141,10 @@ header {
   }
 
   @include desktop-min {
-    transform: translateX(-3500px);
+    margin: -70px 0 0 0;
     width: 40vw;
     height: 100vh;
-    margin: -70px 0 0 0;
+    transform: translateX(-3500px);
     @include flexbox(column, center, flex-start);
   }
 
@@ -166,8 +166,8 @@ header {
   }
 
   li {
-    list-style-type: none;
     margin-top: 32px;
+    list-style-type: none;
 
     @include tablet-up {
       margin-top: 76px;
@@ -178,15 +178,15 @@ header {
     }
 
     a {
-      @include flexbox(column, center, center);
+      color: $whiteKc;
       font-family: $montserrat;
+      font-size: rem(30px);
       font-style: normal;
       font-weight: 600;
-      font-size: rem(30px);
       line-height: 1.5;
-      text-transform: uppercase;
       text-decoration: none;
-      color: $whiteKc;
+      text-transform: uppercase;
+      @include flexbox(column, center, center);
 
       &:hover {
         font-weight: bolder;
@@ -220,8 +220,8 @@ header {
         }
 
         @include tablet-up {
-          font-size: 3rem;
           color: $blueLagoon;
+          font-size: 3rem;
           -webkit-text-stroke: 2px #f6fcfc;
         }
 
@@ -240,14 +240,14 @@ header {
 
     p {
       margin: 0 0 8px 0;
+      color: $whiteKc;
       font-family: $montserrat;
-      font-weight: 300;
       font-size: rem(11px);
+      font-variant: small-caps;
+      font-weight: 300;
       line-height: 13px;
       letter-spacing: 0.2em;
-      font-variant: small-caps;
       text-align: center;
-      color: $whiteKc;
 
       @supports (backdrop-filter: blur(10px)) {
         color: $darkBlue;
@@ -273,8 +273,8 @@ header {
         fill: $whiteKc;
 
         &:hover {
-          fill: $blueLagoon;
           transition: 1s;
+          fill: $blueLagoon;
         }
 
         @supports (backdrop-filter: blur(10px)) {
@@ -299,15 +299,15 @@ header {
 // }
 
 .is-open-menu {
+  position: relative;
+  padding: 30px;
+  margin: -61px 0 0 0;
+  overflow: hidden;
+  background: $darkBlue;
   transform: none;
   transition: transform 250ms;
-  @include format_vw-vh;
-  background: $darkBlue;
-  margin: -61px 0 0 0;
-  padding: 30px;
-  overflow: hidden;
-  position: relative;
   z-index: 2;
+  @include format_vw-vh;
 
   @supports (backdrop-filter: blur(10px)) {
     background: rgba(255, 255, 255, 0.3);
@@ -326,7 +326,7 @@ header {
 }
 
 .nav-on-scroll {
-  transition: 0.5s;
   background-color: white;
   background-image: $backgroundGradient;
+  transition: 0.5s;
 }
