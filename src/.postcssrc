@@ -1,0 +1,8 @@
+{
+  "plugins": {
+    "postcss-pxtorem": {
+      propList: ['*'],
+      replace: false
+    }
+  }
+}
