@@ -1,6 +1,10 @@
 .projects {
   margin: 32px 0 400px 0;
 
+
+  @include big-tablet {
+    margin-bottom: 300px;
+  }
 }
 
 .project {
@@ -64,7 +68,13 @@
   // position: static;
   // z-index: -1;
 
+
+  @include big-tablet {
+    margin-bottom: 170px;
+  }
+
   @include desktop-min {
+    margin: 0 auto;
     margin-bottom: 170px;
     max-width: 704px;
   }
