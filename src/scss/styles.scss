@@ -43,18 +43,18 @@
 
   @include tablet-up {
     padding: 0 60px;
-    max-width: 1224px;
+    // max-width: 1164px;
   }
 
-  @include desktop-min {
-    padding: 0 160px;
-    max-width: 1024px;
-  }
+  // @include desktop-min {
+  //   padding: 0 60px;
+  //   max-width: 1164px;
+  // }
 
-  @include desktop-up {
-    padding: 0 130px;
-    max-width: 1224px;
-  }
+  // @include desktop-up {
+  //   padding: 0 60px;
+  //   max-width: 1164px;
+  // }
 }
 
 // .corpo {

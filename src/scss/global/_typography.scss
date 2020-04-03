@@ -3,51 +3,59 @@
 //MONTSERRAT//
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/Montserrat-Regular.woff2") format("woff2"),
-    url("/fonts/Montserrat-Regular.woff") format("woff");
+  src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+    url('/fonts/Montserrat-Regular.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 800;
-  src: url("/fonts/Montserrat-ExtraBold.woff2") format("woff2"),
-    url("/fonts/Montserrat-ExtraBold.woff") format("woff");
+  src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+    url('/fonts/Montserrat-ExtraBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url("/fonts/Montserrat-SemiBold.woff2") format("woff2"),
-    url("/fonts/Montserrat-SemiBold.woff") format("woff");
+  src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+    url('/fonts/Montserrat-SemiBold.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300;
-  src: url("/fonts/Montserrat-Light.woff2") format("woff2"),
-    url("/fonts/Montserrat-Light.woff") format("woff");
+  src: url('/fonts/Montserrat-Light.woff2') format('woff2'),
+    url('/fonts/Montserrat-Light.woff') format('woff');
 }
 
 @font-face {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  src: url("/fonts/Montserrat-Medium.woff2") format("woff2"),
-    url("/fonts/Montserrat-Medium.woff") format("woff");
+  src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
+    url('/fonts/Montserrat-Medium.woff') format('woff');
 }
-
 
 //RIGHTEOUS//
 
+// @font-face {
+//   font-family: 'Righteous';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Righteous'), local('Righteous-Regular'),
+//     url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+// }
+
 @font-face {
-  font-family: 'Righteous';
+  font-family: 'righteousregular';
   font-style: normal;
-  font-weight: 400;
-  src: local('Righteous'), local('Righteous-Regular'), url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  font-weight: normal;
+  src: url('/fonts/Righteous.woff2') format('woff2'),
+    url('/fonts/Righteous.woff') format('woff');
 }
