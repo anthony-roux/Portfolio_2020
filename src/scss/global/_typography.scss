@@ -44,18 +44,18 @@
 
 //RIGHTEOUS//
 
-// @font-face {
-//   font-family: 'Righteous';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local('Righteous'), local('Righteous-Regular'),
-//     url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
-// }
-
 @font-face {
-  font-family: 'righteousregular';
+  font-family: 'Righteous';
   font-style: normal;
   font-weight: 400;
-  src: url('/fonts/Righteous.woff2') format('woff2'),
-    url('/fonts/Righteous.woff') format('woff');
+  src: local('Righteous'), local('Righteous-Regular'),
+    url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
 }
+
+// @font-face {
+//   font-family: 'righteousregular';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: url('/fonts/Righteous.woff2') format('woff2'),
+//     url('/fonts/Righteous.woff') format('woff');
+// }
