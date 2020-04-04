@@ -1,24 +1,43 @@
 .skills {
+  margin-top: 250px; //marche pas... 
 
-  &__bigtitles {}
+  &__bigTitle {
+    position: relative;
+    top: 20px;
+    font-size: rem(50px);
+    @include background-project;
+    @include animation-gradient-project;
 
-  &__mediumTitle {}
+  }
+
+  &__mediumTitle {
+    font-size: rem(32px);
+    @include background-title;
+
+  }
 
   &__namedColumn {}
 
   &__iconAndh2 {}
 
   &__icons {
-    width: 35px;
+    position: relative;
+    top: 80px;
+    // left: -7%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
     fill: $iconGradient;
-
-    path {}
   }
 
   &__title {
     margin-bottom: 32px;
-    font-size: rem(32px);
+    font-size: rem(24px);
     @include background-title;
+    color: $darkBlue;
+    text-transform: initial;
   }
 
   &__column {
