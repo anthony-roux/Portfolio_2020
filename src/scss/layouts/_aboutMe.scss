@@ -113,8 +113,8 @@
     }
 
     @include desktop-min {
-      top: 241px;
-      left: -280px;
+      top: 221px;
+      left: -321px;
     }
 
     @include desktop-up {
@@ -125,8 +125,6 @@
 
     @include desktop-large {
       top: 245px;
-      left: -61px;
-      width: max-content;
     }
 
     .svg {
@@ -154,8 +152,8 @@
       }
 
       @include desktop-min {
-        width: 280px;
-        min-height: 390px;
+        width: 293px;
+        min-height: 414px;
       }
 
       @include desktop-up {
@@ -180,26 +178,22 @@
     @include big-tablet {
       display: flex;
       flex-direction: column;
-      margin-top: -240px;
-      margin-left: 400px;
+      margin: -240px 0 0 455px;
       max-width: 500px;
     }
 
     @include desktop-min {
-      display: flex;
-      flex-direction: column;
-      margin: -171px 0 0 404px;
-      max-width: 600px;
+      margin: -215px 0 0 450px;
+      max-width: 500px;
     }
 
     @include desktop-up {
-      margin: -239px 0 0 405px;
+      margin: -239px 0 0 450px;
       max-width: 650px;
     }
 
     @include desktop-large {
-      margin: -346px 0 0 405px;
-      max-width: 650px;
+      margin: -346px 0 0 500px;
     }
   }
 
@@ -219,7 +213,7 @@
     }
 
     @include desktop-min {
-      font-size: 16px;
+      font-size: 18px;
     }
 
     @include desktop-up {
@@ -246,7 +240,7 @@
 
     @include desktop-min {
       max-width: 600px;
-      font-size: 14px;
+      font-size: 16px;
       line-height: 1.7;
     }
 
@@ -285,18 +279,12 @@
   }
 
   @include desktop-min {
-    top: 60px;
-    left: 29%;
-  }
-
-  @include desktop-up {
-    top: 20px;
-    left: 45%;
+    top: 30px;
+    left: 30%;
   }
 
   @include desktop-large {
-    top: 0;
-    left: 56%;
+    left: 38%;
   }
 
   &__contact {
