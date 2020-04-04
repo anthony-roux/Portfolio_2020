@@ -268,10 +268,14 @@
   &__scrollDown {
     display: flex;
     justify-content: center;
-    margin: 0 auto;
+    margin: 5px auto;
 
     svg {
-      width: 50px;
+      width: 35px;
+
+      @include iphone6-7-8_max {
+        width: 40px;
+      }
 
       path {
         fill: $darkBlue-opa_50;
@@ -284,7 +288,7 @@
     }
 
     @include iphone6-7-8_max {
-      margin: -35px auto;
+      margin: -50px auto;
     }
 
     @include tablet-up {
