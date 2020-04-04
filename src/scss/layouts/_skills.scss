@@ -14,13 +14,10 @@
 
     @include tablet-up {
       top: -15px;
-      // padding: 0 60px;
       font-size: rem(100px);
     }
 
     @include big-tablet {
-      // top: 305px;
-      // left: 235px;
       max-width: max-content;
       font-size: 8.25rem;
       z-index: 0;
@@ -28,10 +25,9 @@
     }
 
     @include desktop-min {
-      // top: 305px;
+      top: 35px;
       max-width: max-content;
       font-size: 8.25rem;
-      // z-index: 0;
       @include animation-gradient-project;
     }
 
@@ -56,10 +52,8 @@
     }
 
     @include desktop-min {
-      top: -63px;
+      top: -9px;      
       max-width: max-content;
-      // z-index: 0;
-      // -webkit-text-stroke-color: $white;
     }
 
   }
