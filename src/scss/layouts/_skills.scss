@@ -14,12 +14,12 @@
 
     @include tablet-up {
       top: -15px;
-      padding: 0 60px;
+      // padding: 0 60px;
       font-size: rem(100px);
     }
 
     @include big-tablet {
-      top: 305px;
+      // top: 305px;
       // left: 235px;
       max-width: max-content;
       font-size: 8.25rem;
@@ -28,10 +28,10 @@
     }
 
     @include desktop-min {
-      top: 305px;
+      // top: 305px;
       max-width: max-content;
       font-size: 8.25rem;
-      z-index: 0;
+      // z-index: 0;
       @include animation-gradient-project;
     }
 
@@ -47,29 +47,36 @@
 
     @include tablet-up {
       top: -50px;
-      padding: 0 60px;
       font-size: rem(70px);
     }
 
     @include big-tablet {
-      top: 206px;
       max-width: max-content;
-      z-index: 0;
-      -webkit-text-stroke-color: $white;
+
     }
 
     @include desktop-min {
-      top: 206px;
+      top: -63px;
       max-width: max-content;
-      z-index: 0;
-      -webkit-text-stroke-color: $white;
+      // z-index: 0;
+      // -webkit-text-stroke-color: $white;
     }
 
   }
 
+  &__columns {
+
+    @include big-tablet {
+      @include flexbox(row, space-between, flex-start);
+    }
+
+    @include desktop-min {
+      @include flexbox(row, space-between, flex-start);
+    }
+  }
+
   &__namedColumn {
     @include flexbox(column, center, center);
-
   }
 
   &__iconAndh2 {}
@@ -84,6 +91,10 @@
     width: 50px;
     height: 50px;
     fill: $iconGradient;
+
+    @include big-tablet {
+      top: 95px;
+    }
   }
 
   &__title {
@@ -92,6 +103,12 @@
     @include background-title;
     color: $darkBlue;
     text-transform: initial;
+    -webkit-text-stroke-width: 1.5px;
+
+    @include big-tablet {
+      margin-bottom: 40px;
+      font-size: rem(32px);
+    }
   }
 
   &__column {
