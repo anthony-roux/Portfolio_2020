@@ -1,0 +1,77 @@
+.skills {
+
+  &__bigtitles {}
+
+  &__mediumTitle {}
+
+  &__namedColumn {}
+
+  &__iconAndh2 {}
+
+  &__icons {
+    width: 35px;
+    fill: $iconGradient;
+
+    path {}
+  }
+
+  &__title {
+    margin-bottom: 32px;
+    font-size: rem(32px);
+    @include background-title;
+  }
+
+  &__column {
+    padding: 32px 0;
+    background: $darkBlue;
+    border-radius: 10px 10px 150px 150px;
+  }
+
+  &__dev {}
+
+  &__category {
+    margin: 24px 0;
+  }
+
+  // &__langage {}
+
+  // &__tools {}
+
+  // &__practices {}
+
+  // &__metodology {}
+
+  // &__designTools {}
+
+  // &__marketing {}
+
+  &__subtitle {
+    margin-bottom: 16px;
+    color: $white;
+    font-family: $montserrat;
+    font-size: rem(14px);
+    font-weight: bold;
+    line-height: 14px;
+    text-align: center;
+    text-transform: uppercase;
+    @include gradient-strokes;
+
+    @supports (backdrop-filter: blur(10px)) {
+      color: $whiteKc;
+      -webkit-text-stroke: 2px linear-gradient(0.42deg, #161569 -230.79%, #2f3f80 -104.45%, #505488 14.14%, #00b7d4 145.11%);
+    }
+  }
+
+  &__values {}
+
+  &__value {
+    margin-bottom: 8px;
+    color: $white;
+    font-family: $montserrat;
+    font-size: rem(14px);
+    line-height: 14px;
+    @include flexbox(column, center, center);
+
+
+  }
+}
