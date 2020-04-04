@@ -34,8 +34,8 @@
           "constant.numeric.json"
         ],
         "settings": {
-          "fontStyle": "bold",
-          "foreground": "#e96d00"
+          "fontStyle": "italic",
+          "foreground": "#47d500"
         }
       }
     ]
