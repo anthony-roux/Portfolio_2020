@@ -26,7 +26,9 @@ let links = [$home_isClicked, $project_isClicked, $aboutMe_isClicked, $skills_is
 
 links.forEach(link => {
   link.addEventListener('click', function () {
-    menu.classList.toggle('is-open-menu')
+    menu.classList.toggle('is-open-menu');
+    hideBgNavScrolling.classList.toggle('hideBgNavScrolling')
+
   });
 });
 
