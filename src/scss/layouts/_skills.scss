@@ -8,22 +8,76 @@
     @include background-project;
     @include animation-gradient-project;
 
+    @include iphone6-7-8_max {
+      font-size: rem(65px);
+    }
+
+    @include tablet-up {
+      top: -15px;
+      padding: 0 60px;
+      font-size: rem(100px);
+    }
+
+    @include big-tablet {
+      top: 305px;
+      // left: 235px;
+      max-width: max-content;
+      font-size: 8.25rem;
+      z-index: 0;
+      @include animation-gradient-project;
+    }
+
+    @include desktop-min {
+      top: 305px;
+      max-width: max-content;
+      font-size: 8.25rem;
+      z-index: 0;
+      @include animation-gradient-project;
+    }
+
   }
 
   &__mediumTitle {
     font-size: rem(32px);
     @include background-title;
 
+    @include iphone6-7-8_max {
+      font-size: rem(44px);
+    }
+
+    @include tablet-up {
+      top: -50px;
+      padding: 0 60px;
+      font-size: rem(70px);
+    }
+
+    @include big-tablet {
+      top: 206px;
+      max-width: max-content;
+      z-index: 0;
+      -webkit-text-stroke-color: $white;
+    }
+
+    @include desktop-min {
+      top: 206px;
+      max-width: max-content;
+      z-index: 0;
+      -webkit-text-stroke-color: $white;
+    }
+
   }
 
-  &__namedColumn {}
+  &__namedColumn {
+    @include flexbox(column, center, center);
+
+  }
 
   &__iconAndh2 {}
 
   &__icons {
     position: relative;
     top: 80px;
-    // left: -7%;
+    left: 0%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -42,8 +96,13 @@
 
   &__column {
     padding: 32px 0;
+    min-width: 288px;
+    max-width: 335px;
     background: $darkBlue;
     border-radius: 10px 10px 150px 150px;
+    @include flexbox(column, center, center);
+
+
   }
 
   &__dev {}
