@@ -13,6 +13,26 @@ burger.addEventListener('click', () => {
 
 
 /**********************************************************/
+/*********** TOGGLE is-open-menu WHEN WE CLICKED ON LINK INSIDE **************/
+
+const $home_isClicked = document.querySelector('.home_isClicked');
+const $project_isClicked = document.querySelector('.project_isClicked');
+const $aboutMe_isClicked = document.querySelector('.aboutMe_isClicked');
+const $skills_isClicked = document.querySelector('.skills_isClicked');
+const $contact_isClicked = document.querySelector('.contact_isClicked');
+
+let links = [$home_isClicked, $project_isClicked, $aboutMe_isClicked, $skills_isClicked, $contact_isClicked];
+
+
+links.forEach(link => {
+  link.addEventListener('click', function () {
+    menu.classList.toggle('is-open-menu')
+  });
+});
+
+
+
+/**********************************************************/
 /*********** SCALE ANIMATION ON BURGER MENU **************/
 
 const btn = document.querySelector('.nav__menu-button');
