@@ -6,19 +6,19 @@
 
   &__purpleLines {
     width: 2px;
-    height: 8000px;
+    height: 5990px;
     @include flexbox(row, center, center);
   }
 }
 
 .purpleLines__line1 {
   width: 1px;
-  height: 8000px;
+  height: 5990px;
   background: $BG_darkBlue-opa_003;
 }
 
 .purpleLines__line2 {
   width: 1px;
-  height: 8000px;
+  height: 5990px;
   background: $BG_darkBlue-opa_008;
 }
