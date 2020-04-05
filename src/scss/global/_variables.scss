@@ -75,7 +75,6 @@ sans-serif;
 
 $iphone6-7-8: 374px;
 $iphone6-7-8__: 375px;
-// $iphone6-7-8_max: 413px;
 $iphone6-7-8_max: 410px;
 
 $tablet-up: 768px;
@@ -148,21 +147,9 @@ $desktop-Xlarge: 1768px;
   }
 }
 
-// @mixin desktop-down {
-//   @media (max-width: $desktop-down) {
-//     @content;
-//   }
-// }
 
 // @mixin desktop-Xlarge {
 //   @media (min-width: $desktop-Xlarge) {
-//     @content;
-//   }
-// }
-
-
-// @mixin iphoneXS_Max {
-//   @media (min-width: 414px) and (max-width: $iphoneXs_max-height) {
 //     @content;
 //   }
 // }
@@ -198,12 +185,6 @@ $desktop-Xlarge: 1768px;
 }
 
 @mixin animation-gradient {
-  // background: linear-gradient($numberGradient);
-  // -webkit-background-clip: text;
-  // -webkit-text-fill-color: transparent;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // background-position: center;
   background-size: 600% 600%;
   animation: gradient 10s ease infinite;
 

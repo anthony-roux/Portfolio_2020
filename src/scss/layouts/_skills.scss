@@ -52,7 +52,7 @@
     }
 
     @include desktop-min {
-      top: -9px;      
+      top: -9px;
       max-width: max-content;
     }
 
@@ -73,7 +73,7 @@
     @include flexbox(column, center, center);
   }
 
-  &__iconAndh2 {}
+  // &__iconAndh2 {}
 
   &__icons {
     position: relative;
@@ -116,7 +116,7 @@
 
   }
 
-  &__dev {}
+  // &__dev {}
 
   &__category {
     margin: 24px 0;
@@ -151,7 +151,7 @@
     }
   }
 
-  &__values {}
+  // &__values {}
 
   &__value {
     margin-bottom: 8px;
