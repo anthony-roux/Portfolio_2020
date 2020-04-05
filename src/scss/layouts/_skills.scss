@@ -71,6 +71,12 @@
 
   &__namedColumn {
     @include flexbox(column, center, center);
+    transition: 1s;
+
+
+    &:hover {
+      @include scale-animation;
+    }
   }
 
   // &__iconAndh2 {}
