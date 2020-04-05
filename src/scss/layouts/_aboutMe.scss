@@ -312,7 +312,7 @@
 
     p {
       margin-right: 8px;
-      font-size: rem(11px);
+      font-size: rem(10px);
 
       &:hover {
         font-weight: 500;
@@ -321,7 +321,11 @@
 
       @include tablet-up {
         margin-right: 16px;
-        font-size: rem(18px);
+        font-size: rem(16px);
+      }
+
+      &:after {
+        content: "\002794";
       }
     }
   }
@@ -332,6 +336,11 @@
 
     @include tablet-up {
       margin: 12px 0;
+
+      &:hover {
+        @include scale-animation;
+      }
+
     }
   }
 
@@ -342,6 +351,10 @@
 
     @include tablet-up {
       margin-bottom: 12px;
+
+      &:hover {
+        @include scale-animation;
+      }
     }
   }
 }
