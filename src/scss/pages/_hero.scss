@@ -4,26 +4,36 @@
 }
 
 .hero {
-
-  @include flexbox(column, space-between, center);
-
-  @include tablet-up {
-    @include flexbox(column, space-around, center);
-  }
+  height: inherit;
+  @include flexbox(column, space-evenly, center);
 
   @include desktop-min {
     height: 100vh;
-    @include flexbox(row, space-around, center);
+  }
+
+  &__content {
+    height: inherit;
+    @include flexbox(column, space-evenly, center);
+
+    @include desktop-min {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      justify-content: space-evenly;
+      margin-top: 5%;
+      width: 90%;
+      height: initial;
+    }
+    @include desktop-large {
+      width: 100%;
+    }
   }
 
   &__svg {
     //container of vector me
-    height: 46vh;
+    margin-top: 15%;
+    width: inherit;
     @include flexbox(column, flex-end, center);
-
-    @include big-tablet {
-      height: 52vh;
-    }
 
     @include desktop-min {
       margin: 0 7% 0 0;
@@ -62,27 +72,7 @@
     }
   }
 
-  &__text {
-    margin-top: 8%;
-
-    @include iphone6-7-8_max {
-      margin: 8% 0 8% 0;
-    }
-
-    @include tablet-up {
-      margin: 8% 0 0% 0;
-
-    }
-
-    @include big-tablet {
-      margin: 7% 0;
-
-    }
-
-    @include desktop-min {
-      margin: 0;
-    }
-  }
+  // &__text {}
 
   &__name {
     width: 220px;
@@ -218,20 +208,11 @@
       line-height: 1.5;
 
       @include iphone6-7-8 {
-        font-size: rem(17px);
+        font-size: rem(15px);
       }
 
       @include tablet-up {
         margin: 0 0 8px 0;
-        font-size: rem(20px);
-      }
-
-      @include big-tablet {
-        font-size: rem(22px);
-      }
-
-      @include desktop-large {
-        margin: 0px 0 8px 0;
         font-size: rem(21px);
       }
     }
@@ -247,20 +228,15 @@
 
       @include iphone6-7-8 {
         margin: 0 0 24px 0;
-        font-size: rem(15px);
+        font-size: rem(13px);
       }
 
       @include tablet-up {
-        font-size: rem(16px);
-      }
-
-      @include big-tablet {
-        font-size: rem(19px);
+        font-size: rem(18px);
       }
 
       @include desktop-large {
         max-width: 500px;
-        font-size: rem(18px);
       }
     }
   }
@@ -268,7 +244,6 @@
   &__scrollDown {
     display: flex;
     justify-content: center;
-    margin: 5px auto;
 
     svg {
       width: 35px;
@@ -287,25 +262,31 @@
       }
     }
 
-    @include iphone6-7-8_max {
-      margin: -50px auto;
-    }
-
-    @include tablet-up {
-      margin: 0 auto;
-    }
-
     @include desktop-min {
-      position: relative;
-      bottom: 65px;
-      display: flex;
-      justify-content: center;
-      padding: 17px auto;
+      display: none;
     }
+  }
+}
 
-    // @include desktop-large {
-    //   margin: 3px auto 50px;
-    //   left: -50%;
-    // }
+.hero__scrollDown--laptop {
+  display: none;
+
+  @include desktop-min {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+
+    svg {
+      width: 55px;
+
+      path {
+        fill: $darkBlue-opa_50;
+
+        &:hover {
+          transition: 250ms;
+          fill: $darkBlue;
+        }
+      }
+    }
   }
 }
