@@ -83,8 +83,8 @@
 
   &__icons {
     position: relative;
-    top: 80px;
-    left: 0%;
+    top: 82px;
+    left: 35%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -95,6 +95,11 @@
     @include big-tablet {
       top: 95px;
     }
+
+    @include desktop-min {
+      left: 0%;
+    }
+
   }
 
   &__title {
