@@ -299,7 +299,7 @@ $desktop-Xlarge: 1768px;
   }
 }
 
-@mixin scale-animation-on-project {
+@mixin scale-animation-light {
   transition: all 0.2s ease-in;
 
   &:hover {
