@@ -148,11 +148,11 @@ $desktop-Xlarge: 1768px;
 }
 
 
-// @mixin desktop-Xlarge {
-//   @media (min-width: $desktop-Xlarge) {
-//     @content;
-//   }
-// }
+@mixin desktop-Xlarge {
+  @media (min-width: $desktop-Xlarge) {
+    @content;
+  }
+}
 
 
 //************************* MIXINS *************************//
