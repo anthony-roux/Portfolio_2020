@@ -77,7 +77,7 @@
     margin: 0 auto;
     margin-bottom: 170px;
     max-width: 704px;
-    @include scale-animation-on-project;
+    @include scale-animation-light;
   }
 
   @include desktop-up {

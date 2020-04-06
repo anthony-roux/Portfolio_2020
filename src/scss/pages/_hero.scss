@@ -24,6 +24,7 @@
       width: 90%;
       height: initial;
     }
+
     @include desktop-large {
       width: 100%;
     }
@@ -275,6 +276,9 @@
     display: flex;
     justify-content: center;
     margin: 0 auto;
+    @include scale-animation-light;
+    -webkit-transform: scale(1.08);
+    transform: scale(1.08);
 
     svg {
       width: 55px;

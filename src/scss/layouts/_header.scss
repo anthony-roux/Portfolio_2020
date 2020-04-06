@@ -25,6 +25,12 @@ header {
     @include tablet-up {
       width: 50px;
     }
+
+    @include desktop-min {
+      @include scale-animation-light;
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
   }
 
   &__burger {
@@ -38,6 +44,10 @@ header {
       font-weight: 500;
       text-decoration: none;
       text-transform: uppercase;
+
+      &:hover {
+        font-weight: 900;
+      }
     }
 
     .nav__menu-button {
