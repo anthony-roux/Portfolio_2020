@@ -54,7 +54,8 @@
   font-style: normal;
   font-weight: 400;
   src: local('Righteous'), local('Righteous-Regular'),
-    url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf&display=swap) format('truetype');
+    url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+  font-display: swap;
 }
 
 // @font-face {
