@@ -8,6 +8,7 @@
   font-weight: normal;
   src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
     url('/fonts/Montserrat-Regular.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -16,6 +17,7 @@
   font-weight: 800;
   src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
     url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -24,6 +26,7 @@
   font-weight: 600;
   src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
     url('/fonts/Montserrat-SemiBold.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -32,6 +35,7 @@
   font-weight: 300;
   src: url('/fonts/Montserrat-Light.woff2') format('woff2'),
     url('/fonts/Montserrat-Light.woff') format('woff');
+  font-display: swap;
 }
 
 @font-face {
@@ -40,6 +44,7 @@
   font-weight: 500;
   src: url('/fonts/Montserrat-Medium.woff2') format('woff2'),
     url('/fonts/Montserrat-Medium.woff') format('woff');
+  font-display: swap;
 }
 
 //RIGHTEOUS//
@@ -49,7 +54,7 @@
   font-style: normal;
   font-weight: 400;
   src: local('Righteous'), local('Righteous-Regular'),
-    url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+    url(https://themes.googleusercontent.com/static/fonts/righteous/v2/w5P-SI7QJQSDqB3GziL8XaCWcynf_cDxXwCLxiixG1c.ttf&display=swap) format('truetype');
 }
 
 // @font-face {
