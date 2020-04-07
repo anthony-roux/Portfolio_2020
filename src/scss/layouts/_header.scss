@@ -340,3 +340,17 @@ header {
   background-image: $backgroundGradient;
   transition: 0.5s;
 }
+
+.body_nova {
+
+  .nav {
+    background-color: white;
+    background-image: $backgroundGradient;
+  }
+
+  .nav-on-scroll {
+    background-color: white;
+    background-image: $backgroundGradient;
+    transition: 250ms;
+  }
+}
