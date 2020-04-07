@@ -62,7 +62,7 @@ window.addEventListener("scroll", (e) => {
   var offsetWindow = window.pageYOffset;
   var scrolled = document.body.scrollTop;
   var position = nav.offsetTop;
-  const dumbPosition = 50;
+  const dumbPosition = 20;
   // console.log(offsetWindow);
 
   if (offsetWindow > dumbPosition) {
