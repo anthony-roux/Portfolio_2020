@@ -12,6 +12,7 @@ burger.addEventListener('click', () => {
 });
 
 
+
 /**********************************************************/
 /*********** TOGGLE is-open-menu WHEN WE CLICKED ON LINK INSIDE **************/
 
@@ -27,8 +28,9 @@ let links = [$home_isClicked, $project_isClicked, $aboutMe_isClicked, $skills_is
 links.forEach(link => {
   link.addEventListener('click', function () {
     menu.classList.toggle('is-open-menu');
-    hideBgNavScrolling.classList.toggle('hideBgNavScrolling')
-
+    hideBgNavScrolling.classList.toggle('hideBgNavScrolling');
+    btn.classList.toggle('clicked');
+    clicked = false;
   });
 });
 
