@@ -1,7 +1,7 @@
 /.cache
-/dist
+.dist
 /node_modules
-/.Ds_Store 
+.Ds_Store 
 /src/scss/dist
 /src/scss/dist/global/dist
 /src/scss/dist/layouts/dist
