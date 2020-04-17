@@ -13,6 +13,7 @@
 // COMPONENTS
 // ici importations des éléments génériques qui se répétent souvent dans le site : calltoactions, cards...
 @import 'components/_vertical-titles.scss';
+@import 'components/_page_project-generic.scss';
 
 
 // LAYOUTS
@@ -28,6 +29,7 @@
 // ici importations des pages du site : homepage, contact, panier, articles, FAQ...
 @import 'pages/_hero.scss';
 @import 'pages/_page_project-nova.scss';
+@import 'pages/_page_project-koala.scss';
 
 
 
