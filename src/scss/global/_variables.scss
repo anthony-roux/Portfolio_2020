@@ -3,7 +3,7 @@
 // PRIMARY :
 $white: #ffffff;
 $darkBlue: #161569;
-$whiteKc: #f6fcfc;
+$whiteKc: #edf0f0;
 
 // SECONDARY
 $blueGrey: #2f3f80;
@@ -38,10 +38,14 @@ $gradient1: -webkit-linear-gradient(0.42deg,
   #00b7d4 145.11%);
 
 $backgroundGradient: linear-gradient(103.23deg,
-  rgba(182, 251, 255, 0.1) -25.45%,
-  rgba(0, 183, 212, 0.1) 16.51%,
-  rgba(47, 63, 128, 0.1) 53.77%,
-  rgba(22, 21, 105, 0.1) 100%);
+  rgb(182, 251, 255) -25.45%,
+  rgb(0, 184, 212) 20.51%,
+  rgb(5, 2, 79) 100%);
+
+$backgroundGradientheader: linear-gradient(103.23deg,
+  rgba(182, 251, 255, 0.132) -25.45%,
+  rgba(0, 184, 212, 0.248) 20.51%,
+  rgba(5, 2, 79, 0.269) 100%);
 
 $iconGradient: linear-gradient(181.28deg,
   #161569 -176.37%,
