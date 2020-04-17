@@ -33,6 +33,18 @@
 <body class="body_nova">
   include includes/header.pug
   <main class="main__nova">
+    <div class="project__navigation">
+      <a class="project__btnLink" href="">
+        <button class="project__button">
+          <p>&#12296;&nbspback</p>
+        </button>
+      </a>
+      <a class="project__btnLink" href="">
+        <button class="project__button project__button--right">
+          <p>next&nbsp&#12297;</p>
+        </button>
+      </a>
+    </div>
     <section class="projectNova content-wrapper-adapt">
       <div class="projectNova__textualCard">
         <div class="projectNova__cadre">
@@ -45,10 +57,10 @@
           <p class="projectNova__paragraph hidden-p">Après des recherches et un brain storming efficace, l’idée de présenter des portes-feuilles de luxe, réaliser en cuir de vin nous est alors venue. <br>C’est là, que Nova Pellicia est née.
           </p>
           <p class="projectNova__paragraph">Ma polyvalence m’a donné l’opportunité de penser et aider à la réalisation des maquettes. Mais ce sont surtout mes compétences en intégration que j’ai pu mettre à l’épreuve.</p> 
-          <p>De simples technos comme le <strong>SCSS</strong> couplés à du <strong>Javascript</strong> natif nous aurons permis de mener à bien notre mission.
+          <p class="projectNova__paragraph">De simples technos comme le <strong>SCSS</strong> couplés à du <strong>Javascript</strong> natif nous aurons permis de mener à bien notre mission.
           </p>
           <div class="projectNova__button button">
-            <a href="">
+            <a href="" id="decouvrir">
               <div class="btn anim-top">
                 <span>découvrir</span>
               </div>
@@ -56,6 +68,13 @@
           </div>
         </div>
       </div>
+      <div class="hero__scrollDown project__scrollDown">
+        <a href="#decouvrir">
+          <svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 3C21.615 3 27 8.385 27 15C27 21.615 21.615 27 15 27C8.385 27 3 21.615 3 15C3 8.385 8.385 3 15 3ZM15 0C6.72 0 0 6.72 0 15C0 23.28 6.72 30 15 30C23.28 30 30 23.28 30 15C30 6.72 23.28 0 15 0ZM15 19.5L9 13.5H21L15 19.5Z" fill="#1A1B6D"/>
+          </svg>
+        </a>
+      </div> 
       <div class="projectNova__images">
         <img class="iMac" src="/assets/img/page_project-nova-iMac.png" alt="Mockup du Site sur iMac">
         <img class="iPhone" src="/assets/img/page_project-nova-iPhone.png" alt="Mockup du site sur iPhone">
