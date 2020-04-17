@@ -1,0 +1,93 @@
+.projectKoala {
+
+  &__textualCard {
+    margin: -40px 0 16px;
+    max-width: 496px;
+
+
+    @include tablet-up {
+      margin: -8.1875rem 0 1rem;
+
+    }
+
+    @include desktop-min {
+      position: relative;
+      left: 230px;
+      order: 0;
+      padding: 24px;
+      margin: 0;
+      min-width: 470px;
+      max-width: 500px;
+    }
+
+    @include desktop-large {
+      left: 200px;
+    }
+  }
+
+
+
+  .iMac {
+    margin-left: 15.9375rem;
+    width: 29.75rem;
+    max-width: initial;
+
+    @include tablet-up {
+      position: relative;
+      top: 1.75rem;
+      margin-left: 25.9375rem;
+      width: 50.75rem;
+    }
+
+    @include big-tablet {
+      width: 60.75rem;
+    }
+
+    @include desktop-min {
+      margin-left: 0;
+      width: 37.75rem;
+    }
+
+    @include desktop-large {
+      width: 42.75rem;
+    }
+  }
+
+  .macbook {
+    position: relative;
+    top: -157px;
+    left: -11px;
+    width: 14.75rem;
+
+    @include tablet-up {
+      top: -19.25rem;
+      width: 32.75rem;
+    }
+
+    @include big-tablet {
+      left: -137px;
+    }
+
+    @include desktop-min {
+      margin-left: 0;
+      width: 37.75rem;
+    }
+
+    @include desktop-large {
+      width: 42.75rem;
+    }
+
+  }
+
+  .project__scrollDown {
+    top: 385px;
+
+    @include tablet-up {
+      top: 657px;
+    }
+
+    @include big-tablet {
+      top: 765px;
+    }
+  }
+}
