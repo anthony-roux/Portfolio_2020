@@ -21,6 +21,7 @@
   transition: all 400ms ease-in-out;
   user-select: none;
   z-index: 0;
+  outline: none;
 
   @include tablet-up {
     padding: 16px 16px;
