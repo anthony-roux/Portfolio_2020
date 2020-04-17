@@ -1,6 +1,38 @@
 .bg-hero {
+  position: relative;
   height: 100vh;
+  overflow: hidden;
   background: $backgroundGradient;
+  z-index: 1;
+}
+
+.hero__videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-width: 100%;
+  height: 100vh;
+  z-index: -100;
+}
+
+.videoBackground {
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -100;
+  filter: opacity(60%);
+}
+
+.video_overlay {
+  height: 100vh;
+  width: 100vw;
+  // background: $backgroundGradient;
+  background: red;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .hero {
@@ -83,10 +115,13 @@
     }
 
     @include tablet-up {
-      width: 420px;
+      margin-top: 12px;
+      width: 380px;
+
     }
 
     @include desktop-min {
+      margin-top: 0;
       padding-top: 75px;
     }
 
@@ -97,7 +132,7 @@
 
   &__introduction {
     @include tablet-up {
-      margin: 30px 0 0 0;
+      margin: 24px 0 0 0;
     }
 
     @include big-tablet {
@@ -117,7 +152,7 @@
 
       @include tablet-up {
         max-width: 400px;
-        font-size: rem(26px);
+        font-size: rem(24px);
       }
 
       @include big-tablet {
@@ -184,7 +219,7 @@
             margin-bottom: 24px;
 
             path {
-              fill: $darkBlue-opa_50;
+              fill: $darkBlue;
 
               &:hover {
                 transition: 250ms;
@@ -202,7 +237,7 @@
 
     .introduction__welcome {
       margin: 0 0 4px 0;
-      color: $darkBlue-opa_50;
+      color: $darkBlue;
       font-family: $montserrat;
       font-size: rem(12.5px);
       font-weight: 600;
@@ -214,14 +249,14 @@
 
       @include tablet-up {
         margin: 0 0 8px 0;
-        font-size: rem(21px);
+        font-size: rem(18px);
       }
     }
 
     .introduction__purpose {
       margin: 0 0 5px 0;
       max-width: 400px;
-      color: $darkBlue-opa_50;
+      color: $darkBlue;
       font-family: $montserrat;
       font-size: rem(11px);
       font-weight: 500;
@@ -233,7 +268,7 @@
       }
 
       @include tablet-up {
-        font-size: rem(18px);
+        font-size: rem(16px);
       }
 
       @include desktop-large {

@@ -337,20 +337,20 @@ header {
 
 .nav-on-scroll {
   background-color: white;
-  background-image: $backgroundGradient;
+  background-image: $backgroundGradientheader;
   transition: 0.5s;
 }
 
 .body_nova {
 
-  // .nav {
-  //   // background-color: white;
-  //   // background-image: $backgroundGradient;
-  // }
+  .nav {
+    background-color: white;
+    background-image: $backgroundGradientheader;
+  }
 
   .nav-on-scroll {
     background-color: white;
-    background-image: $backgroundGradient;
-    transition: 250ms;
+    background-image: $backgroundGradientheader;
+    transition: 0ms;
   }
 }
