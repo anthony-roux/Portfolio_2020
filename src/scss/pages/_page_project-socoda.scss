@@ -1,0 +1,94 @@
+.projectSocoda {
+  &__textualCard {
+    margin: -225px 0 16px;
+
+
+    @include tablet-up {
+      margin: -17.1875rem 0 1rem;
+    }
+
+    @include desktop-min {
+      position: relative;
+      left: 230px;
+      order: 0;
+      padding: 24px;
+      margin: 0;
+      min-width: 470px;
+      max-width: 500px;
+    }
+
+    @include desktop-large {
+      left: 200px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+  &__images {
+    position: relative;
+    top: -12px;
+    @include flexbox(column, center, center);
+
+    @include desktop-min {
+      position: relative;
+      left: 100px;
+      @include flexbox(row, center, center);
+    }
+  }
+
+  .iMac {
+    margin-left: 15.9375rem;
+    width: 29.75rem;
+    max-width: initial;
+
+    @include tablet-up {
+      position: relative;
+      top: 1.75rem;
+      margin-left: 25.9375rem;
+      width: 50.75rem;
+    }
+
+    @include desktop-min {
+      margin-left: 0;
+      width: 37.75rem;
+    }
+
+    @include desktop-large {
+      width: 42.75rem;
+    }
+  }
+
+  .iPhone {
+    position: relative;
+    top: -17.25rem;
+    left: -4.75rem;
+    width: 19.375rem;
+    max-width: initial;
+    z-index: 1;
+
+    @include tablet-up {
+      top: -21.85rem;
+      left: -10.75rem;
+      width: 26.375rem;
+    }
+
+    @include desktop-min {
+      top: 118px;
+      left: -15.25rem;
+      width: 21.375rem;
+    }
+
+    @include desktop-large {
+      width: 24.375rem;
+    }
+  }
+}
