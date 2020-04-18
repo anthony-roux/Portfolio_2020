@@ -6,27 +6,27 @@
 
   &__purpleLines {
     width: 2px;
-    height: 5550px;
+    height: 7200px;
     @include flexbox(row, center, center);
 
     @include iphone6-7-8_max {
-      height: 5850px;
+      height: 7200px;
     }
 
     @include tablet-up {
-      height: 7400px;
+      height: 9000px;
     }
 
     @include big-tablet {
-      height: 6500px;
+      height: 8500px;
     }
 
     @include desktop-min {
-      height: 6200px;
+      height: 8050px;
     }
 
     @include desktop-up {
-      height: 6300px;
+      height: 8050px;
     }
   }
 }
@@ -34,52 +34,53 @@
 .purpleLines__line1 {
   width: 1px;
   // height: 5990px;
-  height: 5550px;
+  height: 7200px;
   background: $BG_darkBlue-opa_003;
 
   @include iphone6-7-8_max {
-    height: 5850px;
+    height: 7200px;
   }
 
   @include tablet-up {
-    height: 7400px;
+    height: 9000px;
+
   }
 
   @include big-tablet {
-    height: 6500px;
+    height: 8500px;
   }
 
   @include desktop-min {
-    height: 6200px;
+    height: 8050px;
   }
 
   @include desktop-up {
-    height: 6300px;
+    height: 8050px;
   }
 }
 
 .purpleLines__line2 {
   width: 1px;
-  height: 5550px;
+  height: 7200px;
   background: $BG_darkBlue-opa_008;
 
   @include iphone6-7-8_max {
-    height: 5850px;
+    height: 7200px;
   }
 
   @include tablet-up {
-    height: 7400px;
+    height: 9000px;
   }
 
   @include big-tablet {
-    height: 6500px;
+    height: 8500px;
   }
 
   @include desktop-min {
-    height: 6200px;
+    height: 8050px;
   }
 
   @include desktop-up {
-    height: 6300px;
+    height: 8050px;
   }
 }
