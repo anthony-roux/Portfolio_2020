@@ -12,7 +12,7 @@
 
     @include desktop-min {
       position: relative;
-      left: 230px;
+      left: 155px;
       order: 0;
       padding: 24px;
       margin: 0;
@@ -25,7 +25,18 @@
     }
   }
 
+  &__images {
+    position: relative;
+    top: -12px;
+    @include flexbox(column, center, center);
 
+    @include desktop-min {
+      position: relative;
+      left: 50px;
+      top: 0;
+      @include flexbox(row, center, center);
+    }
+  }
 
   .iMac {
     margin-left: 15.9375rem;
@@ -44,12 +55,13 @@
     }
 
     @include desktop-min {
+      top: 1.15rem;
       margin-left: 0;
-      width: 37.75rem;
+      width: 44.75rem;
     }
 
     @include desktop-large {
-      width: 42.75rem;
+      width: 50.75rem;
     }
   }
 
@@ -69,12 +81,15 @@
     }
 
     @include desktop-min {
-      margin-left: 0;
-      width: 37.75rem;
+      top: 7.25rem;
+      left: -370px;
+      width: 24.75rem;
     }
 
     @include desktop-large {
-      width: 42.75rem;
+      width: 28.75rem;
+      top: 8rem;
+
     }
 
   }
