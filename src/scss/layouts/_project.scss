@@ -24,17 +24,23 @@
       left: 160px;
 
     }
+
+    &--bug {
+      top: -32px;
+    }
   }
 
   &__background-project {
-    top: -40px;
+    // top: -40px;
+    top: 0;
+
     font-size: rem(60px);
     @include background-project;
     @include animation-gradient-project;
 
 
     @include tablet-up {
-      top: -60px;
+      // top: -60px;
       max-width: max-content;
       font-size: rem(100px);
 
@@ -250,6 +256,16 @@
 
     &__ikea {
       background-image: url(/assets/img/project__ikea.png);
+      @include manage-img-project-mobile;
+    }
+
+    &__socoda {
+      background-image: url(/assets/img/project__socoda.png);
+      @include manage-img-project-mobile;
+    }
+
+    &__otaku {
+      background-image: url(/assets/img/project__otaku.png);
       @include manage-img-project-mobile;
     }
   }
