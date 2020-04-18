@@ -1,14 +1,17 @@
 .verticals {
   // margin: 0 auto;
+  position: absolute;
   max-width: 2560px;
-
+  z-index: -2;
+  @include flexbox(column, space-between, center);
 }
 
 .vertical__titles {
   display: none;
 
   @include desktop-up {
-    position: absolute;
+    position: relative;
+    margin: 0 0 150px 0;
     font-family: $righteous;
     font-size: rem(110px);
     text-transform: uppercase;
@@ -17,31 +20,89 @@
     @include animation-gradient-project;
 
     &--1 {
-      top: 930px;
-      left: 20%;
+      // top: 930px;
+      left: -50%;
+
+      // @include desktop-up {
+      //   left: 11%;
+      // }
     }
 
     &--2 {
-      top: 1780px;
-      left: 1080px;
+      // top: 1780px;
+      // left: 1080px;
+      right: -50%;
 
-      @include desktop-large {
-        left: 1250px;
-      }
+
+      // @include desktop-up {
+      //   left: 84%;
+      // }
+
+      // @include desktop-large {
+      //   left: 1250px;
+      // }
     }
 
     &--3 {
-      top: 2580px;
-      left: 200px
+      // top: 2580px;
+      // left: 200px;
+      left: -50%;
+
+
+      // @include desktop-up {
+      //   left: 11%;
+      // }
     }
 
     &--4 {
-      top: 3380px;
-      left: 1080px;
+      // top: 3380px;
+      // left: 1080px;
+      right: -50%;
+
+
+      // @include desktop-up {
+      //   left: 84%;
+      // }
+
+      // @include desktop-large {
+      //   top: 3480px;
+      //   left: 1250px;
+      // }
+    }
+
+    &--5 {
+      // top: 4426px;
+      // left: 200px;
+      left: -50%;
+
+
+      // @include desktop-up {
+      //   left: 11%;
+      // }
+    }
+
+
+    &--skills {
+      margin: 0;
+      font-size: rem(50px);
+
+    }
+
+    &--skillsNPM {
+      left: -50%;
+      margin-top: 1200px;
 
       @include desktop-large {
-        top: 3480px;
-        left: 1250px;
+        left: -60%;
+      }
+    }
+
+    &--skillsGP {
+      right: -50%;
+      margin-top: -800px;
+
+      @include desktop-large {
+        right: -60%;
       }
     }
   }
