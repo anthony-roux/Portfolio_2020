@@ -344,8 +344,32 @@ header {
 .project__body {
 
   header {
-    height: 9vh;
+    height: 61px;
     background-image: $backgroundGradientheader;
+
+    @include tablet-up {
+      height: 72px;
+
+
+    }
+
+    @include big-tablet {
+      height: 5vh;
+    }
+
+    @include desktop-min {
+      height: 9vh;
+      // max-height: 70px;
+
+    }
+
+    .nav {
+
+      @include desktop-min {
+        height: 9vh;
+      }
+    }
+
 
   }
 
@@ -354,9 +378,9 @@ header {
   //   background-image: $backgroundGradientheader;
   // }
 
-  // .nav-on-scroll {
-  //   background-color: white;
-  //   background-image: $backgroundGradientheader;
-  //   transition: 0ms;
-  // }
+  .nav-on-scroll {
+    // background-color: white;
+    // background-image: $backgroundGradientheader;
+    transition: 0ms;
+  }
 }

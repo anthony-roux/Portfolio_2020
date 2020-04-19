@@ -8,12 +8,15 @@
   background-attachment: fixed;
 
   @include tablet-up {
-    padding-top: 10vh;
-    margin-top: 0;
+    // padding-top: 10vh;
+    padding: 0 60px 50px;
+    margin-top: 72px;
   }
 
   @include big-tablet {
-    padding-top: 9vh;
+    // padding-top: 9vh;
+    padding: 0 60px 50px;
+    margin-top: 5vh;
   }
 
   @include desktop-min {
