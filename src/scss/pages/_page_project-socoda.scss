@@ -1,15 +1,18 @@
 .projectSocoda {
+
   &__textualCard {
-    margin: -225px 0 16px;
+    margin: -40px 0 16px;
+    max-width: 496px;
 
 
     @include tablet-up {
-      margin: -17.1875rem 0 1rem;
+      margin: -8.1875rem 0 1rem;
+
     }
 
     @include desktop-min {
       position: relative;
-      left: 230px;
+      left: 155px;
       order: 0;
       padding: 24px;
       margin: 0;
@@ -22,17 +25,6 @@
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
   &__images {
     position: relative;
     top: -12px;
@@ -40,7 +32,8 @@
 
     @include desktop-min {
       position: relative;
-      left: 100px;
+      left: 50px;
+      top: 0;
       @include flexbox(row, center, center);
     }
   }
@@ -57,38 +50,59 @@
       width: 50.75rem;
     }
 
+    @include big-tablet {
+      width: 60.75rem;
+    }
+
     @include desktop-min {
+      top: 1.15rem;
       margin-left: 0;
-      width: 37.75rem;
+      width: 44.75rem;
     }
 
     @include desktop-large {
-      width: 42.75rem;
+      width: 50.75rem;
     }
   }
 
-  .iPhone {
+  .macbook {
     position: relative;
-    top: -17.25rem;
-    left: -4.75rem;
-    width: 19.375rem;
-    max-width: initial;
-    z-index: 1;
+    top: -157px;
+    left: -11px;
+    width: 14.75rem;
 
     @include tablet-up {
-      top: -21.85rem;
-      left: -10.75rem;
-      width: 26.375rem;
+      top: -19.25rem;
+      width: 32.75rem;
+    }
+
+    @include big-tablet {
+      left: -137px;
     }
 
     @include desktop-min {
-      top: 118px;
-      left: -15.25rem;
-      width: 21.375rem;
+      top: 7.25rem;
+      left: -370px;
+      width: 24.75rem;
     }
 
     @include desktop-large {
-      width: 24.375rem;
+      width: 28.75rem;
+      top: 8rem;
+
+    }
+
+  }
+
+  .project__scrollDown {
+    top: 385px;
+
+    @include tablet-up {
+      top: 657px;
+    }
+
+    @include big-tablet {
+      top: 765px;
     }
   }
 }
