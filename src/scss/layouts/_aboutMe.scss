@@ -85,19 +85,19 @@
     width: 100%;
     height: auto;
     min-height: 300px;
-    max-height: 300px;
+    max-height: 530px;
     background-color: $darkBlue;
 
     @include tablet-up {
-      max-height: 380px;
+      max-height: 580px;
     }
 
     @include big-tablet {
-      max-height: 568px;
+      max-height: 700px;
     }
 
     @include desktop-min {
-      max-height: 568px;
+      max-height: 700px;
     }
   }
 
@@ -110,12 +110,12 @@
     }
 
     @include big-tablet {
-      top: 236px;
-      left: -280px;
+      top: 235px;
+      left: -300px;
     }
 
     @include desktop-min {
-      top: 221px;
+      top: 230px;
       left: -321px;
     }
 
@@ -171,7 +171,7 @@
   }
 
   &__text {
-    margin-top: -255px;
+    margin-top: -225px;
 
     @include tablet-up {
       margin-top: -290px;
@@ -180,17 +180,17 @@
     @include big-tablet {
       display: flex;
       flex-direction: column;
-      margin: -240px 0 0 455px;
-      max-width: 500px;
+      margin: -250px 0 0 360px;
+      max-width: 550px;
     }
 
     @include desktop-min {
-      margin: -215px 0 0 450px;
-      max-width: 500px;
+      margin: -210px 0 0 360px;
+      max-width: 550px;
     }
 
     @include desktop-up {
-      margin: -239px 0 0 450px;
+      // margin: -239px 0 0 450px;
       max-width: 650px;
     }
 
@@ -201,8 +201,8 @@
 
   &__subtitle {
     margin-bottom: 8px;
-    font-size: rem(13px);
-    font-weight: bold;
+    font-size: rem(11px);
+    font-weight: 700;
     text-transform: uppercase;
 
     @include tablet-up {
@@ -211,20 +211,29 @@
     }
 
     @include big-tablet {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     @include desktop-min {
-      font-size: 18px;
+      font-size: 16px;
     }
 
     @include desktop-up {
-      font-size: 21px;
+      font-size: 16px;
     }
   }
 
   &__description {
-    font-size: rem(12px);
+    font-size: rem(10px);
+    line-height: 1.4;
+
+    &--style {
+      margin: 5px 0;
+    }
+
+    strong {
+      font-weight: 600;
+    }
 
     @include iphone6-7-8_max {
       font-size: rem(13px);
@@ -232,22 +241,22 @@
 
     @include tablet-up {
       max-width: 600px;
-      font-size: rem(18px);
+      font-size: rem(14px);
     }
 
     @include big-tablet {
-      font-size: 16px;
-      line-height: 1.7;
+      font-size: 14px;
+      line-height: 1.6;
     }
 
-    @include desktop-min {
-      max-width: 600px;
-      font-size: 16px;
-      line-height: 1.7;
-    }
+    // @include desktop-min {
+    //   max-width: 600px;
+    //   font-size: 14px;
+    //   line-height: 1.6;
+    // }
 
     @include desktop-up {
-      font-size: 18px;
+      font-size: 15px;
     }
   }
 }
@@ -263,7 +272,7 @@
   border-radius: 96% 51% 44% 95%/90% 77% 80% 69%;
 
   @include iphone6-7-8_max {
-    top: 40px;
+    top: 20px;
     left: 42%;
   }
 
@@ -277,16 +286,17 @@
 
   @include big-tablet {
     top: 28px;
-    left: 26%;
+    left: 36%;
   }
 
   @include desktop-min {
     top: 30px;
-    left: 30%;
+    left: 36%;
   }
 
   @include desktop-large {
-    left: 38%;
+    top: 40px;
+    left: 42%;
   }
 
   &__contact {
@@ -325,7 +335,7 @@
       }
 
       &:after {
-        content: "\002794";
+        content: '\002794';
       }
     }
   }
@@ -340,7 +350,6 @@
       &:hover {
         @include scale-animation;
       }
-
     }
   }
 
