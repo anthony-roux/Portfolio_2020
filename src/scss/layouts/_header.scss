@@ -342,14 +342,21 @@ header {
 }
 
 .project__body {
-  .nav {
-    background-color: white;
+
+  header {
+    height: 9vh;
     background-image: $backgroundGradientheader;
+
   }
 
-  .nav-on-scroll {
-    background-color: white;
-    background-image: $backgroundGradientheader;
-    transition: 0ms;
-  }
+  // .nav {
+  //   background-color: white;
+  //   background-image: $backgroundGradientheader;
+  // }
+
+  // .nav-on-scroll {
+  //   background-color: white;
+  //   background-image: $backgroundGradientheader;
+  //   transition: 0ms;
+  // }
 }

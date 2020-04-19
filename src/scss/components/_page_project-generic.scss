@@ -17,8 +17,11 @@
   }
 
   @include desktop-min {
-    padding: 71px 60px 15px;
-    height: 100vh;
+    // padding: 71px 60px 15px;
+    padding: 0 60px 50px;
+    margin-top: 9vh;
+    height: 91vh;
+
   }
 
   .content-wrapper--adapt {

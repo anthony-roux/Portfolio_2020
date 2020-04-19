@@ -83,7 +83,7 @@
   }
 
   @include big-tablet {
-    margin-top: 0;
+    margin: 24px 0 32px;
   }
 
   @include desktop-min {
@@ -95,8 +95,7 @@
   }
 }
 
-.project__btnLink {
-}
+.project__btnLink {}
 
 .project__button {
   padding: 8px 10px 8px 4px;
