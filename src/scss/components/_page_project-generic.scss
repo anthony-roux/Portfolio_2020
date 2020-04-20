@@ -92,7 +92,7 @@
       }
 
       @include desktop-min {
-        padding: 24px;
+        padding: 24px 24px 12px 24px;
       }
     }
 
@@ -141,7 +141,7 @@
       margin: 16px auto 0;
 
       @include desktop-min {
-        margin: 24px auto 0;
+        margin: 16px auto 0;
       }
 
       .btn {
