@@ -2,37 +2,55 @@
   position: relative;
   height: 100vh;
   overflow: hidden;
-  background: $backgroundGradient;
+  background: $backgroundGradientheader;
   z-index: 1;
+
+  @include desktop-min {
+    background: $backgroundGradient;
+  }
 }
 
 .hero__videoContainer {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  min-width: 100%;
-  height: 100vh;
-  z-index: -100;
-}
+  display: none;
 
-.videoBackground {
-  min-width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  object-position: center;
-  z-index: -100;
-  filter: opacity(60%);
-}
+  .videoBackground {
+    display: none;
+  }
 
-.video_overlay {
-  height: 100vh;
-  width: 100vw;
-  // background: $backgroundGradient;
-  background: red;
-  overflow: hidden;
-  position: relative;
-  z-index: 1;
+  .video_overlay {
+    display: none;
+  }
+
+  @include desktop-min {
+    .hero__videoContainer {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-width: 100%;
+      height: 100vh;
+      z-index: -100;
+    }
+
+    .videoBackground {
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      object-position: center;
+      z-index: -100;
+      filter: opacity(60%);
+    }
+
+    .video_overlay {
+      height: 100vh;
+      width: 100vw;
+      // background: $backgroundGradient;
+      background: red;
+      overflow: hidden;
+      position: relative;
+      z-index: 1;
+    }
+  }
 }
 
 .hero {
