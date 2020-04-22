@@ -38,14 +38,14 @@ $gradient1: -webkit-linear-gradient(0.42deg,
   #00b7d4 145.11%);
 
 $backgroundGradient: linear-gradient(103.23deg,
-  rgb(182, 251, 255) -25.45%,
-  rgb(0, 184, 212) 20.51%,
+  rgba(182, 251, 255, 0.81) -25.45%,
+  rgba(0, 184, 212, 0.81) 20.51%,
   rgb(5, 2, 79) 100%);
 
 $backgroundGradientheader: linear-gradient(103.23deg,
-  rgba(182, 251, 255, 0.132) -25.45%,
-  rgba(0, 184, 212, 0.248) 20.51%,
-  rgba(5, 2, 79, 0.269) 100%);
+  rgba(182, 251, 255, 0.207) -25.45%,
+  rgba(0, 184, 212, 0.372) 20.51%,
+  rgba(5, 2, 79, 0.467) 100%);
 
 $iconGradient: linear-gradient(181.28deg,
   #161569 -176.37%,
