@@ -10,6 +10,10 @@
     height: 500px;
   }
 
+  @include desktop-Xlarge {
+    margin-top: 420px;
+  }
+
   &__waves {
     position: relative;
     bottom: -4px;
@@ -33,6 +37,8 @@
     @include desktop-min {
       top: -9.5rem;
     }
+
+    @include desktop-Xlarge {}
   }
 
   &__svgWave--darkBlue {
@@ -66,7 +72,7 @@
     }
 
     @include desktop-large {
-      top: -12.6rem;
+      top: -15rem;
       ;
     }
   }
@@ -127,7 +133,7 @@
     }
 
     @include desktop-Xlarge {
-      margin-top: -14.3rem;
+      margin-top: -17.3rem;
 
     }
   }
