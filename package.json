@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/anthony-roux/Portfolio_2020#readme",
   "devDependencies": {
-    "core-js-compat": "^3.4.7",
+    "core-js-compat": "^3.6.5",
     "parcel-bundler": "^1.12.4",
     "postcss-pxtorem": "^5.1.1",
     "prettier": "1.18.2",
