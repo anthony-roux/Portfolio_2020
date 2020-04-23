@@ -2,18 +2,20 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: $darkBlue;
+  width: 100vw;
+  height: 100vh;
+  background-color: $whiteKc;
   z-index: 999;
 }
 
-.container {
+.loader {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -64.5px;
-  margin-top: -85.5px;
+  width: 200px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  @include flexbox(column, center, flex-start);
 }
 
 .ghost {
@@ -27,14 +29,18 @@
 }
 
 .shadowFrame {
-  width: 130px;
+  position: absolute;
+  top: 130%;
+  left: 50%;
   margin: 15px;
+  width: 130px;
+  transform: translate(-60%, -60%);
 }
 
 .shadow {
   fill-opacity: 0.2;
-  animation: shrink 3s ease-out infinite;
   transform-origin: center center;
+  animation: shrink 3s ease-out infinite;
 
   ellipse {
     transform-origin: center center;
@@ -43,17 +49,44 @@
 
 @keyframes shrink {
   0% {
-    width: 60%;
     margin: 0 18%;
+    width: 60%;
   }
 
   50% {
-    width: 90%;
     margin: 0 5%;
+    width: 90%;
   }
 
   100% {
-    width: 60%;
     margin: 0 18%;
+    width: 60%;
+  }
+}
+
+.loader__text {
+  position: relative;
+  top: 120px;
+  margin-left: 16px;
+  color: $darkBlue;
+  font-family: $righteous;
+  font-size: 24px;
+}
+
+
+.dots:after {
+  display: inline-block;
+  width: 0px;
+  overflow: hidden;
+  vertical-align: bottom;
+  -webkit-animation: dot steps(4, end) 1000ms infinite;
+  animation: dot steps(4, end) 1000ms infinite;
+  content: "\2026";
+}
+
+
+@keyframes dot {
+  to {
+    width: 1.5rem;
   }
 }
