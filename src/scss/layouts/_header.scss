@@ -337,7 +337,7 @@ header {
 
 .nav-on-scroll {
   background-color: white;
-  background-image: $backgroundGradientheader;
+  background-image: $backgroundGradient;
   transition: 0.5s;
 }
 
@@ -345,7 +345,7 @@ header {
 
   header {
     height: 61px;
-    background-image: $backgroundGradientheader;
+    background-image: $backgroundGradient;
 
     @include tablet-up {
       height: 72px;
