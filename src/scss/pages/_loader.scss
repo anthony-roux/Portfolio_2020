@@ -90,3 +90,15 @@
     width: 1.5rem;
   }
 }
+
+
+.hidden-loader {
+  animation: disparition 1s forwards;
+}
+
+@keyframes disparition {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
