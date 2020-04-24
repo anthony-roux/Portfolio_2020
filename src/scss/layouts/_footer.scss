@@ -20,26 +20,26 @@
     left: -1px;
   }
 
-  &__svgWave--gradient {
-    position: relative;
-    top: -11.5rem;
-    width: 100%;
-    z-index: -2;
+  // &__svgWave--gradient {
+  //   position: relative;
+  //   top: -11.5rem;
+  //   width: 100%;
+  //   z-index: -2;
 
-    @include iphone6-7-8_max {
-      top: -14.5rem;
-    }
+  //   @include iphone6-7-8_max {
+  //     top: -14.5rem;
+  //   }
 
-    @include tablet-up {
-      top: -26.5rem;
-    }
+  //   @include tablet-up {
+  //     top: -26.5rem;
+  //   }
 
-    @include desktop-min {
-      top: -9.5rem;
-    }
+  //   @include desktop-min {
+  //     top: -9.5rem;
+  //   }
 
-    @include desktop-Xlarge {}
-  }
+  //   @include desktop-Xlarge {}
+  // }
 
   &__svgWave--darkBlue {
     position: relative;
@@ -68,35 +68,38 @@
 
     @include desktop-up {
       top: -11.1rem;
-      ;
     }
 
     @include desktop-large {
+      top: -12rem;
+
+    }
+
+    @include desktop-Xlarge {
       top: -15rem;
-      ;
     }
   }
 
-  &__svgWave--lagoon {
-    position: relative;
-    top: -6.5rem;
-    width: 100%;
-    z-index: -1;
+  // &__svgWave--lagoon {
+  //   position: relative;
+  //   top: -6.5rem;
+  //   width: 100%;
+  //   z-index: -1;
 
-    @include iphone6-7-8_max {
-      top: -8.5rem;
-    }
+  //   @include iphone6-7-8_max {
+  //     top: -8.5rem;
+  //   }
 
-    @include tablet-up {
-      top: -15.5rem;
-    }
+  //   @include tablet-up {
+  //     top: -15.5rem;
+  //   }
 
-    @include desktop-min {
-      top: -9.5rem;
-    }
+  //   @include desktop-min {
+  //     top: -9.5rem;
+  //   }
 
 
-  }
+  // }
 
 
 
