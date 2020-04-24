@@ -190,7 +190,6 @@
     }
 
     @include desktop-up {
-      // margin: -239px 0 0 450px;
       max-width: 650px;
     }
 
@@ -250,12 +249,6 @@
       line-height: 1.6;
     }
 
-    // @include desktop-min {
-    //   max-width: 600px;
-    //   font-size: 14px;
-    //   line-height: 1.6;
-    // }
-
     @include desktop-up {
       font-size: 15px;
     }
@@ -313,11 +306,6 @@
       display: flex;
       color: $whiteKc;
       cursor: pointer;
-
-      // @include tablet-up {
-      //   // width: 25px;
-      //   // height: 25px;
-      // }
     }
 
     p {

@@ -31,7 +31,6 @@
   }
 
   &__background-project {
-    // top: -40px;
     top: 0;
 
     font-size: rem(60px);
@@ -71,9 +70,6 @@
 
 .project__card {
   margin-bottom: 117px;
-  // position: static;
-  // z-index: -1;
-
 
   @include big-tablet {
     margin-bottom: 170px;

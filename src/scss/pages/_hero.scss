@@ -4,55 +4,7 @@
   overflow: hidden;
   background: $backgroundGradient;
   z-index: 1;
-
-  // @include desktop-min {
-  //   background: $backgroundGradient;
-  // }
 }
-
-// .hero__videoContainer {
-//   // display: none;
-
-//   .videoBackground {
-//     // display: none;
-//   }
-
-//   .video_overlay {
-//     // display: none;
-//   }
-
-
-// .hero__videoContainer {
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   // display: block;
-//   width: 100%;
-//   min-width: 100%;
-//   height: 100vh;
-//   z-index: -100;
-// }
-
-// .videoBackground {
-//   // display: block;
-//   min-width: 100%;
-//   min-height: 100%;
-//   object-fit: cover;
-//   object-position: center;
-//   z-index: -100;
-//   filter: opacity(60%);
-// }
-
-// .video_overlay {
-//   // display: block;
-//   height: 100vh;
-//   width: 100vw;
-//   // background: $backgroundGradient;
-//   overflow: hidden;
-//   position: relative;
-//   z-index: 1;
-// }
-
 
 .hero {
   height: inherit;
@@ -123,8 +75,6 @@
       height: 570px;
     }
   }
-
-  // &__text {}
 
   &__name {
     width: 220px;
@@ -208,7 +158,6 @@
 
       @include tablet-up {
         @include flexbox(row, space-between, end);
-        // margin-top: 50px;
 
         div {
           //bloc de texts a gauche de __network
@@ -231,8 +180,6 @@
 
         .introduction__social-icons {
           @include flexbox(column, center, center);
-          // position: relative;
-          // z-index: 1;
 
           a {
             margin-bottom: 24px;

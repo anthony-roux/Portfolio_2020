@@ -72,13 +72,7 @@
   &__namedColumn {
     @include flexbox(column, center, center);
     @include scale-animation;
-
-
-    // &:hover {
-    // }
   }
-
-  // &__iconAndh2 {}
 
   &__icons {
     position: relative;
@@ -125,23 +119,9 @@
     @include shadow-animation;
   }
 
-  // &__dev {}
-
   &__category {
     margin: 24px 0;
   }
-
-  // &__langage {}
-
-  // &__tools {}
-
-  // &__practices {}
-
-  // &__metodology {}
-
-  // &__designTools {}
-
-  // &__marketing {}
 
   &__subtitle {
     margin-bottom: 16px;
@@ -159,8 +139,6 @@
       -webkit-text-stroke: 2px linear-gradient(0.42deg, #161569 -230.79%, #2f3f80 -104.45%, #505488 14.14%, #00b7d4 145.11%);
     }
   }
-
-  // &__values {}
 
   &__value {
     margin-bottom: 8px;

@@ -20,27 +20,6 @@
     left: -1px;
   }
 
-  // &__svgWave--gradient {
-  //   position: relative;
-  //   top: -11.5rem;
-  //   width: 100%;
-  //   z-index: -2;
-
-  //   @include iphone6-7-8_max {
-  //     top: -14.5rem;
-  //   }
-
-  //   @include tablet-up {
-  //     top: -26.5rem;
-  //   }
-
-  //   @include desktop-min {
-  //     top: -9.5rem;
-  //   }
-
-  //   @include desktop-Xlarge {}
-  // }
-
   &__svgWave--darkBlue {
     position: relative;
     top: -2.98rem;
@@ -53,9 +32,7 @@
     }
 
     @include tablet-up {
-      // top: -6.59rem;
       top: -7.1rem;
-
     }
 
     @include big-tablet {
@@ -72,7 +49,6 @@
 
     @include desktop-large {
       top: -12rem;
-
     }
 
     @include desktop-Xlarge {
@@ -87,31 +63,6 @@
       top: -21rem;
     }
   }
-
-  // &__svgWave--lagoon {
-  //   position: relative;
-  //   top: -6.5rem;
-  //   width: 100%;
-  //   z-index: -1;
-
-  //   @include iphone6-7-8_max {
-  //     top: -8.5rem;
-  //   }
-
-  //   @include tablet-up {
-  //     top: -15.5rem;
-  //   }
-
-  //   @include desktop-min {
-  //     top: -9.5rem;
-  //   }
-
-
-  // }
-
-
-
-
 
   &__contents {
     @include flexbox(column, space-between, inherit);
