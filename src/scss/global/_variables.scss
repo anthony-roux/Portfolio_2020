@@ -90,6 +90,8 @@ $desktop-down: 1199px;
 $desktop-up: 1200px;
 $desktop-large: 1366px;
 $desktop-Xlarge: 1768px;
+$desktop-xxLarge: 2078px;
+$desktop-megaLarge_2368: 2368px;
 
 
 
@@ -154,6 +156,18 @@ $desktop-Xlarge: 1768px;
 
 @mixin desktop-Xlarge {
   @media (min-width: $desktop-Xlarge) {
+    @content;
+  }
+}
+
+@mixin desktop-xxLarge {
+  @media (min-width: $desktop-xxLarge) {
+    @content;
+  }
+}
+
+@mixin desktop-megaLarge_2368 {
+  @media (min-width: $desktop-megaLarge_2368) {
     @content;
   }
 }
