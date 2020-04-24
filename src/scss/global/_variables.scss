@@ -282,18 +282,6 @@ $desktop-Xlarge: 1768px;
   -webkit-background-clip: text;
 }
 
-// @mixin scale-animation {
-//   transition: 1s;
-//   -webkit-animation: scale-card 250ms ease both;
-//   animation: scale-card 250ms ease both;
-
-//   @keyframes scale-card {
-//     100% {
-//       -webkit-transform: scale(1.1);
-//       transform: scale(1.1);
-//     }
-//   }
-// }
 @mixin scale-animation {
   transition: all 0.2s ease-in;
 
