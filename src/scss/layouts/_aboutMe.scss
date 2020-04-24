@@ -311,14 +311,13 @@
 
     a {
       display: flex;
-      width: 15px;
-      height: 15px;
+      color: $whiteKc;
       cursor: pointer;
 
-      @include tablet-up {
-        width: 25px;
-        height: 25px;
-      }
+      // @include tablet-up {
+      //   // width: 25px;
+      //   // height: 25px;
+      // }
     }
 
     p {
@@ -349,7 +348,7 @@
       margin: 12px 0;
 
       &:hover {
-        @include scale-animation;
+        @include scale-animation-light;
       }
     }
   }
@@ -363,7 +362,7 @@
       margin-bottom: 12px;
 
       &:hover {
-        @include scale-animation;
+        @include scale-animation-light;
       }
     }
   }
