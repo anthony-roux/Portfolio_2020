@@ -94,11 +94,12 @@
 
 .hidden-loader {
   animation: disparition 1s forwards;
+
 }
 
 @keyframes disparition {
   100% {
+    visibility: hidden;
     opacity: 0;
-    display: none;
   }
 }

@@ -1,4 +1,8 @@
 import {
+  loader
+} from '/js/scripts/loader.js';
+
+import {
   menu_burger
 } from '/js/scripts/menu_burger.js';
 
@@ -9,7 +13,3 @@ import {
 import {
   open_menu
 } from '/js/scripts/open_menu.js';
-
-import {
-  loader
-} from '/js/scripts/loader.js';
