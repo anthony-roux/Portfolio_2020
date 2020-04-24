@@ -19,67 +19,56 @@
     @include vertical-text;
     @include animation-gradient-project;
 
-    &--1 {
-      // top: 930px;
-      left: -50%;
-
-      // @include desktop-up {
-      //   left: 11%;
-      // }
-    }
-
-    &--2 {
-      // top: 1780px;
-      // left: 1080px;
-      right: -48%;
-
-
-      // @include desktop-up {
-      //   left: 84%;
-      // }
-
-      // @include desktop-large {
-      //   left: 1250px;
-      // }
-    }
-
-    &--3 {
-      // top: 2580px;
-      // left: 200px;
-      left: -50%;
-
-
-      // @include desktop-up {
-      //   left: 11%;
-      // }
-    }
-
-    &--4 {
-      // top: 3380px;
-      // left: 1080px;
-      right: -48%;
-
-
-      // @include desktop-up {
-      //   left: 84%;
-      // }
-
-      // @include desktop-large {
-      //   top: 3480px;
-      //   left: 1250px;
-      // }
-    }
-
+    &--1,
+    &--3,
     &--5 {
-      // top: 4426px;
-      // left: 200px;
       left: -50%;
 
+      @include desktop-large {
+        left: -58%;
+      }
 
-      // @include desktop-up {
-      //   left: 11%;
-      // }
+      @include desktop-Xlarge {
+        left: -68%;
+      }
     }
+
+    &--2,
+    &--4 {
+      right: -48%;
+
+      @include desktop-large {
+        right: -58%;
+      }
+
+      @include desktop-Xlarge {
+        right: -68%;
+      }
+    }
+
+    // &--3 {
+    //   left: -50%;
+
+    //   @include desktop-large {
+    //     left: -58%;
+    //   }
+    // }
+
+    // &--4 {
+    //   right: -48%;
+
+    //   @include desktop-large {
+    //     right: -58%;
+    //   }
+    // }
+
+    // &--5 {
+    //   left: -50%;
+
+    //   @include desktop-large {
+    //     left: -58%;
+    //   }
+    // }
 
 
     &--skills {
@@ -95,6 +84,14 @@
       @include desktop-large {
         left: -58%;
       }
+
+      @include desktop-Xlarge {
+        left: -68%;
+      }
+
+      @include desktop-xxLarge {
+        left: -78%;
+      }
     }
 
     &--skillsGP {
@@ -103,6 +100,14 @@
 
       @include desktop-large {
         right: -58%;
+      }
+
+      @include desktop-Xlarge {
+        right: -68%;
+      }
+
+      @include desktop-xxLarge {
+        right: -78%;
       }
     }
   }
