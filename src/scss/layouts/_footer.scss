@@ -78,6 +78,14 @@
     @include desktop-Xlarge {
       top: -15rem;
     }
+
+    @include desktop-xxLarge {
+      top: -18rem;
+    }
+
+    @include desktop-megaLarge_2368 {
+      top: -21rem;
+    }
   }
 
   // &__svgWave--lagoon {
@@ -136,8 +144,15 @@
     }
 
     @include desktop-Xlarge {
-      margin-top: -17.3rem;
+      margin-top: -18.3rem;
+    }
 
+    @include desktop-xxLarge {
+      margin-top: -20.5rem;
+    }
+
+    @include desktop-megaLarge_2368 {
+      margin-top: -26rem;
     }
   }
 
