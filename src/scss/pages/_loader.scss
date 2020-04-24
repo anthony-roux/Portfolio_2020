@@ -19,6 +19,10 @@
 }
 
 .ghost {
+  -webkit-animation: float 3s ease-out infinite;
+  -moz-animation: float 3s ease-out infinite;
+  -ms-animation: float 3s ease-out infinite;
+  -o-animation: float 3s ease-out infinite;
   animation: float 3s ease-out infinite;
 }
 
@@ -40,14 +44,18 @@
 .shadow {
   fill-opacity: 0.2;
   transform-origin: center center;
-  animation: shrink 3s ease-out infinite;
+  -webkit-animation: shadow 3s ease-out infinite;
+  -moz-animation: shadow 3s ease-out infinite;
+  -o-animation: shadow 3s ease-out infinite;
+  -ms-animation: shadow 3s ease-out infinite;
+  animation: shadow 3s ease-out infinite;
 
   ellipse {
     transform-origin: center center;
   }
 }
 
-@keyframes shrink {
+@keyframes shadow {
   0% {
     margin: 0 18%;
     width: 60%;
@@ -80,6 +88,9 @@
   overflow: hidden;
   vertical-align: bottom;
   -webkit-animation: dot steps(4, end) 1000ms infinite;
+  -moz-animation: dot steps(4, end) 1000ms infinite;
+  -o-animation: dot steps(4, end) 1000ms infinite;
+  -ms-animation: dot steps(4, end) 1000ms infinite;
   animation: dot steps(4, end) 1000ms infinite;
   content: "\2026";
 }
@@ -93,6 +104,10 @@
 
 
 .hidden-loader {
+  -moz-animation: disparition 1s forwards;
+  -webkit-animation: disparition 1s forwards;
+  -o-animation: disparition 1s forwards;
+  -ms-animation: disparition 1s forwards;
   animation: disparition 1s forwards;
 
 }
