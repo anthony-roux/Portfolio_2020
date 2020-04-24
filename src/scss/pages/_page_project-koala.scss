@@ -32,8 +32,8 @@
 
     @include desktop-min {
       position: relative;
-      left: 50px;
       top: 0;
+      left: 50px;
       @include flexbox(row, center, center);
     }
   }
@@ -87,8 +87,8 @@
     }
 
     @include desktop-large {
-      width: 28.75rem;
       top: 8rem;
+      width: 28.75rem;
 
     }
 
