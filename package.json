@@ -30,8 +30,10 @@
     "stylelint-order": "3.0.0"
   },
   "dependencies": {
+    "js": "^0.1.0",
     "node-gyp": "^6.1.0",
     "pug-cli": "^1.0.0-alpha6",
-    "rebuild": "^0.1.2"
+    "rebuild": "^0.1.2",
+    "scrollmagic": "^2.0.7"
   }
 }
