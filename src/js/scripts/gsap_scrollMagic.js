@@ -27,7 +27,7 @@ const tween_text_hero = TweenMax.staggerFromTo(
 
 const tween_themeOtaku = TweenMax.staggerFromTo(
   '.tween_themeOtaku',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -43,7 +43,7 @@ const tween_themeOtaku = TweenMax.staggerFromTo(
 
 const tween_themeSocoda = TweenMax.staggerFromTo(
   '.tween_themeSocoda',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -59,7 +59,7 @@ const tween_themeSocoda = TweenMax.staggerFromTo(
 
 const tween_themeNova = TweenMax.staggerFromTo(
   '.tween_themeNova',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -75,7 +75,7 @@ const tween_themeNova = TweenMax.staggerFromTo(
 
 const tween_themeKoala = TweenMax.staggerFromTo(
   '.tween_themeKoala',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -90,7 +90,7 @@ const tween_themeKoala = TweenMax.staggerFromTo(
 );
 const tween_themeNespresso = TweenMax.staggerFromTo(
   '.tween_themeNespresso',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -106,7 +106,7 @@ const tween_themeNespresso = TweenMax.staggerFromTo(
 
 const tween_themeIkea = TweenMax.staggerFromTo(
   '.tween_themeIkea',
-  0.75,
+  1.25,
   {
     opacity: 0,
     x: -300,
@@ -138,7 +138,7 @@ const tween_text_aboutMe = TweenMax.staggerFromTo(
 
 const tween_text_skills = TweenMax.staggerFromTo(
   '.tween_text_skills',
-  0.75,
+  0.3,
   {
     opacity: 0,
     y: -30,
@@ -184,7 +184,7 @@ const scene_themeOtaku = new ScrollMagic.Scene({
 
 const scene_themeSocoda = new ScrollMagic.Scene({
   triggerElement: '#animate25',
-  offset: -200
+  offset: -350
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -198,7 +198,7 @@ const scene_themeSocoda = new ScrollMagic.Scene({
 
 const scene_themeNova = new ScrollMagic.Scene({
   triggerElement: '#animate24',
-  offset: -200
+  offset: -350
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -212,7 +212,7 @@ const scene_themeNova = new ScrollMagic.Scene({
 
 const scene_themeKoala = new ScrollMagic.Scene({
   triggerElement: '#animate23',
-  offset: -200
+  offset: -350
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -226,7 +226,7 @@ const scene_themeKoala = new ScrollMagic.Scene({
 
 const scene_themeNespresso = new ScrollMagic.Scene({
   triggerElement: '#animate22',
-  offset: -200
+  offset: -350
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -240,7 +240,7 @@ const scene_themeNespresso = new ScrollMagic.Scene({
 
 const scene_themeIkea = new ScrollMagic.Scene({
   triggerElement: '#animate21',
-  offset: -300
+  offset: -400
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -254,7 +254,7 @@ const scene_themeIkea = new ScrollMagic.Scene({
 
 const scene_aboutMe = new ScrollMagic.Scene({
   triggerElement: '#animate3',
-  offset: -100
+  offset: -150
 })
   .triggerHook(0.4)
   // .addIndicators({
@@ -268,7 +268,7 @@ const scene_aboutMe = new ScrollMagic.Scene({
 
 const scene_skills = new ScrollMagic.Scene({
   triggerElement: '#animate4',
-  offset: -250
+  offset: -350
 })
   .triggerHook(0.4)
   // .addIndicators({
