@@ -170,7 +170,7 @@ const scene_vectorMe = new ScrollMagic.Scene({
 
 const scene_themeOtaku = new ScrollMagic.Scene({
   triggerElement: '#animate26',
-  offset: 500
+  offset: 350
 })
   .triggerHook(0.4)
   // .addIndicators({
