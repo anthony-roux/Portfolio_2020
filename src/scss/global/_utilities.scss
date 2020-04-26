@@ -7,6 +7,10 @@
 
 // appliquer la propriété de cette façon : font-size: rem(14px);
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
 }
