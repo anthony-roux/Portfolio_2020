@@ -18,3 +18,16 @@ html {
 img {
   max-width: 100%;
 }
+
+p,
+strong,
+a,
+h1,
+h2,
+h3 {
+  &::selection {
+    color: white;
+    background: #00b7d4;
+    -webkit-text-stroke-color: white;
+  }
+}
