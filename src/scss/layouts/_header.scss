@@ -199,7 +199,8 @@ header {
       @include flexbox(column, center, center);
 
       &:hover {
-        font-weight: bolder;
+        color: $blueLagoon;
+        transition: 500ms;
       }
 
       @supports (backdrop-filter: blur(10px)) {
@@ -217,10 +218,11 @@ header {
       p {
         color: $blueLagoon;
         -webkit-text-stroke: 1.5px #f6fcfc;
-        font-weight: 900;
+        font-weight: 600;
 
         &:hover {
-          font-weight: bolder;
+          color: $darkBlue;
+          transition: 500ms;
         }
 
         @supports (backdrop-filter: blur(10px)) {
