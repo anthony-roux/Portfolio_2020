@@ -3,7 +3,7 @@
 const controller = new ScrollMagic.Controller();
 
 //tweens
-const tween_vectorMe = TweenMax.from('#vectorMe', 1, {
+const tween_vectorMe = TweenMax.from('#vectorMe', 1.25, {
   scale: 0.9,
   duration: '80%',
   ease: Power4.easeInOut
@@ -11,13 +11,11 @@ const tween_vectorMe = TweenMax.from('#vectorMe', 1, {
 
 const tween_text_hero = TweenMax.staggerFromTo(
   '.tween_text',
-  0.75,
-  {
+  1.25, {
     opacity: 0,
     y: -100,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     y: 0,
     ease: Power4.easeInOut
@@ -27,13 +25,11 @@ const tween_text_hero = TweenMax.staggerFromTo(
 
 const tween_themeOtaku = TweenMax.staggerFromTo(
   '.tween_themeOtaku',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -43,13 +39,11 @@ const tween_themeOtaku = TweenMax.staggerFromTo(
 
 const tween_themeSocoda = TweenMax.staggerFromTo(
   '.tween_themeSocoda',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -59,13 +53,11 @@ const tween_themeSocoda = TweenMax.staggerFromTo(
 
 const tween_themeNova = TweenMax.staggerFromTo(
   '.tween_themeNova',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -75,13 +67,11 @@ const tween_themeNova = TweenMax.staggerFromTo(
 
 const tween_themeKoala = TweenMax.staggerFromTo(
   '.tween_themeKoala',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -90,13 +80,11 @@ const tween_themeKoala = TweenMax.staggerFromTo(
 );
 const tween_themeNespresso = TweenMax.staggerFromTo(
   '.tween_themeNespresso',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -106,13 +94,11 @@ const tween_themeNespresso = TweenMax.staggerFromTo(
 
 const tween_themeIkea = TweenMax.staggerFromTo(
   '.tween_themeIkea',
-  1.25,
-  {
+  1.25, {
     opacity: 0,
     x: -300,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     x: 0,
     ease: Power4.easeInOut
@@ -122,13 +108,11 @@ const tween_themeIkea = TweenMax.staggerFromTo(
 
 const tween_text_aboutMe = TweenMax.staggerFromTo(
   '.tween_text_aboutMe',
-  0.75,
-  {
+  0.75, {
     opacity: 0,
     y: -100,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     y: 0,
     ease: Power4.easeInOut
@@ -138,13 +122,11 @@ const tween_text_aboutMe = TweenMax.staggerFromTo(
 
 const tween_text_skills = TweenMax.staggerFromTo(
   '.tween_text_skills',
-  0.3,
-  {
+  0.3, {
     opacity: 0,
     y: -30,
     ease: Power4.easeInOut
-  },
-  {
+  }, {
     opacity: 1,
     y: 0,
     ease: Power4.easeInOut
@@ -155,8 +137,8 @@ const tween_text_skills = TweenMax.staggerFromTo(
 //scenes
 
 const scene_vectorMe = new ScrollMagic.Scene({
-  triggerElement: '#animate1'
-})
+    triggerElement: '#animate1'
+  })
   .triggerHook(0.9)
   // .addIndicators({
   //   name: "vectorMe",
@@ -169,9 +151,9 @@ const scene_vectorMe = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeOtaku = new ScrollMagic.Scene({
-  triggerElement: '#animate26',
-  offset: 350
-})
+    triggerElement: 'animate26',
+    offset: 350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_otaku',
@@ -183,9 +165,9 @@ const scene_themeOtaku = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeSocoda = new ScrollMagic.Scene({
-  triggerElement: '#animate25',
-  offset: -350
-})
+    triggerElement: '#animate25',
+    offset: -350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_socoda',
@@ -197,9 +179,9 @@ const scene_themeSocoda = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeNova = new ScrollMagic.Scene({
-  triggerElement: '#animate24',
-  offset: -350
-})
+    triggerElement: '#animate24',
+    offset: -350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_Nova',
@@ -211,9 +193,9 @@ const scene_themeNova = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeKoala = new ScrollMagic.Scene({
-  triggerElement: '#animate23',
-  offset: -350
-})
+    triggerElement: '#animate23',
+    offset: -350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_Koala',
@@ -225,9 +207,9 @@ const scene_themeKoala = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeNespresso = new ScrollMagic.Scene({
-  triggerElement: '#animate22',
-  offset: -350
-})
+    triggerElement: '#animate22',
+    offset: -350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_Nespresso',
@@ -239,9 +221,9 @@ const scene_themeNespresso = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_themeIkea = new ScrollMagic.Scene({
-  triggerElement: '#animate21',
-  offset: -400
-})
+    triggerElement: '#animate21',
+    offset: -400
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'Theme_Ikea',
@@ -253,9 +235,9 @@ const scene_themeIkea = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_aboutMe = new ScrollMagic.Scene({
-  triggerElement: '#animate3',
-  offset: -150
-})
+    triggerElement: '#animate3',
+    offset: -150
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: "AboutMe_txt",
@@ -267,9 +249,9 @@ const scene_aboutMe = new ScrollMagic.Scene({
   .addTo(controller);
 
 const scene_skills = new ScrollMagic.Scene({
-  triggerElement: '#animate4',
-  offset: -350
-})
+    triggerElement: '#animate4',
+    offset: -350
+  })
   .triggerHook(0.4)
   // .addIndicators({
   //   name: 'AboutMe_txt',
