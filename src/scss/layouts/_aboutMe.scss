@@ -11,7 +11,7 @@
 
   @include desktop-min {
     margin-top: -350px;
-    margin-bottom: 400px;
+    margin-bottom: 300px;
   }
 
   &__title {
@@ -211,6 +211,7 @@
 
     @include big-tablet {
       font-size: 16px;
+      max-width: 550px;
     }
 
     @include desktop-min {
@@ -219,6 +220,8 @@
 
     @include desktop-up {
       font-size: 16px;
+      max-width: 650px;
+
     }
   }
 
