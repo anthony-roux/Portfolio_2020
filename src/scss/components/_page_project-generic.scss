@@ -58,15 +58,11 @@
     order: 1;
     padding: 8px;
     width: 107vw;
-    max-width: 496px;
     background-color: $white;
     border-radius: 8px;
     z-index: 2;
     @include shadow-card;
 
-    @include tablet-up {
-      max-width: none;
-    }
 
     @include desktop-min {
       order: 0;
@@ -106,13 +102,18 @@
     @include desktop-min {
       font-size: rem(28px);
     }
+
+    &::after {
+      content: '';
+      background-image: url(/assets/icons/github.svg);
+    }
   }
 
   &__paragraph {
-    margin: 8px 0 8px 0;
+    margin: 6px 0 6px 0;
 
     @include tablet-up {
-      margin: 12px 0 12px 0;
+      // margin: 10px 0 10px 0;
       font-size: rem(16px);
     }
 
@@ -126,16 +127,13 @@
   }
 
   &__button {
-    margin: 16px auto 0;
-
-    @include desktop-min {
-      margin: 16px auto 0;
-    }
+    margin: 24px auto 8px;
 
     .btn {
       margin: 0 auto;
       max-width: 200px;
-      font-size: 15px;
+      font-size: 13px;
+      padding: 8px 10px;
     }
   }
 
@@ -172,4 +170,9 @@
       }
     }
   }
+}
+
+
+.fa-github {
+  font-size: 44px;
 }
