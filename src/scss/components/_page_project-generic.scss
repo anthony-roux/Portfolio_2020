@@ -125,14 +125,6 @@
     font-weight: 500;
   }
 
-  .hidden-p {
-    display: none;
-
-    @include tablet-up {
-      display: block;
-    }
-  }
-
   &__button {
     margin: 16px auto 0;
 
@@ -142,8 +134,8 @@
 
     .btn {
       margin: 0 auto;
-      font-size: 15px;
       max-width: 200px;
+      font-size: 15px;
     }
   }
 
