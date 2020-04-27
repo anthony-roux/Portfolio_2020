@@ -28,6 +28,10 @@
 </head>
 
 <body class="project__body body__koala">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
   include includes/header.pug
   <main class="project__main main__koala">
     <div class="project__navigation">
@@ -42,22 +46,22 @@
         </button>
       </a>
     </div>
-    <section class=" projectSection projectKoala content-wrapper-adapt">
+    <section class=" projectSection projectKoala content-wrapper-adapt" id="#animateA">
       <div class="projectSection__textualCard projectKoala__textualCard">
         <div class="projectSection__cadre projectKoala__cadre">
-          <h2 class="projectSection__title projectKoala__title">Koala's Rescue</h2>
-          <p class="projectSection__paragraph projectKoala__paragraph hidden-p">Avec l’aide de la librairie OXO, l’objectif était de pouvoir mettre en pratique nos notions de <strong>JavaScript</strong> acquises durant les 3 mois précédent.
+          <h2 class="projectSection__title projectKoala__title tween_text_pageProjet">Koala's Rescue</h2>
+          <p class="projectSection__paragraph projectKoala__paragraph hidden-p tween_text_pageProjet">Avec l’aide de la librairie OXO, l’objectif était de pouvoir mettre en pratique nos notions de <strong>JavaScript</strong> acquises durant les 3 mois précédent.
           </p>
-          <p class="projectSection__paragraph projectKoala__paragraph">Nous avions donc 4 jours pour imaginer et concevoir ce jeu qui nous semblait infaisable.
+          <p class="projectSection__paragraph projectKoala__paragraph tween_text_pageProjet">Nous avions donc 4 jours pour imaginer et concevoir ce jeu qui nous semblait infaisable.
           </p>
-          <p class="projectSection__paragraph projectKoala__paragraph hidden-p">Pour cela, nous avons d’abord imaginé un thème :
+          <p class="projectSection__paragraph projectKoala__paragraph hidden-p tween_text_pageProjet">Pour cela, nous avons d’abord imaginé un thème :
           </p>
-          <p class="projectSection__paragraph projectKoala__paragraph hidden-p">Étant donné que la situation apocalyptique Australienne était le sujet n°1, nous sommes parti sur un sauvetage de Koalas.
+          <p class="projectSection__paragraph projectKoala__paragraph hidden-p tween_text_pageProjet">Étant donné que la situation apocalyptique Australienne était le sujet n°1, nous sommes parti sur un sauvetage de Koalas.
           </p>
-          <p class="projectSection__paragraph projectKoala__paragraph">Premièrement, conception du jeu sous forme de maquette avec Figma. Puis en second temps, l’intégration du jeu.
+          <p class="projectSection__paragraph projectKoala__paragraph tween_text_pageProjet">Premièrement, conception du jeu sous forme de maquette avec Figma. Puis en second temps, l’intégration du jeu.
           </p>
-          <p class="projectSection__paragraph projectKoala__paragraph">Malheureusement trop ambitieux, et inexpérimenté, le jeu n’a pas pu être terminé, et n’est donc pas vraiment fonctionnel.</p> 
-          <p class="projectSection__paragraph projectKoala__paragraph">Cela ne m’a pas empêché de mettre mes compétences encore très frêles à l’œuvre. J’ai pu intégrer les différentes pages du jeu, et créer des composants dynamiquement en JavaScript.
+          <p class="projectSection__paragraph projectKoala__paragraph tween_text_pageProjet">Malheureusement trop ambitieux, et inexpérimenté, le jeu n’a pas pu être terminé, et n’est donc pas vraiment fonctionnel.</p> 
+          <p class="projectSection__paragraph projectKoala__paragraph tween_text_pageProjet">Cela ne m’a pas empêché de mettre mes compétences encore très frêles à l’œuvre. J’ai pu intégrer les différentes pages du jeu, et créer des composants dynamiquement en JavaScript.
           </p>
           <div class="projectSection__button projectKoala__button button">
             <a href="https://koala-rescue.netlify.app/?fbclid=IwAR3bQwLWFhKeNq6ZbG8gBDm4QS0gvL3N5xYR3ICRj0Pkpb7IYAKmmky2mmw#" target="_blank" rel="noopener" id="decouvrir">
