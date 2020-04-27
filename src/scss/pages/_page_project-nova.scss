@@ -22,17 +22,6 @@
     }
   }
 
-
-
-
-
-
-
-
-
-
-
-
   &__images {
     position: relative;
     top: -12px;
@@ -89,6 +78,14 @@
 
     @include desktop-large {
       width: 24.375rem;
+    }
+  }
+
+  &__button {
+    @include flexbox(row, space-between, center);
+
+    @include tablet-up {
+      @include flexbox(row, space-around, center);
     }
   }
 }
