@@ -134,6 +134,20 @@ const tween_text_skills = TweenMax.staggerFromTo(
   0.1
 );
 
+const tween_text_pageProjet = TweenMax.staggerFromTo(
+  '.tween_text_pageProjet',
+  0.3, {
+    opacity: 0,
+    y: -30,
+    ease: Power4.easeInOut
+  }, {
+    opacity: 1,
+    y: 0,
+    ease: Power4.easeInOut
+  },
+  0.1
+);
+
 //scenes
 
 const scene_vectorMe = new ScrollMagic.Scene({
