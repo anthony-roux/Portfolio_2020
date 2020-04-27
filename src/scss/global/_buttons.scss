@@ -112,6 +112,7 @@
   cursor: pointer;
   transition: all 400ms ease-in-out;
   user-select: none;
+  outline: none;
 
   &--right {
     padding: 8px 4px 8px 10px;
