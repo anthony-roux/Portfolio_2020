@@ -2,7 +2,6 @@
 
   &__textualCard {
     margin: -40px 0 16px;
-    max-width: 496px;
 
 
     @include tablet-up {
@@ -87,8 +86,8 @@
     }
 
     @include desktop-large {
-      width: 28.75rem;
       top: 8rem;
+      width: 28.75rem;
 
     }
 
