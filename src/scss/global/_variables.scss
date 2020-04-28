@@ -279,9 +279,9 @@ $desktop-megaLarge_2368: 2368px;
 }
 
 @mixin gradient-strokes {
-  background: $gradient1;
+  background: $gradientOriginal;
   /* Chrome10+,Safari5.1+ */
-  -webkit-text-stroke: 2.5px rgba(255, 255, 255, .01);
+  -webkit-text-stroke: 3px rgba(255, 255, 255, .01);
   -webkit-background-clip: text;
 }
 
