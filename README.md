@@ -8,8 +8,7 @@
   <li>Animations avec GreenSock et ScrollMagic 💫</li>
 </ul>
 
-<h3>Allez jeter un oeil :</h3>
 <a href="https://anthony-roux.netlify.app/
-" target="_blank" >ICI 🎊</a>
+" target="_blank" ><h3>Allez jeter un oeil 🎊:</h3></a>
 
 <h3>🚧 Work in progress 🚧</h3>
